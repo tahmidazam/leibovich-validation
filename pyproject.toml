@@ -1,0 +1,52 @@
+[project]
+name = "leibovich-validation"
+version = "0.1.0"
+description = "External validation of Leibovich Plus, a competing-risks recurrence model after nephrectomy, on public cohorts"
+authors = [
+    { name = "Tahmid Azam", email = "ta549@cam.ac.uk" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "joblib>=1.6.0",
+    "matplotlib>=3.10.0",
+    "numpy>=2.5.4",
+    "openpyxl>=3.1.5",
+    "polars>=2.1.0",
+    "pydantic-settings>=2.16.2",
+    "pyyaml>=6.0.3",
+    "rich>=14.0.0",
+    "rpy2>=3.6.0",
+    "typer>=0.27.3",
+]
+
+[project.scripts]
+leibovich-validation = "leibovich_validation.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+# Only resolve releases at least 7 days old.
+exclude-newer = "2026-11-01T00:00:00Z"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "PTH", "N"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-ra", "--strict-markers"]
+
+[tool.ty.src]
+include = ["src", "tests"]
+
+[dependency-groups]
+dev = [
+    "dvc>=3.67.1",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+    "ty>=0.0.95",
+]

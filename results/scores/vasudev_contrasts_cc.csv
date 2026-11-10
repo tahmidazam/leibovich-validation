@@ -1,0 +1,7 @@
+cohort,horizon_years,contrast,metric,estimate,lower,upper,method
+vasudev,5.0,Leibovich Plus - Leibovich,oe,0.04301546752238372,0.03528756874250413,0.05203487813295948,bootstrap
+vasudev,5.0,Leibovich Plus - Leibovich,slope,0.07483973671821254,0.02586984782902385,0.13570561791959315,bootstrap
+vasudev,5.0,Leibovich Plus - Leibovich,brier,-0.0027797518531420262,-0.005108932280672331,-0.0006787447537015316,bootstrap
+vasudev,3.0,Leibovich Plus - Leibovich,oe,0.02711979295661804,0.02142664120971042,0.033573963292567975,bootstrap
+vasudev,3.0,Leibovich Plus - Leibovich,slope,0.03523275240840362,0.006986858685675516,0.06865710025073712,bootstrap
+vasudev,3.0,Leibovich Plus - Leibovich,brier,-0.0009456670538463136,-0.0020218239747371676,0.00003292806014112843,bootstrap

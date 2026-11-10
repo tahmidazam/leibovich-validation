@@ -1,0 +1,23 @@
+stratum,step,kind,label,n
+TranSORCE,workbook_rows,main,Rows in the TranSORCE workbook,443
+TranSORCE,eligible_trial_record,main,Eligible by the trial record,443
+TranSORCE,excluded_missing_sex,excluded,Missing sex,0
+TranSORCE,estimated_operation_date,note,Operation date estimated,18
+TranSORCE,excluded_operation_outside_window,excluded,Operation date outside the trial window,4
+TranSORCE,excluded_randomisation_lag_outside_range,excluded,Randomisation lag outside 28 to 92 days,0
+TranSORCE,analysis_set,main,Analysis set,439
+Vasudev cohort,patient_rows,main,Patients in the clinical table,943
+Vasudev cohort,sample_rows,note,Tumour sample rows,943
+Vasudev cohort,patients_without_sample_row,note,Patients without a sample row,0
+Vasudev cohort,sample_rows_without_patient,note,Sample rows without a patient,0
+Vasudev cohort,excluded_missing_overall_stage,excluded,Missing overall stage,1
+Vasudev cohort,excluded_overall_stage_iv,excluded,Overall stage IV,132
+Vasudev cohort,excluded_recorded_m1,excluded,Recorded M1,0
+Vasudev cohort,excluded_missing_sex,excluded,Missing sex,0
+Vasudev cohort,excluded_nonpositive_followup,excluded,No observable follow-up,44
+Vasudev cohort,analysis_set,main,Analysis set,766
+Vasudev cohort,missing_relapse_event_status_from_dfs_status,note,Event status taken from DFS_STATUS,21
+Vasudev cohort,relapse_and_dfs_status_both_missing,note,RELAPSE and DFS_STATUS both missing,3
+Vasudev cohort,relapsed_but_coded_disease_free,note,Relapsed but coded disease-free,60
+Vasudev cohort,dfs_time_capped_at_survival_time,note,DFS time capped at survival time,465
+Vasudev cohort,missing_dfs_time_used_survival_time,note,Survival time used for missing DFS time,0

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Environments
+.venv
+.env
+
+# Patient-level tables (DVC cache only)
+/data/interim/
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# LaTeX build output
+/manuscript/*.pdf
+!/manuscript/main.pdf
+/manuscript/*.aux
+/manuscript/*.bbl
+/manuscript/*.blg
+/manuscript/*.log
+/manuscript/*.out
+/manuscript/*.fls
+/manuscript/*.fdb_latexmk

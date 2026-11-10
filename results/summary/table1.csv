@@ -1,0 +1,73 @@
+key,section,label,stratum,value,n
+n_patients,"","Patients, n",TranSORCE,439,439
+age_mean_sd,"Age at surgery, years",mean (SD),TranSORCE,58.5 (9.8),439
+age_median_range,"Age at surgery, years",median (range),TranSORCE,59 (30–81),439
+sex_male,Sex,male,TranSORCE,301 (68.6%),301
+sex_female,Sex,female,TranSORCE,138 (31.4%),138
+t_stage_pT1a,T stage,pT1a,TranSORCE,1 (0.2%),1
+t_stage_pT1b,T stage,pT1b,TranSORCE,51 (11.6%),51
+t_stage_pT2,T stage,pT2,TranSORCE,102 (23.2%),102
+t_stage_pT3a,T stage,pT3a,TranSORCE,285 (64.9%),285
+t_stage_pT3b,T stage,pT3b,TranSORCE,0 (0.0%),0
+t_stage_pT3c,T stage,pT3c,TranSORCE,0 (0.0%),0
+t_stage_pT4,T stage,pT4,TranSORCE,0 (0.0%),0
+node_positive,Nodal status,pN1 or pN2,TranSORCE,5 (1.1%),5
+node_negative,Nodal status,pNx or pN0,TranSORCE,434 (98.9%),434
+size_ge_10cm,Tumour size,10 cm or greater,TranSORCE,130 (29.6%),130
+grade_1,Nuclear grade,1,TranSORCE,11 (2.5%),11
+grade_2,Nuclear grade,2,TranSORCE,122 (27.8%),122
+grade_3,Nuclear grade,3,TranSORCE,226 (51.5%),226
+grade_4,Nuclear grade,4,TranSORCE,80 (18.2%),80
+necrosis,Tumour necrosis,present,TranSORCE,244 (55.6%),244
+nephrectomy_radical,Nephrectomy,radical,TranSORCE,"",0
+nephrectomy_partial,Nephrectomy,partial,TranSORCE,"",0
+risk_low,Leibovich risk group,low (score 0–2),TranSORCE,0 (0.0%),0
+risk_intermediate,Leibovich risk group,intermediate (score 3–5),TranSORCE,242 (55.1%),242
+risk_high,Leibovich risk group,high (score 6–11),TranSORCE,197 (44.9%),197
+followup_median_range,"Follow-up, years",median (range),TranSORCE,6.3 (0.2–11.3),439
+events_interest,Events,"event of interest, n",TranSORCE,140,140
+events_competing,Events,"death without the event, n",TranSORCE,15,15
+events_censored,Events,"censored, n",TranSORCE,284,284
+missing_t_stage,Missing values,T stage,TranSORCE,0 (0.0%),0
+missing_node,Missing values,Nodal status,TranSORCE,0 (0.0%),0
+missing_size,Missing values,Tumour size,TranSORCE,0 (0.0%),0
+missing_grade,Missing values,Nuclear grade,TranSORCE,0 (0.0%),0
+missing_necrosis,Missing values,Tumour necrosis,TranSORCE,0 (0.0%),0
+missing_nephrectomy_type,Missing values,Nephrectomy type,TranSORCE,439 (100.0%),439
+missing_score,Missing values,Any predictor,TranSORCE,0 (0.0%),0
+n_patients,"","Patients, n",Vasudev cohort,766,766
+age_mean_sd,"Age at surgery, years",mean (SD),Vasudev cohort,61.1 (10.5),766
+age_median_range,"Age at surgery, years",median (range),Vasudev cohort,62 (23–86),766
+sex_male,Sex,male,Vasudev cohort,472 (61.6%),472
+sex_female,Sex,female,Vasudev cohort,294 (38.4%),294
+t_stage_pT1a,T stage,pT1a,Vasudev cohort,254 (33.2%),254
+t_stage_pT1b,T stage,pT1b,Vasudev cohort,196 (25.6%),196
+t_stage_pT2,T stage,pT2,Vasudev cohort,86 (11.2%),86
+t_stage_pT3a,T stage,pT3a,Vasudev cohort,198 (25.8%),198
+t_stage_pT3b,T stage,pT3b,Vasudev cohort,0 (0.0%),0
+t_stage_pT3c,T stage,pT3c,Vasudev cohort,0 (0.0%),0
+t_stage_pT4,T stage,pT4,Vasudev cohort,0 (0.0%),0
+node_positive,Nodal status,pN1 or pN2,Vasudev cohort,13 (1.7%),13
+node_negative,Nodal status,pNx or pN0,Vasudev cohort,753 (98.3%),753
+size_ge_10cm,Tumour size,10 cm or greater,Vasudev cohort,58 (7.6%),58
+grade_1,Nuclear grade,1,Vasudev cohort,115 (15.0%),115
+grade_2,Nuclear grade,2,Vasudev cohort,347 (45.3%),347
+grade_3,Nuclear grade,3,Vasudev cohort,214 (27.9%),214
+grade_4,Nuclear grade,4,Vasudev cohort,56 (7.3%),56
+necrosis,Tumour necrosis,present,Vasudev cohort,155 (20.2%),155
+nephrectomy_radical,Nephrectomy,radical,Vasudev cohort,650 (84.9%),650
+nephrectomy_partial,Nephrectomy,partial,Vasudev cohort,107 (14.0%),107
+risk_low,Leibovich risk group,low (score 0–2),Vasudev cohort,250 (32.6%),250
+risk_intermediate,Leibovich risk group,intermediate (score 3–5),Vasudev cohort,211 (27.5%),211
+risk_high,Leibovich risk group,high (score 6–11),Vasudev cohort,95 (12.4%),95
+followup_median_range,"Follow-up, years",median (range),Vasudev cohort,5.8 (0.0–20.0),766
+events_interest,Events,"event of interest, n",Vasudev cohort,169,169
+events_competing,Events,"death without the event, n",Vasudev cohort,94,94
+events_censored,Events,"censored, n",Vasudev cohort,503,503
+missing_t_stage,Missing values,T stage,Vasudev cohort,32 (4.2%),32
+missing_node,Missing values,Nodal status,Vasudev cohort,753 (98.3%),753
+missing_size,Missing values,Tumour size,Vasudev cohort,205 (26.8%),205
+missing_grade,Missing values,Nuclear grade,Vasudev cohort,34 (4.4%),34
+missing_necrosis,Missing values,Tumour necrosis,Vasudev cohort,28 (3.7%),28
+missing_nephrectomy_type,Missing values,Nephrectomy type,Vasudev cohort,9 (1.2%),9
+missing_score,Missing values,Any predictor,Vasudev cohort,210 (27.4%),210

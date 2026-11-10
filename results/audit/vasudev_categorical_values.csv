@@ -1,0 +1,87 @@
+source,column,value,n,covered_by_mapping_rule
+patient,COHORT_CATEGORY,C1,93,
+patient,COHORT_CATEGORY,C2,376,
+patient,COHORT_CATEGORY,C3,474,
+patient,COHORT,Discovery Cohort,469,
+patient,COHORT,Validation Cohort,474,
+patient,SEX,Female,361,true
+patient,SEX,Male,582,true
+patient,BMI_CATEGORIES,<missing>,90,
+patient,BMI_CATEGORIES,25-29.9,346,
+patient,BMI_CATEGORIES,30-34.9,201,
+patient,BMI_CATEGORIES,<24.9,222,
+patient,BMI_CATEGORIES,>35,84,
+patient,TOBACCO_STATUS,<missing>,7,
+patient,TOBACCO_STATUS,Current Smoker,207,
+patient,TOBACCO_STATUS,Ex-Smoker,260,
+patient,TOBACCO_STATUS,Never Smoker,469,
+patient,COUNTRY,Czech Republic,346,
+patient,COUNTRY,Romania,75,
+patient,COUNTRY,Russia,197,
+patient,COUNTRY,Serbia,34,
+patient,COUNTRY,United Kingdom,291,
+patient,STAGE,<missing>,1,true
+patient,STAGE,I,490,true
+patient,STAGE,II,95,true
+patient,STAGE,III,225,true
+patient,STAGE,IV,132,true
+patient,LEIBOVICH_RISK_GROUP,<missing>,222,
+patient,LEIBOVICH_RISK_GROUP,High,104,
+patient,LEIBOVICH_RISK_GROUP,Intermediate,267,
+patient,LEIBOVICH_RISK_GROUP,Low,350,
+patient,RHABDOID_OR_SARCOMATOID,<missing>,14,
+patient,RHABDOID_OR_SARCOMATOID,No Consensus,5,
+patient,RHABDOID_OR_SARCOMATOID,Not Present,878,
+patient,RHABDOID_OR_SARCOMATOID,Present,46,
+patient,LATERALITY,<missing>,67,
+patient,LATERALITY,Bilateral,2,
+patient,LATERALITY,Left Kidney,437,
+patient,LATERALITY,Right Kidney,437,
+patient,NEPHRECTOMY_TYPE,<missing>,12,true
+patient,NEPHRECTOMY_TYPE,Partial,116,true
+patient,NEPHRECTOMY_TYPE,Radical,815,true
+patient,RELAPSE,<missing>,157,true
+patient,RELAPSE,No,626,true
+patient,RELAPSE,Yes,160,true
+patient,OS_STATUS,<missing>,3,true
+patient,OS_STATUS,0:LIVING,612,true
+patient,OS_STATUS,1:DECEASED,328,true
+patient,RCC_RELATED_DEATH,<missing>,625,true
+patient,RCC_RELATED_DEATH,No,126,true
+patient,RCC_RELATED_DEATH,Yes,192,true
+patient,DFS_STATUS,<missing>,4,true
+patient,DFS_STATUS,0:DiseaseFree,611,true
+patient,DFS_STATUS,1:Recurred/Progressed,328,true
+patient,RCC_STATUS,<missing>,13,true
+patient,RCC_STATUS,0:LIVING,738,true
+patient,RCC_STATUS,1:DECEASED,192,true
+sample,NECROSIS,<missing>,33,true
+sample,NECROSIS,Absent,682,true
+sample,NECROSIS,Present,228,true
+sample,STAGE_T,<missing>,42,true
+sample,STAGE_T,TI,1,true
+sample,STAGE_T,TII,107,true
+sample,STAGE_T,TIII,288,true
+sample,STAGE_T,TIV,10,true
+sample,STAGE_T,TIa,279,true
+sample,STAGE_T,TIb,216,true
+sample,STAGE_T_CATEGORY,<missing>,42,
+sample,STAGE_T_CATEGORY,TI,496,
+sample,STAGE_T_CATEGORY,TII,107,
+sample,STAGE_T_CATEGORY,TIII,288,
+sample,STAGE_T_CATEGORY,TIV,10,
+sample,STAGE_N,<missing>,906,true
+sample,STAGE_N,NI,37,true
+sample,STAGE_M,<missing>,859,true
+sample,STAGE_M,M0,1,true
+sample,STAGE_M,MI,83,true
+sample,ONCOTREE_CODE,CCRCC,943,
+sample,SOMATIC_STATUS,Matched,943,
+sample,VHL_MUTATION,<missing>,3,
+sample,VHL_MUTATION,Mutated,720,
+sample,VHL_MUTATION,Not Mutated,220,
+sample,GENOMIC_GROUP,<missing>,223,
+sample,GENOMIC_GROUP,VHL+0,245,
+sample,GENOMIC_GROUP,VHL+1,284,
+sample,GENOMIC_GROUP,VHL+2,148,
+sample,GENOMIC_GROUP,VHL+>=3,43,

@@ -1,0 +1,90 @@
+# Analysis settings. Change only by the author's decision.
+model:
+  # Settings that reproduce Stimpson et al. Table 1: ONS 2020-based period qx, followed through the
+  # calendar years from 2024, with the other-cause risk rounded to a whole percent.
+  life_table: lifetables/ons-2020-based-qx.xlsx
+  start_year: 2024
+  round_other_cause_to_percent: true
+
+analysis:
+  # Primary prediction horizon. TranSORCE and the Vasudev cohort have median follow-up of about 6 to 7 years.
+  horizon_years: 5
+  # Secondary horizon, used for shorter follow-up.
+  secondary_horizon_years: 3
+  # Stop threshold for computed-versus-recorded Leibovich score agreement.
+  # Below it the cohort stage fails.
+  score_agreement_min: 0.95
+  seed: 20261108
+  bootstrap_resamples: 2000
+  imputations: 20
+  # Completed datasets drawn inside each bootstrap resample, deliberately smaller
+  # than `imputations` because chained-equations imputation dominates the runtime.
+  bootstrap_imputations: 3
+  # Resamples for the sensitivity stages only; the principal analysis
+  # keeps bootstrap_resamples.
+  sensitivity_resamples: 200
+  # Interval estimation: percentile bootstrap at this level, seed and resamples above.
+  interval_level: 0.95
+  interval_method: bootstrap
+  # Fallback horizon rule: if fewer than this many patients remain at risk at the
+  # primary horizon in a cohort, that cohort's primary horizon becomes the secondary
+  # one and the primary-horizon results are reported descriptively.
+  min_at_risk: 50
+  # Patients with missing sex are excluded from the main analysis (the life-table
+  # other-cause risk needs sex); they are counted in the flow diagram.
+  missing_sex: exclude
+  # The Vasudev cohort has no surgery dates, so a single calendar year stands in for each
+  # patient's surgery year in the country-specific WHO life-table sensitivity
+  # analysis: the mid-point of the 1998 to 2014 recruitment window.
+  vasudev_who_year: 2006
+  subgroups:
+    # Age bands in years: under 60, 60 to 69, 70 and over.
+    age_cut_points: [60, 70]
+    # Leibovich score bands: low 0-2, intermediate 3-5, high 6 and over.
+    leibovich_groups:
+      low: [0, 2]
+      intermediate: [3, 5]
+      high: [6, 11]
+  # Switches for the five sensitivity analyses. The principal analysis does
+  # not read this block.
+  sensitivity:
+    pt3b_for_unsplit_pt3: true
+    complete_cases: true
+    who_country_life_table_vasudev: true
+    transorce_surgery_clock: true
+    exclude_inconsistent_vasudev: true
+
+# Reporting thresholds and the grid for the model-behaviour summary table.
+reporting:
+  # Groups smaller than this are flagged in figures, not dropped.
+  minimum_group_n: 10
+  # Curves stop at the last time with at least this many patients at risk.
+  minimum_at_risk: 20
+  # Ages at surgery and the time step, in years, of the model-behaviour grid.
+  behaviour_ages: [55, 65, 75, 85]
+  behaviour_time_step: 0.25
+  behaviour_sex: male
+  # Calibration summary: patients are grouped into this many equal-count bins of
+  # predicted risk, and the strip of predicted risks shows this many quantiles.
+  calibration_bins: 5
+  calibration_rug_points: 25
+  # Half-width, in predicted risk, of the nearest-neighbour smoother behind the
+  # smoothed calibration curve and the ICI. The smoothed curve stops where fewer
+  # than minimum_at_risk patients fall inside it. STRATOS uses 0.05
+  # (https://doi.org/10.1136/bmj-2021-069249).
+  calibration_bandwidth: 0.05
+
+# Named profiles overlay `analysis` for fast iteration. Load with params.load_analysis("dev").
+profiles:
+  dev:
+    bootstrap_resamples: 20
+    sensitivity_resamples: 20
+    imputations: 3
+    bootstrap_imputations: 1
+
+audit:
+  # SORCE randomised between July 2007 and April 2013, 4 weeks to 3 months after
+  # surgery (ISRCTN38934710, https://www.isrctn.com/ISRCTN38934710).
+  operation_window: ["2007-07-01", "2013-04-30"]
+  randomisation_lag_days: [28, 92]
+  followup_horizons_years: [3, 5]

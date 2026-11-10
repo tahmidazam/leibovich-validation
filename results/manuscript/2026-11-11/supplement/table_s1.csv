@@ -1,0 +1,42 @@
+section,item,value,source
+Leibovich linear predictor coefficients,T stage pT1a,0 (reference),"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,T stage pT1b,1.243,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,T stage pT2,1.648,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,T stage pT3a,1.896,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,T stage pT3b,2.014,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,T stage pT3c,2.014,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,T stage pT4,2.014,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Regional lymph node metastasis,0.924,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Tumour size 10 cm or greater,0.393,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Nuclear grade 1,0 (reference),"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Nuclear grade 2,0 (reference),"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Nuclear grade 3,0.640,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Nuclear grade 4,1.313,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich linear predictor coefficients,Tumour necrosis,0.678,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 3"
+Leibovich risk score points,T stage pT1a,0,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,T stage pT1b,2,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,T stage pT2,3,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,T stage pT3a,4,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,T stage pT3b,4,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,T stage pT3c,4,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,T stage pT4,4,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Regional lymph node metastasis,2,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Tumour size 10 cm or greater,1,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Nuclear grade 1,0,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Nuclear grade 2,0,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Nuclear grade 3,1,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Nuclear grade 4,3,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Leibovich risk score points,Tumour necrosis,1,"Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234), Table 4"
+Preprint tumour profiles,low-risk profile,"pT1a, node negative, size under 10 cm, grade 1, no necrosis; published Leibovich risks 1 y: 1.17%, 5 y: 2.98%, 10 y: 4.33%","Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132), Table 1"
+Preprint tumour profiles,intermediate-risk profile,"pT2, node negative, size under 10 cm, grade 3, no necrosis; published Leibovich risks 1 y: 10.99%, 5 y: 25.79%, 10 y: 35.39%","Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132), Table 1"
+Preprint tumour profiles,high-risk profile,"pT3b, node positive, size 10 cm or greater, grade 3, no necrosis; published Leibovich risks 1 y: 46.56%, 5 y: 79.91%, 10 y: 90.47%","Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132), Table 1"
+Baseline cumulative hazard,Baseline cumulative hazard at 1 year,0.0117989,Recovered from the unadjusted Leibovich risks in Table 1 of Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132): the geometric mean of -log(1 - R) / exp(linear predictor) across the three published tumour profiles
+Baseline cumulative hazard,Baseline cumulative hazard at 5 years,0.0302597,Recovered from the unadjusted Leibovich risks in Table 1 of Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132): the geometric mean of -log(1 - R) / exp(linear predictor) across the three published tumour profiles
+Baseline cumulative hazard,Baseline cumulative hazard at 10 years,0.0443031,Recovered from the unadjusted Leibovich risks in Table 1 of Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132): the geometric mean of -log(1 - R) / exp(linear predictor) across the three published tumour profiles
+Baseline cumulative hazard,Hazard between the recovered times,"piecewise constant; the cumulative hazard is linear between knots at 0, 1, 5, 10 years",Recovered from the unadjusted Leibovich risks in Table 1 of Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132): the geometric mean of -log(1 - R) / exp(linear predictor) across the three published tumour profiles
+Life table,Mortality rates,lifetables/ons-2020-based-qx.xlsx,"ONS period mortality rates, qx (https://www.ons.gov.uk)"
+Life table,Sex,each patient's own sex,Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132)
+Life table,Calendar years,"one calendar year per follow-up year, from 2024",Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132)
+Life table,Other-cause risk,rounded to a whole percent,Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132)
+Model equations,Leibovich (original),"R_D(t) = 1 - exp(-H0(t) * exp(lp)); lp is the linear predictor, the sum of the Table 3 coefficients",Leibovich et al. 2003 (https://doi.org/10.1002/cncr.11234)
+Model equations,Leibovich Plus (published),"R = 1 - (1 - R_D)(1 - R_P), split as R_met = R * R_D / (R_D + R_P) and R_death = R * R_P / (R_D + R_P); R_D is the Leibovich risk and R_P the life-table other-cause risk","Stimpson et al. 2025 (https://doi.org/10.1101/2025.05.22.25328132), equations 4, 5.1 and 5.2"

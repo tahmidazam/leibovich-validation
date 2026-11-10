@@ -1,0 +1,2654 @@
+schema: '2.0'
+stages:
+  manifest:
+    cmd: uv run leibovich-validation manifest
+    deps:
+    - path: src/leibovich_validation/manifest.py
+      hash: md5
+      md5: 90a7fd0df0be194cf295b1f22d70ccfc
+      size: 1234
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    outs:
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+  report:
+    cmd: uv run leibovich-validation report
+    deps:
+    - path: data/interim/transorce_imputed.parquet
+      hash: md5
+      md5: 508c1632f4f2858fc1ee98001baa28c8
+      size: 16225
+    - path: data/interim/transorce_patients.parquet
+      hash: md5
+      md5: 87282d5501876ec4b08c1f9592527a86
+      size: 15526
+    - path: data/interim/transorce_predictions.parquet
+      hash: md5
+      md5: 49dc4dab6dc80622476933597dcefd5e
+      size: 50599
+    - path: data/interim/vasudev_imputed.parquet
+      hash: md5
+      md5: 1fbf73bb31c44713c2d319e4043ff714
+      size: 21221
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: data/interim/vasudev_predictions.parquet
+      hash: md5
+      md5: 4d3470d15dc543f50e7d7024743b0958
+      size: 83198
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: results/cohort/transorce_flow.csv
+      hash: md5
+      md5: 131a2ea9f9f474647c2a7d351c391d22
+      size: 198
+    - path: results/cohort/vasudev_flow.csv
+      hash: md5
+      md5: 947de71a353c625cfa60e435b71ba748
+      size: 455
+    - path: results/scores
+      hash: md5
+      md5: 41c309b4ae29f07606c964cb434c8c44.dir
+      size: 795376
+      nfiles: 16
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    params:
+      params.yaml:
+        analysis.horizon_years: 5
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        analysis.subgroups.leibovich_groups:
+          low:
+          - 0
+          - 2
+          intermediate:
+          - 3
+          - 5
+          high:
+          - 6
+          - 11
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting:
+          minimum_group_n: 10
+          minimum_at_risk: 20
+          behaviour_ages:
+          - 55
+          - 65
+          - 75
+          - 85
+          behaviour_time_step: 0.25
+          behaviour_sex: male
+          calibration_bins: 5
+          calibration_rug_points: 25
+          calibration_bandwidth: 0.05
+    outs:
+    - path: results/summary/calibration_5y.csv
+      hash: md5
+      md5: 044cf2d5635f09ea11a25dc090e39849
+      size: 214246
+    - path: results/summary/flow.csv
+      hash: md5
+      md5: 49bbeac41bab615ff9232637ffa021d3
+      size: 1678
+    - path: results/summary/model_behaviour.csv
+      hash: md5
+      md5: f744e56b8a715d8d7acd593dd39fefaf
+      size: 45951
+    - path: results/summary/other_cause.csv
+      hash: md5
+      md5: 92d959c592c5606b9750007021bd56cb
+      size: 3202
+    - path: results/summary/other_cause_by_age.csv
+      hash: md5
+      md5: 8f91e9bbbbdeaceff584fafea87b8da3
+      size: 1579
+    - path: results/summary/subgroups.csv
+      hash: md5
+      md5: 922a52273c7a7b4047771d0d0c2abfcb
+      size: 4365
+    - path: results/summary/table1.csv
+      hash: md5
+      md5: 0362d9e96424ca781c6ce860d121dfad
+      size: 4585
+    - path: results/summary/table2.csv
+      hash: md5
+      md5: 24e4823a5be59abe7a95d869949fa0b0
+      size: 10147
+  figure@model_behaviour:
+    cmd: uv run leibovich-validation figure model_behaviour
+    deps:
+    - path: results/summary
+      hash: md5
+      md5: 0d0f8c2652dfa43d855f1ff4d35acbb5.dir
+      size: 285753
+      nfiles: 8
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/figures
+      hash: md5
+      md5: d550eea8524a83ddf2add6a3add7888f.dir
+      size: 31161
+      nfiles: 3
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    params:
+      params.yaml:
+        reporting:
+          minimum_group_n: 10
+          minimum_at_risk: 20
+          behaviour_ages:
+          - 55
+          - 65
+          - 75
+          - 85
+          behaviour_time_step: 0.25
+          behaviour_sex: male
+          calibration_bins: 5
+          calibration_rug_points: 25
+          calibration_bandwidth: 0.05
+      manuscript.yaml:
+        figure.model_behaviour:
+          label: Figure S1
+          placement: supplement
+          size:
+          - 183
+          - 75
+          mosaic:
+          - - A
+            - B
+            - C
+          sharex: true
+          sharey: true
+          legend:
+            loc: outside lower center
+            ncol: 6
+            stratum_label: age {}
+          panels:
+            A:
+              draw: curve
+              table: model_behaviour
+              where:
+                label: low
+              title: Low-risk profile
+              xlabel: Years since surgery
+              ylabel: Predicted risk of distant metastasis
+            B:
+              draw: curve
+              table: model_behaviour
+              where:
+                label: intermediate
+              title: Intermediate-risk profile
+              xlabel: Years since surgery
+            C:
+              draw: curve
+              table: model_behaviour
+              where:
+                label: high
+              title: High-risk profile
+              xlabel: Years since surgery
+          caption: Predicted cumulative incidence of distant metastasis in men 
+            for the three tumour profiles of Stimpson et al., defined in Table 
+            S2. The original Leibovich model does not use age, so it has one 
+            curve per profile. Leibovich Plus divides the risk of either event 
+            in proportion to the two cumulative risks, so its predicted risk can
+            fall as follow-up lengthens, as in the high-risk profile at older 
+            ages.
+        style:
+          font.family: sans-serif
+          font.sans-serif: DejaVu Sans
+          font.size: 8
+          axes.titlesize: 8
+          axes.labelsize: 8
+          xtick.labelsize: 7
+          ytick.labelsize: 7
+          legend.fontsize: 7
+          pdf.fonttype: 42
+          axes.spines.top: false
+          axes.spines.right: false
+          axes.grid: true
+          axes.axisbelow: true
+          grid.color: '0.9'
+          grid.linewidth: 0.6
+          legend.frameon: false
+          lines.linewidth: 1.4
+    outs:
+    - path: results/figures/supplement/model_behaviour.pdf
+      hash: md5
+      md5: 04bcdcf76ff365f27acf45dd68452155
+      size: 23192
+    - path: results/figures/supplement/model_behaviour.png
+      hash: md5
+      md5: 5f6dcc75fd6e6a53a4da97b0a4cfb526
+      size: 132831
+  table:
+    cmd: uv run leibovich-validation table
+    deps:
+    - path: docs/transorce-other-details-mapping.yaml
+      hash: md5
+      md5: 3469455536c19c24e798fd7d2f2942a8
+      size: 4172
+    - path: results/imputation
+      hash: md5
+      md5: 980a22c15fbd7df4c0c2156414456cef.dir
+      size: 513
+      nfiles: 2
+    - path: results/sensitivity
+      hash: md5
+      md5: 1af0cadb3979e1f7536afa99f5beb22b.dir
+      size: 39844
+      nfiles: 3
+    - path: results/summary/other_cause.csv
+      hash: md5
+      md5: 92d959c592c5606b9750007021bd56cb
+      size: 3202
+    - path: results/summary/table1.csv
+      hash: md5
+      md5: 0362d9e96424ca781c6ce860d121dfad
+      size: 4585
+    - path: results/summary/table2.csv
+      hash: md5
+      md5: 24e4823a5be59abe7a95d869949fa0b0
+      size: 10147
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/raw_transorce.py
+      hash: md5
+      md5: 1b04de6054eb1f0be2c5e133abc1282a
+      size: 7736
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    - path: src/leibovich_validation/sensitivity.py
+      hash: md5
+      md5: fc66755d6023d2081a5a644986cb9c7c
+      size: 20683
+    - path: src/leibovich_validation/tables.py
+      hash: md5
+      md5: d7b54ab5a64b1dad2565a45c8e414d9c
+      size: 36995
+    - path: src/leibovich_validation/tables_latex.py
+      hash: md5
+      md5: a194909519440ef6a0a7c7b2df71b0b0
+      size: 3808
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.horizon_years: 5
+        analysis.imputations: 20
+        analysis.missing_sex: exclude
+        analysis.score_agreement_min: 0.95
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.vasudev_who_year: 2006
+        audit.operation_window:
+        - '2007-07-01'
+        - '2013-04-30'
+        audit.randomisation_lag_days:
+        - 28
+        - 92
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+    outs:
+    - path: results/tables/table_1.csv
+      hash: md5
+      md5: 8b60ff7e43a8b2b2a0ac5a8245662fa9
+      size: 2086
+    - path: results/tables/table_1.tex
+      hash: md5
+      md5: 87db9e6eefb4073104e56ef534d3b47e
+      size: 3029
+    - path: results/tables/table_2.csv
+      hash: md5
+      md5: 23687b57f4daf0d5e7e551e6028a3cbf
+      size: 822
+    - path: results/tables/table_2.tex
+      hash: md5
+      md5: 135ca176359ace8c235639954000f9ea
+      size: 1964
+    - path: results/tables/table_2_3y.csv
+      hash: md5
+      md5: fb670cf8557daca7a4243e920eb76fa5
+      size: 822
+    - path: results/tables/table_s1.csv
+      hash: md5
+      md5: 4607fe7b84b62883f6faa604eb5b1847
+      size: 6576
+    - path: results/tables/table_s2.csv
+      hash: md5
+      md5: daff658e0d657aaf999273e4552b1e87
+      size: 7941
+    - path: results/tables/table_s2_other_details.csv
+      hash: md5
+      md5: 3e644a40478813490b87e7a757c33176
+      size: 2223
+    - path: results/tables/table_s3.csv
+      hash: md5
+      md5: a12698dd418b1610c50ebcfe77d5224c
+      size: 4335
+    - path: results/tables/table_s3_notes.csv
+      hash: md5
+      md5: 4d6d1aaa9710c3c90c1a13768a1b6539
+      size: 347
+    - path: results/tables/table_s4.csv
+      hash: md5
+      md5: 9bd063fdb33898b19098d6d46a75cd0c
+      size: 1937
+    - path: results/tables/table_s6.csv
+      hash: md5
+      md5: 9d52166984a20333c1454de92eb4f913
+      size: 1549
+  audit:
+    cmd: uv run leibovich-validation audit
+    deps:
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: params.yaml
+      hash: md5
+      md5: 8bd8c79a32e35cabf3860882830509e0
+      size: 3923
+    - path: src/leibovich_validation/audit.py
+      hash: md5
+      md5: 154db5877f2d67b500e8c2f9783c7022
+      size: 14921
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/raw_transorce.py
+      hash: md5
+      md5: 1b04de6054eb1f0be2c5e133abc1282a
+      size: 7736
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    outs:
+    - path: results/audit
+      hash: md5
+      md5: 21db8f501b71436f6d5df3e639f59dd2.dir
+      size: 9084
+      nfiles: 14
+  cohort:
+    cmd: uv run leibovich-validation cohort --name transorce
+    deps:
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: docs/transorce-other-details-mapping.yaml
+      hash: md5
+      md5: 3469455536c19c24e798fd7d2f2942a8
+      size: 4172
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/raw_transorce.py
+      hash: md5
+      md5: 1b04de6054eb1f0be2c5e133abc1282a
+      size: 7736
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    params:
+      params.yaml:
+        analysis.score_agreement_min: 0.95
+        audit.operation_window:
+        - '2007-07-01'
+        - '2013-04-30'
+        audit.randomisation_lag_days:
+        - 28
+        - 92
+    outs:
+    - path: data/interim/transorce_patients.parquet
+      hash: md5
+      md5: 87282d5501876ec4b08c1f9592527a86
+      size: 15526
+    - path: results/cohort/transorce_flow.csv
+      hash: md5
+      md5: 131a2ea9f9f474647c2a7d351c391d22
+      size: 198
+    - path: results/cohort/transorce_score_agreement.csv
+      hash: md5
+      md5: 6c27e5107aed142211df5c0041f88309
+      size: 154
+  cohort_leeds_iarc:
+    cmd: uv run leibovich-validation cohort --name leeds_iarc
+    deps:
+    - path: data/manifest.json
+      hash: md5
+      md5: da16c353465db495b9147b5e84ebbb77
+      size: 3683
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 1d5532abc3c66377eeb5bf9c1b1d7185
+      size: 20565
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 4811c3008f14d0c3c18eeb718311bd74
+      size: 35904
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: b281c081c3bd0de850c24a4b8e6515ad
+      size: 5901
+    - path: src/leibovich_validation/raw_leeds_iarc.py
+      hash: md5
+      md5: 67c7aaf455c1da1b2a860f99ce91bc7b
+      size: 5917
+    params:
+      params.yaml:
+        analysis.score_agreement_min: 0.95
+    outs:
+    - path: data/interim/leeds_iarc_patients.parquet
+      hash: md5
+      md5: d78f6cbc9be8c455e404fe74e72218f0
+      size: 15532
+    - path: results/cohort/leeds_iarc_flow.csv
+      hash: md5
+      md5: 947de71a353c625cfa60e435b71ba748
+      size: 455
+    - path: results/cohort/leeds_iarc_score_agreement.csv
+      hash: md5
+      md5: 7d4300a19e255ae3f07a055482357278
+      size: 60
+  impute:
+    cmd: uv run leibovich-validation impute --name transorce
+    deps:
+    - path: data/interim/transorce_patients.parquet
+      hash: md5
+      md5: 87282d5501876ec4b08c1f9592527a86
+      size: 15526
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    params:
+      params.yaml:
+        analysis.imputations: 20
+        analysis.seed: 20261108
+    outs:
+    - path: data/interim/transorce_imputed.parquet
+      hash: md5
+      md5: 508c1632f4f2858fc1ee98001baa28c8
+      size: 16225
+    - path: results/imputation/transorce_missingness.csv
+      hash: md5
+      md5: 8cb43b95f77836c8e081e5c813db8b32
+      size: 253
+  impute_leeds_iarc:
+    cmd: uv run leibovich-validation impute --name leeds_iarc
+    deps:
+    - path: data/interim/leeds_iarc_patients.parquet
+      hash: md5
+      md5: d78f6cbc9be8c455e404fe74e72218f0
+      size: 15532
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 1d5532abc3c66377eeb5bf9c1b1d7185
+      size: 20565
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 4811c3008f14d0c3c18eeb718311bd74
+      size: 35904
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: ff35519281a8d0a9bf9edf32080022fe
+      size: 11148
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: b281c081c3bd0de850c24a4b8e6515ad
+      size: 5901
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/raw_leeds_iarc.py
+      hash: md5
+      md5: 67c7aaf455c1da1b2a860f99ce91bc7b
+      size: 5917
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: 8902cfe62955a5607f1afd25b4da8f82
+      size: 37462
+    params:
+      params.yaml:
+        analysis.imputations: 20
+        analysis.seed: 20261108
+    outs:
+    - path: data/interim/leeds_iarc_imputed.parquet
+      hash: md5
+      md5: cd58f7ca91ff4a995512819b3b0d8916
+      size: 21249
+    - path: results/imputation/leeds_iarc_missingness.csv
+      hash: md5
+      md5: 938a747742509b517b9daa4cdf3e46df
+      size: 278
+  predict:
+    cmd: uv run leibovich-validation predict --name transorce
+    deps:
+    - path: data/interim/transorce_imputed.parquet
+      hash: md5
+      md5: 508c1632f4f2858fc1ee98001baa28c8
+      size: 16225
+    - path: data/interim/transorce_patients.parquet
+      hash: md5
+      md5: 87282d5501876ec4b08c1f9592527a86
+      size: 15526
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    params:
+      params.yaml:
+        analysis.horizon_years: 5
+        analysis.secondary_horizon_years: 3
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+    outs:
+    - path: data/interim/transorce_predictions.parquet
+      hash: md5
+      md5: 49dc4dab6dc80622476933597dcefd5e
+      size: 50599
+    - path: data/interim/transorce_predictions_cc.parquet
+      hash: md5
+      md5: 83b8b3a02733c21c8c7ee2308d20eaf7
+      size: 50261
+    - path: results/cohort/transorce_prediction_summary.csv
+      hash: md5
+      md5: 0360ef42972f6e35ce2c4aba0d96873c
+      size: 855
+  predict_leeds_iarc:
+    cmd: uv run leibovich-validation predict --name leeds_iarc
+    deps:
+    - path: data/interim/leeds_iarc_imputed.parquet
+      hash: md5
+      md5: cd58f7ca91ff4a995512819b3b0d8916
+      size: 21249
+    - path: data/interim/leeds_iarc_patients.parquet
+      hash: md5
+      md5: d78f6cbc9be8c455e404fe74e72218f0
+      size: 15532
+    - path: data/manifest.json
+      hash: md5
+      md5: da16c353465db495b9147b5e84ebbb77
+      size: 3683
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 1d5532abc3c66377eeb5bf9c1b1d7185
+      size: 20565
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 4811c3008f14d0c3c18eeb718311bd74
+      size: 35904
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: 76610b554a6b69e5ede0425c890af206
+      size: 8836
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: b281c081c3bd0de850c24a4b8e6515ad
+      size: 5901
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: 64db7b885e30fd946252e26a9da29e8f
+      size: 8645
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    params:
+      params.yaml:
+        analysis.horizon_years: 5
+        analysis.secondary_horizon_years: 3
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+    outs:
+    - path: data/interim/leeds_iarc_predictions.parquet
+      hash: md5
+      md5: 976389b7119ddeb5fa660dca9112a07b
+      size: 83226
+    - path: data/interim/leeds_iarc_predictions_cc.parquet
+      hash: md5
+      md5: 51368cdeb1ac87fb27361ef0e380a69e
+      size: 36185
+    - path: results/cohort/leeds_iarc_prediction_summary.csv
+      hash: md5
+      md5: addba1e6dbce85e471c0ed323172906d
+      size: 889
+  score:
+    cmd: uv run leibovich-validation score --name transorce
+    deps:
+    - path: data/interim/transorce_patients.parquet
+      hash: md5
+      md5: 87282d5501876ec4b08c1f9592527a86
+      size: 15526
+    - path: data/interim/transorce_predictions.parquet
+      hash: md5
+      md5: 49dc4dab6dc80622476933597dcefd5e
+      size: 50599
+    - path: data/interim/transorce_predictions_cc.parquet
+      hash: md5
+      md5: 83b8b3a02733c21c8c7ee2308d20eaf7
+      size: 50261
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/subgroups.py
+      hash: md5
+      md5: a6d0519b2e3d54895694261ba8c1a340
+      size: 3004
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.min_at_risk: 50
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        analysis.subgroups.leibovich_groups:
+          low:
+          - 0
+          - 2
+          intermediate:
+          - 3
+          - 5
+          high:
+          - 6
+          - 11
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting.calibration_bins: 5
+        reporting.calibration_rug_points: 25
+    outs:
+    - path: results/scores/transorce_calibration.csv
+      hash: md5
+      md5: 95357a76e75934a076ecf12db35a3c97
+      size: 247270
+    - path: results/scores/transorce_calibration_cc.csv
+      hash: md5
+      md5: 696a383eb69e23ccb2c52657e5bac4e2
+      size: 247298
+    - path: results/scores/transorce_contrasts.csv
+      hash: md5
+      md5: b4a7d0d7547d8d5449a3018b6ff5f16f
+      size: 789
+    - path: results/scores/transorce_contrasts_cc.csv
+      hash: md5
+      md5: b4a7d0d7547d8d5449a3018b6ff5f16f
+      size: 789
+    - path: results/scores/transorce_other_cause.csv
+      hash: md5
+      md5: 3add2fcf9128e09c6fe833123f06ff53
+      size: 1487
+    - path: results/scores/transorce_performance.csv
+      hash: md5
+      md5: ac6ba659068dcf288d8ad3d4d80a0c9a
+      size: 7919
+    - path: results/scores/transorce_performance_cc.csv
+      hash: md5
+      md5: ac6ba659068dcf288d8ad3d4d80a0c9a
+      size: 7919
+    - path: results/scores/transorce_subgroups.csv
+      hash: md5
+      md5: 450ac04c3425e1591eb5c9eecd011cba
+      size: 603
+  score_leeds_iarc:
+    cmd: uv run leibovich-validation score --name leeds_iarc
+    deps:
+    - path: data/interim/leeds_iarc_patients.parquet
+      hash: md5
+      md5: d78f6cbc9be8c455e404fe74e72218f0
+      size: 15532
+    - path: data/interim/leeds_iarc_predictions.parquet
+      hash: md5
+      md5: 976389b7119ddeb5fa660dca9112a07b
+      size: 83226
+    - path: data/interim/leeds_iarc_predictions_cc.parquet
+      hash: md5
+      md5: 51368cdeb1ac87fb27361ef0e380a69e
+      size: 36185
+    - path: data/manifest.json
+      hash: md5
+      md5: da16c353465db495b9147b5e84ebbb77
+      size: 3683
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 1d5532abc3c66377eeb5bf9c1b1d7185
+      size: 20565
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 4811c3008f14d0c3c18eeb718311bd74
+      size: 35904
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: ff35519281a8d0a9bf9edf32080022fe
+      size: 11148
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: 76610b554a6b69e5ede0425c890af206
+      size: 8836
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: b281c081c3bd0de850c24a4b8e6515ad
+      size: 5901
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: 64db7b885e30fd946252e26a9da29e8f
+      size: 8645
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: 8902cfe62955a5607f1afd25b4da8f82
+      size: 37462
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: 790d142c36c6499ba5e8de4f8400f209
+      size: 30407
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/subgroups.py
+      hash: md5
+      md5: a6d0519b2e3d54895694261ba8c1a340
+      size: 3004
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.min_at_risk: 50
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        analysis.subgroups.leibovich_groups:
+          low:
+          - 0
+          - 2
+          intermediate:
+          - 3
+          - 5
+          high:
+          - 6
+          - 11
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting.calibration_bins: 5
+        reporting.calibration_rug_points: 25
+    outs:
+    - path: results/scores/leeds_iarc_calibration.csv
+      hash: md5
+      md5: 50ed336afe7491df42edff85a0908d25
+      size: 160360
+    - path: results/scores/leeds_iarc_calibration_cc.csv
+      hash: md5
+      md5: 7f5b9f856f566dc35a1e71f83f4b2d01
+      size: 89765
+    - path: results/scores/leeds_iarc_contrasts.csv
+      hash: md5
+      md5: 4727f45d539da46f70e36accafbd6eb9
+      size: 793
+    - path: results/scores/leeds_iarc_contrasts_cc.csv
+      hash: md5
+      md5: 72cb4472dea6b194291819d645775ce0
+      size: 786
+    - path: results/scores/leeds_iarc_other_cause.csv
+      hash: md5
+      md5: 693e5970dcc30c4f3ee1b5fd3e4a8589
+      size: 1644
+    - path: results/scores/leeds_iarc_performance.csv
+      hash: md5
+      md5: c197fc2604f51a7f8679aa38171fa582
+      size: 8037
+    - path: results/scores/leeds_iarc_performance_cc.csv
+      hash: md5
+      md5: 3361200eefd07a68e60686b9187cd4bd
+      size: 7997
+    - path: results/scores/leeds_iarc_subgroups.csv
+      hash: md5
+      md5: 5812d134f5ceed4ded5a8869c63b9065
+      size: 722
+  sensitivity:
+    cmd: uv run leibovich-validation sensitivity --kind definitions --name 
+      transorce
+    deps:
+    - path: data/interim/transorce_patients.parquet
+      hash: md5
+      md5: 87282d5501876ec4b08c1f9592527a86
+      size: 15526
+    - path: results/scores/transorce_performance.csv
+      hash: md5
+      md5: ac6ba659068dcf288d8ad3d4d80a0c9a
+      size: 7919
+    - path: results/scores/transorce_performance_cc.csv
+      hash: md5
+      md5: ac6ba659068dcf288d8ad3d4d80a0c9a
+      size: 7919
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/sensitivity.py
+      hash: md5
+      md5: fc66755d6023d2081a5a644986cb9c7c
+      size: 20683
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.imputations: 20
+        analysis.min_at_risk: 50
+        analysis.score_agreement_min: 0.95
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.sensitivity:
+          pt3b_for_unsplit_pt3: true
+          complete_cases: true
+          who_country_life_table_vasudev: true
+          transorce_surgery_clock: true
+          exclude_inconsistent_vasudev: true
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting.calibration_bins: 5
+        reporting.calibration_rug_points: 25
+    outs:
+    - path: results/sensitivity/transorce_definitions.csv
+      hash: md5
+      md5: 1c7e568b41faca2da61c1924d032f227
+      size: 14919
+  sensitivity_leeds_iarc:
+    cmd: uv run leibovich-validation sensitivity --kind definitions --name 
+      leeds_iarc
+    deps:
+    - path: data/interim/leeds_iarc_patients.parquet
+      hash: md5
+      md5: d78f6cbc9be8c455e404fe74e72218f0
+      size: 15532
+    - path: results/scores/leeds_iarc_performance.csv
+      hash: md5
+      md5: c197fc2604f51a7f8679aa38171fa582
+      size: 8037
+    - path: results/scores/leeds_iarc_performance_cc.csv
+      hash: md5
+      md5: 3361200eefd07a68e60686b9187cd4bd
+      size: 7997
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 1d5532abc3c66377eeb5bf9c1b1d7185
+      size: 20565
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 4811c3008f14d0c3c18eeb718311bd74
+      size: 35904
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: ff35519281a8d0a9bf9edf32080022fe
+      size: 11148
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: 76610b554a6b69e5ede0425c890af206
+      size: 8836
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: b281c081c3bd0de850c24a4b8e6515ad
+      size: 5901
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: 64db7b885e30fd946252e26a9da29e8f
+      size: 8645
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/raw_leeds_iarc.py
+      hash: md5
+      md5: 67c7aaf455c1da1b2a860f99ce91bc7b
+      size: 5917
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: 8902cfe62955a5607f1afd25b4da8f82
+      size: 37462
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: 790d142c36c6499ba5e8de4f8400f209
+      size: 30407
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/sensitivity.py
+      hash: md5
+      md5: ea137631cc217f9dd8134e1e03d4d3de
+      size: 20652
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.imputations: 20
+        analysis.min_at_risk: 50
+        analysis.score_agreement_min: 0.95
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.sensitivity:
+          pt3b_for_unsplit_pt3: true
+          complete_cases: true
+          who_country_life_table_leeds: true
+          transorce_surgery_clock: true
+          exclude_inconsistent_leeds: true
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting.calibration_bins: 5
+        reporting.calibration_rug_points: 25
+    outs:
+    - path: results/sensitivity/leeds_iarc_definitions.csv
+      hash: md5
+      md5: 43cf71962bc4c9059ecbe33c74253251
+      size: 23478
+  sensitivity_life_tables:
+    cmd: uv run leibovich-validation sensitivity --kind life-tables
+    deps:
+    - path: data/interim/vasudev_imputed.parquet
+      hash: md5
+      md5: 1fbf73bb31c44713c2d319e4043ff714
+      size: 21221
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/sensitivity.py
+      hash: md5
+      md5: fc66755d6023d2081a5a644986cb9c7c
+      size: 20683
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.sensitivity.who_country_life_table_vasudev: true
+        analysis.vasudev_who_year: 2006
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+    outs:
+    - path: results/sensitivity/life_tables.csv
+      hash: md5
+      md5: 62cef3505232cef0ffacaa53639569d4
+      size: 1833
+  figure@participant_flow:
+    cmd: uv run leibovich-validation figure participant_flow
+    deps:
+    - path: results/summary
+      hash: md5
+      md5: 0d0f8c2652dfa43d855f1ff4d35acbb5.dir
+      size: 285753
+      nfiles: 8
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/figures
+      hash: md5
+      md5: d550eea8524a83ddf2add6a3add7888f.dir
+      size: 31161
+      nfiles: 3
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    params:
+      params.yaml:
+        reporting:
+          minimum_group_n: 10
+          minimum_at_risk: 20
+          behaviour_ages:
+          - 55
+          - 65
+          - 75
+          - 85
+          behaviour_time_step: 0.25
+          behaviour_sex: male
+          calibration_bins: 5
+          calibration_rug_points: 25
+          calibration_bandwidth: 0.05
+      manuscript.yaml:
+        figure.participant_flow:
+          label: Figure 1
+          placement: main
+          size:
+          - 183
+          - 92
+          mosaic:
+          - - A
+            - B
+          panels:
+            A:
+              draw: flow
+              table: flow
+              where:
+                stratum: TranSORCE
+              title: '{stratum}'
+            B:
+              draw: flow
+              table: flow
+              where:
+                stratum: Vasudev cohort
+              title: '{stratum}'
+          caption: Flow of patients into the analysis sets of TranSORCE (A) and 
+            the Vasudev cohort (B). RELAPSE and DFS_STATUS are source fields of 
+            the Vasudev cohort. DFS, disease-free survival; M1, distant 
+            metastasis at diagnosis.
+        style:
+          font.family: sans-serif
+          font.sans-serif: DejaVu Sans
+          font.size: 8
+          axes.titlesize: 8
+          axes.labelsize: 8
+          xtick.labelsize: 7
+          ytick.labelsize: 7
+          legend.fontsize: 7
+          pdf.fonttype: 42
+          axes.spines.top: false
+          axes.spines.right: false
+          axes.grid: true
+          axes.axisbelow: true
+          grid.color: '0.9'
+          grid.linewidth: 0.6
+          legend.frameon: false
+          lines.linewidth: 1.4
+    outs:
+    - path: results/figures/main/participant_flow.pdf
+      hash: md5
+      md5: 12f2b95dab621342adfaa20abbb9f95a
+      size: 26118
+    - path: results/figures/main/participant_flow.png
+      hash: md5
+      md5: e17a829aaaac882f6220bb0103cd978b
+      size: 177515
+  figure@calibration:
+    cmd: uv run leibovich-validation figure calibration
+    deps:
+    - path: results/summary
+      hash: md5
+      md5: 0d0f8c2652dfa43d855f1ff4d35acbb5.dir
+      size: 285753
+      nfiles: 8
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/figures
+      hash: md5
+      md5: d550eea8524a83ddf2add6a3add7888f.dir
+      size: 31161
+      nfiles: 3
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    params:
+      params.yaml:
+        reporting:
+          minimum_group_n: 10
+          minimum_at_risk: 20
+          behaviour_ages:
+          - 55
+          - 65
+          - 75
+          - 85
+          behaviour_time_step: 0.25
+          behaviour_sex: male
+          calibration_bins: 5
+          calibration_rug_points: 25
+          calibration_bandwidth: 0.05
+      manuscript.yaml:
+        figure.calibration:
+          label: Figure 2
+          placement: main
+          size:
+          - 183
+          - 90
+          mosaic:
+          - - A
+            - B
+          sharex: true
+          sharey: true
+          legend:
+            loc: outside lower center
+            ncol: 3
+          panels:
+            A:
+              draw: calibration
+              table: calibration_5y
+              where:
+                stratum: TranSORCE
+                bound: pt3a
+              title: '{stratum} (n = {cohort_n:,}; {events} metastases)'
+              xlabel: Predicted 5-year risk of distant metastasis
+              ylabel: Observed 5-year risk
+            B:
+              draw: calibration
+              table: calibration_5y
+              where:
+                stratum: Vasudev cohort
+                bound: pt3a
+              title: '{stratum} (n = {cohort_n:,}; {events} relapses)'
+              xlabel: Predicted 5-year risk of distant metastasis
+          caption: Calibration of predicted 5-year risk. Lines are smoothed 
+            calibration curves; points are fifths of predicted risk with 95% 
+            bootstrap percentile intervals. The dashed line marks perfect 
+            calibration, and the ticks at the foot of each panel show the spread
+            of each model's predicted risk. In TranSORCE, follow-up starts at 
+            randomisation, the event is distant metastasis and predictions are 
+            conditional on being event-free at randomisation. In the Vasudev 
+            cohort, follow-up starts at surgery and the event is any relapse. 
+            Death without the event is the competing event in both. Relapse 
+            includes every distant metastasis, so in B a point below the dashed 
+            line shows over-prediction but a point above it does not show 
+            under-prediction.
+        style:
+          font.family: sans-serif
+          font.sans-serif: DejaVu Sans
+          font.size: 8
+          axes.titlesize: 8
+          axes.labelsize: 8
+          xtick.labelsize: 7
+          ytick.labelsize: 7
+          legend.fontsize: 7
+          pdf.fonttype: 42
+          axes.spines.top: false
+          axes.spines.right: false
+          axes.grid: true
+          axes.axisbelow: true
+          grid.color: '0.9'
+          grid.linewidth: 0.6
+          legend.frameon: false
+          lines.linewidth: 1.4
+    outs:
+    - path: results/figures/main/calibration.pdf
+      hash: md5
+      md5: 1d1ec157f5cfdb01bb64e17df430dd1c
+      size: 30666
+    - path: results/figures/main/calibration.png
+      hash: md5
+      md5: e520a95474a6e5077444d18fe54b5836
+      size: 169163
+  figure@subgroups_by_age:
+    cmd: uv run leibovich-validation figure subgroups_by_age
+    deps:
+    - path: results/summary
+      hash: md5
+      md5: 0d0f8c2652dfa43d855f1ff4d35acbb5.dir
+      size: 285753
+      nfiles: 8
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/figures
+      hash: md5
+      md5: d550eea8524a83ddf2add6a3add7888f.dir
+      size: 31161
+      nfiles: 3
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    params:
+      params.yaml:
+        reporting:
+          minimum_group_n: 10
+          minimum_at_risk: 20
+          behaviour_ages:
+          - 55
+          - 65
+          - 75
+          - 85
+          behaviour_time_step: 0.25
+          behaviour_sex: male
+          calibration_bins: 5
+          calibration_rug_points: 25
+          calibration_bandwidth: 0.05
+      manuscript.yaml:
+        figure.subgroups_by_age:
+          label: Figure 3
+          placement: main
+          size:
+          - 183
+          - 92
+          mosaic:
+          - - A
+            - B
+          - - C
+            - D
+          legend:
+            loc: outside lower center
+            ncol: 3
+            labels:
+              observed: Observed incidence
+          panels:
+            A:
+              draw: dot
+              table: subgroups
+              where:
+                stratum: TranSORCE
+                grouping: age
+                bound: pt3a
+              title: '{stratum}: distant metastasis'
+              xlabel: 5-year risk
+              ylabel: Age at surgery, years
+            B:
+              draw: dot
+              table: subgroups
+              where:
+                stratum: Vasudev cohort
+                grouping: age
+                bound: pt3a
+              title: '{stratum}: relapse'
+              xlabel: 5-year risk
+            C:
+              draw: dot
+              table: other_cause_by_age
+              where:
+                stratum: TranSORCE
+                grouping: age
+              title: '{stratum}: other-cause death'
+              xlabel: 5-year risk
+              ylabel: Age at surgery, years
+            D:
+              draw: dot
+              table: other_cause_by_age
+              where:
+                stratum: Vasudev cohort
+                grouping: age
+              title: '{stratum}: other-cause death'
+              xlabel: 5-year risk
+          caption: Observed and predicted 5-year risk by age at surgery. In the 
+            bottom row, observed death without the event is set against 
+            Leibovich Plus's predicted other-cause risk; the original Leibovich 
+            model does not estimate this risk. Observed values are 
+            Aalen-Johansen cumulative incidences with 95% bootstrap percentile 
+            intervals. Hatched rows have fewer than 10 events. Follow-up, events
+            and the competing event are as in Figure 2.
+        style:
+          font.family: sans-serif
+          font.sans-serif: DejaVu Sans
+          font.size: 8
+          axes.titlesize: 8
+          axes.labelsize: 8
+          xtick.labelsize: 7
+          ytick.labelsize: 7
+          legend.fontsize: 7
+          pdf.fonttype: 42
+          axes.spines.top: false
+          axes.spines.right: false
+          axes.grid: true
+          axes.axisbelow: true
+          grid.color: '0.9'
+          grid.linewidth: 0.6
+          legend.frameon: false
+          lines.linewidth: 1.4
+    outs:
+    - path: results/figures/main/subgroups_by_age.pdf
+      hash: md5
+      md5: 5ee96efd08c458fec12fff520047d17e
+      size: 26941
+    - path: results/figures/main/subgroups_by_age.png
+      hash: md5
+      md5: 1857a329c1316bb7233dda6d1432e731
+      size: 187647
+  figure@subgroups_by_risk_group:
+    cmd: uv run leibovich-validation figure subgroups_by_risk_group
+    deps:
+    - path: results/summary
+      hash: md5
+      md5: 0d0f8c2652dfa43d855f1ff4d35acbb5.dir
+      size: 285753
+      nfiles: 8
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/figures
+      hash: md5
+      md5: d550eea8524a83ddf2add6a3add7888f.dir
+      size: 31161
+      nfiles: 3
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    params:
+      params.yaml:
+        reporting:
+          minimum_group_n: 10
+          minimum_at_risk: 20
+          behaviour_ages:
+          - 55
+          - 65
+          - 75
+          - 85
+          behaviour_time_step: 0.25
+          behaviour_sex: male
+          calibration_bins: 5
+          calibration_rug_points: 25
+          calibration_bandwidth: 0.05
+      manuscript.yaml:
+        figure.subgroups_by_risk_group:
+          label: Figure S2
+          placement: supplement
+          size:
+          - 183
+          - 58
+          mosaic:
+          - - A
+            - B
+          sharex: true
+          legend:
+            loc: outside lower center
+            ncol: 3
+            labels:
+              observed: Observed incidence
+          panels:
+            A:
+              draw: dot
+              table: subgroups
+              where:
+                stratum: TranSORCE
+                grouping: leibovich
+                bound: pt3a
+              title: '{stratum} (n = {cohort_n:,})'
+              xlabel: 5-year risk
+              ylabel: Leibovich risk group
+            B:
+              draw: dot
+              table: subgroups
+              where:
+                stratum: Vasudev cohort
+                grouping: leibovich
+                bound: pt3a
+              title: '{stratum} (n = {cohort_n:,})'
+              xlabel: 5-year risk
+          caption: Observed and predicted 5-year risk of the event by Leibovich 
+            risk group (low, score 0 to 2; intermediate, 3 to 5; high, 6 or 
+            more). SORCE enrolled only patients with a score of 3 or more, so 
+            TranSORCE has no low-risk group. Group sizes and event counts in the
+            Vasudev cohort are averages over the imputed datasets. Symbols, 
+            intervals and hatching are as in Figure 3; follow-up, events and the
+            competing event as in Figure 2.
+        style:
+          font.family: sans-serif
+          font.sans-serif: DejaVu Sans
+          font.size: 8
+          axes.titlesize: 8
+          axes.labelsize: 8
+          xtick.labelsize: 7
+          ytick.labelsize: 7
+          legend.fontsize: 7
+          pdf.fonttype: 42
+          axes.spines.top: false
+          axes.spines.right: false
+          axes.grid: true
+          axes.axisbelow: true
+          grid.color: '0.9'
+          grid.linewidth: 0.6
+          legend.frameon: false
+          lines.linewidth: 1.4
+    outs:
+    - path: results/figures/supplement/subgroups_by_risk_group.pdf
+      hash: md5
+      md5: 92d87fab99a075e794d4f3aba582e4e8
+      size: 20842
+    - path: results/figures/supplement/subgroups_by_risk_group.png
+      hash: md5
+      md5: ca5beb89fa9661e59eda6fc067e725e4
+      size: 97327
+  export:
+    cmd: uv run leibovich-validation export
+    deps:
+    - path: results/figures
+      hash: md5
+      md5: 62621e374deb24d00c01b0027e1d8077.dir
+      size: 892242
+      nfiles: 10
+    - path: results/tables
+      hash: md5
+      md5: ec27a2acf6a123ddc1b4ce5a33bae28f.dir
+      size: 33631
+      nfiles: 12
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/export.py
+      hash: md5
+      md5: cb3d4a3c088d934baadafd2a97bae329
+      size: 4000
+    - path: src/leibovich_validation/tables.py
+      hash: md5
+      md5: d7b54ab5a64b1dad2565a45c8e414d9c
+      size: 36995
+    params:
+      manuscript.yaml:
+        figure:
+          participant_flow:
+            label: Figure 1
+            placement: main
+            size:
+            - 183
+            - 92
+            mosaic:
+            - - A
+              - B
+            panels:
+              A:
+                draw: flow
+                table: flow
+                where:
+                  stratum: TranSORCE
+                title: '{stratum}'
+              B:
+                draw: flow
+                table: flow
+                where:
+                  stratum: Vasudev cohort
+                title: '{stratum}'
+            caption: Flow of patients into the analysis sets of TranSORCE (A) 
+              and the Vasudev cohort (B). RELAPSE and DFS_STATUS are source 
+              fields of the Vasudev cohort. DFS, disease-free survival; M1, 
+              distant metastasis at diagnosis.
+          model_behaviour:
+            label: Figure S1
+            placement: supplement
+            size:
+            - 183
+            - 75
+            mosaic:
+            - - A
+              - B
+              - C
+            sharex: true
+            sharey: true
+            legend:
+              loc: outside lower center
+              ncol: 6
+              stratum_label: age {}
+            panels:
+              A:
+                draw: curve
+                table: model_behaviour
+                where:
+                  label: low
+                title: Low-risk profile
+                xlabel: Years since surgery
+                ylabel: Predicted risk of distant metastasis
+              B:
+                draw: curve
+                table: model_behaviour
+                where:
+                  label: intermediate
+                title: Intermediate-risk profile
+                xlabel: Years since surgery
+              C:
+                draw: curve
+                table: model_behaviour
+                where:
+                  label: high
+                title: High-risk profile
+                xlabel: Years since surgery
+            caption: Predicted cumulative incidence of distant metastasis in men
+              for the three tumour profiles of Stimpson et al., defined in Table
+              S2. The original Leibovich model does not use age, so it has one 
+              curve per profile. Leibovich Plus divides the risk of either event
+              in proportion to the two cumulative risks, so its predicted risk 
+              can fall as follow-up lengthens, as in the high-risk profile at 
+              older ages.
+          calibration:
+            label: Figure 2
+            placement: main
+            size:
+            - 183
+            - 90
+            mosaic:
+            - - A
+              - B
+            sharex: true
+            sharey: true
+            legend:
+              loc: outside lower center
+              ncol: 3
+            panels:
+              A:
+                draw: calibration
+                table: calibration_5y
+                where:
+                  stratum: TranSORCE
+                  bound: pt3a
+                title: '{stratum} (n = {cohort_n:,}; {events} metastases)'
+                xlabel: Predicted 5-year risk of distant metastasis
+                ylabel: Observed 5-year risk
+              B:
+                draw: calibration
+                table: calibration_5y
+                where:
+                  stratum: Vasudev cohort
+                  bound: pt3a
+                title: '{stratum} (n = {cohort_n:,}; {events} relapses)'
+                xlabel: Predicted 5-year risk of distant metastasis
+            caption: Calibration of predicted 5-year risk. Lines are smoothed 
+              calibration curves; points are fifths of predicted risk with 95% 
+              bootstrap percentile intervals. The dashed line marks perfect 
+              calibration, and the ticks at the foot of each panel show the 
+              spread of each model's predicted risk. In TranSORCE, follow-up 
+              starts at randomisation, the event is distant metastasis and 
+              predictions are conditional on being event-free at randomisation. 
+              In the Vasudev cohort, follow-up starts at surgery and the event 
+              is any relapse. Death without the event is the competing event in 
+              both. Relapse includes every distant metastasis, so in B a point 
+              below the dashed line shows over-prediction but a point above it 
+              does not show under-prediction.
+          subgroups_by_age:
+            label: Figure 3
+            placement: main
+            size:
+            - 183
+            - 92
+            mosaic:
+            - - A
+              - B
+            - - C
+              - D
+            legend:
+              loc: outside lower center
+              ncol: 3
+              labels:
+                observed: Observed incidence
+            panels:
+              A:
+                draw: dot
+                table: subgroups
+                where:
+                  stratum: TranSORCE
+                  grouping: age
+                  bound: pt3a
+                title: '{stratum}: distant metastasis'
+                xlabel: 5-year risk
+                ylabel: Age at surgery, years
+              B:
+                draw: dot
+                table: subgroups
+                where:
+                  stratum: Vasudev cohort
+                  grouping: age
+                  bound: pt3a
+                title: '{stratum}: relapse'
+                xlabel: 5-year risk
+              C:
+                draw: dot
+                table: other_cause_by_age
+                where:
+                  stratum: TranSORCE
+                  grouping: age
+                title: '{stratum}: other-cause death'
+                xlabel: 5-year risk
+                ylabel: Age at surgery, years
+              D:
+                draw: dot
+                table: other_cause_by_age
+                where:
+                  stratum: Vasudev cohort
+                  grouping: age
+                title: '{stratum}: other-cause death'
+                xlabel: 5-year risk
+            caption: Observed and predicted 5-year risk by age at surgery. In 
+              the bottom row, observed death without the event is set against 
+              Leibovich Plus's predicted other-cause risk; the original 
+              Leibovich model does not estimate this risk. Observed values are 
+              Aalen-Johansen cumulative incidences with 95% bootstrap percentile
+              intervals. Hatched rows have fewer than 10 events. Follow-up, 
+              events and the competing event are as in Figure 2.
+          subgroups_by_risk_group:
+            label: Figure S2
+            placement: supplement
+            size:
+            - 183
+            - 58
+            mosaic:
+            - - A
+              - B
+            sharex: true
+            legend:
+              loc: outside lower center
+              ncol: 3
+              labels:
+                observed: Observed incidence
+            panels:
+              A:
+                draw: dot
+                table: subgroups
+                where:
+                  stratum: TranSORCE
+                  grouping: leibovich
+                  bound: pt3a
+                title: '{stratum} (n = {cohort_n:,})'
+                xlabel: 5-year risk
+                ylabel: Leibovich risk group
+              B:
+                draw: dot
+                table: subgroups
+                where:
+                  stratum: Vasudev cohort
+                  grouping: leibovich
+                  bound: pt3a
+                title: '{stratum} (n = {cohort_n:,})'
+                xlabel: 5-year risk
+            caption: Observed and predicted 5-year risk of the event by 
+              Leibovich risk group (low, score 0 to 2; intermediate, 3 to 5; 
+              high, 6 or more). SORCE enrolled only patients with a score of 3 
+              or more, so TranSORCE has no low-risk group. Group sizes and event
+              counts in the Vasudev cohort are averages over the imputed 
+              datasets. Symbols, intervals and hatching are as in Figure 3; 
+              follow-up, events and the competing event as in Figure 2.
+        table:
+          table_1:
+            label: Table 1
+            placement: main
+            latex: true
+            caption: Characteristics of the two validation cohorts and of the 
+              Mayo Clinic cohort in which the Leibovich score was developed 
+              (Leibovich et al., 2003). Values are n (%) unless stated. 
+              Predictors are as recorded, before imputation; unknown nodal 
+              status (pNx) is counted with pN0, as in the score, and risk groups
+              are given only for patients with all five predictors. Follow-up 
+              starts at randomisation in TranSORCE and at surgery in the Vasudev
+              cohort, and events are counted over all follow-up. The event is 
+              distant metastasis in TranSORCE and any relapse in the Vasudev 
+              cohort. SD, standard deviation.
+          table_2:
+            label: Table 2
+            placement: main
+            latex: true
+            caption: Performance of the Leibovich model and Leibovich Plus at 5 
+              years. In TranSORCE, follow-up starts at randomisation and the 
+              event is distant metastasis; in the Vasudev cohort, follow-up 
+              starts at surgery and the event is any relapse. Observed incidence
+              is the Aalen-Johansen cumulative incidence of the event, with 
+              death without the event as the competing event. Intervals are 95% 
+              bootstrap percentile intervals. Relapse includes every distant 
+              metastasis, so an O/E below 1 in the Vasudev cohort shows 
+              over-prediction, but one above 1 does not show under-prediction. 
+              The other-cause O/E compares the observed incidence of death 
+              without the event with Leibovich Plus's predicted other-cause 
+              risk; it is marked descriptive in TranSORCE, which had few such 
+              deaths. O/E, observed-to-expected ratio; ICI, integrated 
+              calibration index; AUC, time-dependent area under the receiver 
+              operating characteristic curve.
+          table_s2:
+            label: Table S1
+            placement: supplement
+            caption: Rules that map each cohort's source fields to the 
+              predictors, outcomes and design fields used in the analysis, with 
+              the handling of missing values.
+          table_s2_other_details:
+            label: Table S1 (continued)
+            placement: supplement
+            caption: 'Classification of every distinct entry in the TranSORCE free-text
+              "Other: Details" field. Only distant_metastasis counts as the event.
+              Flagged entries needed clinical review; laterality marks entries whose
+              class depends on which kidney was removed.'
+          table_s1:
+            label: Table S2
+            placement: supplement
+            caption: 'Specification of the validated models: the Leibovich coefficients
+              and score points with their sources, the tumour profiles of Stimpson
+              et al., the recovered baseline cumulative hazard and the life-table
+              settings.'
+          table_s4:
+            label: Table S3
+            placement: supplement
+            caption: Missing predictor values before imputation, and the 
+              imputation model. Unrecorded nodal status is not imputed; it 
+              scores as pN0.
+          table_s6:
+            label: Table S4
+            placement: supplement
+            caption: Observed and predicted risk of death without the event 
+              under Leibovich Plus, overall and by age at surgery, at 3 and 5 
+              years. Observed incidence is the Aalen-Johansen cumulative 
+              incidence with its 95% bootstrap percentile interval. Groups with 
+              fewer than 10 deaths are flagged as few events. TranSORCE rows are
+              descriptive. O/E, observed-to-expected ratio.
+          table_2_3y:
+            label: Table S5
+            placement: supplement
+            caption: Performance of the Leibovich model and Leibovich Plus at 3 
+              years, laid out as Table 2.
+    outs:
+    - path: results/manuscript
+      hash: md5
+      md5: b7b22054f6abe61fbcfb60cc26e4b776.dir
+      size: 926884
+      nfiles: 21
+  cohort_vasudev:
+    cmd: uv run leibovich-validation cohort --name vasudev
+    deps:
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    params:
+      params.yaml:
+        analysis.score_agreement_min: 0.95
+    outs:
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: results/cohort/vasudev_flow.csv
+      hash: md5
+      md5: 947de71a353c625cfa60e435b71ba748
+      size: 455
+    - path: results/cohort/vasudev_score_agreement.csv
+      hash: md5
+      md5: 7d4300a19e255ae3f07a055482357278
+      size: 60
+  impute_vasudev:
+    cmd: uv run leibovich-validation impute --name vasudev
+    deps:
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    params:
+      params.yaml:
+        analysis.imputations: 20
+        analysis.seed: 20261108
+    outs:
+    - path: data/interim/vasudev_imputed.parquet
+      hash: md5
+      md5: 1fbf73bb31c44713c2d319e4043ff714
+      size: 21221
+    - path: results/imputation/vasudev_missingness.csv
+      hash: md5
+      md5: 22a2dafeecd15954fa7a075f5c07a148
+      size: 260
+  predict_vasudev:
+    cmd: uv run leibovich-validation predict --name vasudev
+    deps:
+    - path: data/interim/vasudev_imputed.parquet
+      hash: md5
+      md5: 1fbf73bb31c44713c2d319e4043ff714
+      size: 21221
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    params:
+      params.yaml:
+        analysis.horizon_years: 5
+        analysis.secondary_horizon_years: 3
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+    outs:
+    - path: data/interim/vasudev_predictions.parquet
+      hash: md5
+      md5: 4d3470d15dc543f50e7d7024743b0958
+      size: 83198
+    - path: data/interim/vasudev_predictions_cc.parquet
+      hash: md5
+      md5: a249e78593a62bedeeb2198386ed1a12
+      size: 36157
+    - path: results/cohort/vasudev_prediction_summary.csv
+      hash: md5
+      md5: 58d918bd6ef373a900588c3f879ce92a
+      size: 865
+  score_vasudev:
+    cmd: uv run leibovich-validation score --name vasudev
+    deps:
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: data/interim/vasudev_predictions.parquet
+      hash: md5
+      md5: 4d3470d15dc543f50e7d7024743b0958
+      size: 83198
+    - path: data/interim/vasudev_predictions_cc.parquet
+      hash: md5
+      md5: a249e78593a62bedeeb2198386ed1a12
+      size: 36157
+    - path: data/manifest.json
+      hash: md5
+      md5: aeafdeb841e5b746ed93f85f09df2962
+      size: 3671
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/subgroups.py
+      hash: md5
+      md5: a6d0519b2e3d54895694261ba8c1a340
+      size: 3004
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.min_at_risk: 50
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        analysis.subgroups.leibovich_groups:
+          low:
+          - 0
+          - 2
+          intermediate:
+          - 3
+          - 5
+          high:
+          - 6
+          - 11
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting.calibration_bins: 5
+        reporting.calibration_rug_points: 25
+    outs:
+    - path: results/scores/vasudev_calibration.csv
+      hash: md5
+      md5: 7d613653581e825f534e7357ff636f11
+      size: 167820
+    - path: results/scores/vasudev_calibration_cc.csv
+      hash: md5
+      md5: 5bdf524158cb9a55f582a16b85dc02b4
+      size: 93989
+    - path: results/scores/vasudev_contrasts.csv
+      hash: md5
+      md5: e04e92c7560f0dfd42078107cf07c4ed
+      size: 775
+    - path: results/scores/vasudev_contrasts_cc.csv
+      hash: md5
+      md5: b0043ac76037dd51757bd54c8ff12c2c
+      size: 768
+    - path: results/scores/vasudev_other_cause.csv
+      hash: md5
+      md5: cce05c42940956f50319f1d5c71bca1e
+      size: 1620
+    - path: results/scores/vasudev_performance.csv
+      hash: md5
+      md5: 1ac800f695913f1ef8ea35a99379291b
+      size: 7824
+    - path: results/scores/vasudev_performance_cc.csv
+      hash: md5
+      md5: 9616c94ca3f6116bcd873d7d22a24802
+      size: 7784
+    - path: results/scores/vasudev_subgroups.csv
+      hash: md5
+      md5: 5812d134f5ceed4ded5a8869c63b9065
+      size: 722
+  sensitivity_vasudev:
+    cmd: uv run leibovich-validation sensitivity --kind definitions --name 
+      vasudev
+    deps:
+    - path: data/interim/vasudev_patients.parquet
+      hash: md5
+      md5: 8248f4c48a23293021dc5c7ec0aeeccb
+      size: 15504
+    - path: results/scores/vasudev_performance.csv
+      hash: md5
+      md5: 1ac800f695913f1ef8ea35a99379291b
+      size: 7824
+    - path: results/scores/vasudev_performance_cc.csv
+      hash: md5
+      md5: 9616c94ca3f6116bcd873d7d22a24802
+      size: 7784
+    - path: src/leibovich_validation/bootstrap.py
+      hash: md5
+      md5: e87c839a4c02b15dcf5ab677476ae666
+      size: 6859
+    - path: src/leibovich_validation/cli.py
+      hash: md5
+      md5: 236297447045c15d152dc7da20114007
+      size: 20559
+    - path: src/leibovich_validation/cohort.py
+      hash: md5
+      md5: 3fe22c46006f0cdc3dfe030145b3dce3
+      size: 35978
+    - path: src/leibovich_validation/config.py
+      hash: md5
+      md5: 354b7a1e20a2d915abc5cd6619f1a609
+      size: 609
+    - path: src/leibovich_validation/impute.py
+      hash: md5
+      md5: c0086a11351ba5f42d3643b1a068b45a
+      size: 11145
+    - path: src/leibovich_validation/leibovich.py
+      hash: md5
+      md5: 362e5afa9194620515a7ebf36fab9907
+      size: 4891
+    - path: src/leibovich_validation/leibovich_plus.py
+      hash: md5
+      md5: f45bbe031305c3bbc6176ced81ae9add
+      size: 2086
+    - path: src/leibovich_validation/lifetables.py
+      hash: md5
+      md5: ee6e7c4ab4a085f3705dc68790b86710
+      size: 8622
+    - path: src/leibovich_validation/other_cause.py
+      hash: md5
+      md5: a66ed1b44a0f2fd97e087f76860de3a1
+      size: 6178
+    - path: src/leibovich_validation/params.py
+      hash: md5
+      md5: 2bc79f96fc4c4f1a61ac5bcbc63c049e
+      size: 5911
+    - path: src/leibovich_validation/predict.py
+      hash: md5
+      md5: f373b150706ce67a10a7545593becbe5
+      size: 8649
+    - path: src/leibovich_validation/progress.py
+      hash: md5
+      md5: 9bb5dad38bf818e1ac5773853f06c719
+      size: 593
+    - path: src/leibovich_validation/raw_vasudev.py
+      hash: md5
+      md5: 1487d9b46719acfcf81080bea93badeb
+      size: 5921
+    - path: src/leibovich_validation/rbridge.py
+      hash: md5
+      md5: df6a79e7a3e6ed5d110f3b10aa6252af
+      size: 37335
+    - path: src/leibovich_validation/report.py
+      hash: md5
+      md5: a2b0864a47683b40f2ce655f4607f654
+      size: 30348
+    - path: src/leibovich_validation/score.py
+      hash: md5
+      md5: f329f013ac0546a8890f5c82674acf01
+      size: 31831
+    - path: src/leibovich_validation/sensitivity.py
+      hash: md5
+      md5: fc66755d6023d2081a5a644986cb9c7c
+      size: 20683
+    params:
+      params.yaml:
+        analysis.bootstrap_imputations: 3
+        analysis.bootstrap_resamples: 2000
+        analysis.horizon_years: 5
+        analysis.imputations: 20
+        analysis.min_at_risk: 50
+        analysis.score_agreement_min: 0.95
+        analysis.secondary_horizon_years: 3
+        analysis.seed: 20261108
+        analysis.sensitivity:
+          pt3b_for_unsplit_pt3: true
+          complete_cases: true
+          who_country_life_table_vasudev: true
+          transorce_surgery_clock: true
+          exclude_inconsistent_vasudev: true
+        analysis.subgroups.age_cut_points:
+        - 60
+        - 70
+        model:
+          life_table: lifetables/ons-2020-based-qx.xlsx
+          start_year: 2024
+          round_other_cause_to_percent: true
+        reporting.calibration_bins: 5
+        reporting.calibration_rug_points: 25
+    outs:
+    - path: results/sensitivity/vasudev_definitions.csv
+      hash: md5
+      md5: 0c61eb5260579157b3af042b06dde0a1
+      size: 23092

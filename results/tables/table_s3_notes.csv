@@ -1,0 +1,3 @@
+note
+"(a) Score() in riskRegression does not support delayed entry, so the surgery-clock variant reports the Aalen-Johansen incidence and the observed/expected ratio only."
+"(b) The country-matched life table changes only the other-cause risk, so this analysis reports the observed/expected ratios for metastasis and for death without the event."

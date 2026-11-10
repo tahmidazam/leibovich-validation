@@ -1,0 +1,13 @@
+grouping,label,group_order,stratum,bound,horizon_years,n,events,small,cohort_n,kind,series,estimate,lo,hi,predicted,method
+age,<60,0,TranSORCE,pt3a,5.0,239.0,2.0,true,439,observed,observed,0.008840361385379324,0.0,0.022965904868579624,,bootstrap
+age,<60,0,TranSORCE,pt3a,5.0,239.0,2.0,true,439,predicted,Leibovich Plus,,,,0.020614421674561578,mean
+age,60–69,1,TranSORCE,pt3a,5.0,141.0,3.0,true,439,observed,observed,0.02239708792318497,0.0,0.05051805704623765,,bootstrap
+age,60–69,1,TranSORCE,pt3a,5.0,141.0,3.0,true,439,predicted,Leibovich Plus,,,,0.053493720794056586,mean
+age,70+,2,TranSORCE,pt3a,5.0,59.0,4.0,true,439,observed,observed,0.07130577320263579,0.015182180723645067,0.14589145717709823,,bootstrap
+age,70+,2,TranSORCE,pt3a,5.0,59.0,4.0,true,439,predicted,Leibovich Plus,,,,0.12419735698353929,mean
+age,<60,3,Vasudev cohort,pt3a,5.0,316.0,8.0,true,766,observed,observed,0.02570256106237718,0.009574866096942957,0.04460664152540947,,bootstrap
+age,<60,3,Vasudev cohort,pt3a,5.0,316.0,8.0,true,766,predicted,Leibovich Plus,,,,0.019426942749175877,mean
+age,60–69,4,Vasudev cohort,pt3a,5.0,284.0,22.0,false,766,observed,observed,0.0793385381030323,0.048162122356733415,0.11356406631507747,,bootstrap
+age,60–69,4,Vasudev cohort,pt3a,5.0,284.0,22.0,false,766,predicted,Leibovich Plus,,,,0.052783827795059225,mean
+age,70+,5,Vasudev cohort,pt3a,5.0,166.0,23.0,false,766,observed,observed,0.14057225793437383,0.08808393330023173,0.19897103034739008,,bootstrap
+age,70+,5,Vasudev cohort,pt3a,5.0,166.0,23.0,false,766,predicted,Leibovich Plus,,,,0.14909601001006476,mean

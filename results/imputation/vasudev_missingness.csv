@@ -1,0 +1,7 @@
+cohort,predictor,n_total,n_missing,pct_missing,n_imputed
+vasudev,t_stage,766,32,4.2,32
+vasudev,node_positive,766,753,98.3,0
+vasudev,size_ge_10cm,766,205,26.8,205
+vasudev,grade,766,34,4.4,34
+vasudev,necrosis,766,28,3.7,28
+vasudev,any_predictor,766,210,27.4,210

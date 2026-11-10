@@ -1,0 +1,311 @@
+% BJU International Original Article.
+% BJUI rules (author guidelines, July 2022): title up to 100 characters; main text up to
+% 4000 words excluding abstract, tables, figures and references; structured abstract up to
+% 300 words; 5 to 10 key words; up to 3 figures, 3 tables and 30 references; Vancouver
+% references numbered in brackets; line numbers. Figures are submitted as separate image
+% files, so this file holds their legends only.
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[british]{babel}
+\usepackage{setspace}
+\usepackage{lineno}
+\usepackage[numbers,square,sort&compress]{natbib}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+
+\doublespacing
+\linenumbers
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\Large\bfseries External validation of Leibovich Plus for metastasis after nephrectomy for clear cell renal cancer\par}
+\vspace{1.5em}
+Tahmid Azam\textsuperscript{1}\par
+\vspace{1em}
+\textsuperscript{1}School of Clinical Medicine, University of Cambridge, Cambridge, United Kingdom\par
+\vspace{1em}
+Correspondence: Tahmid Azam (\href{mailto:ta549@cam.ac.uk}{ta549@cam.ac.uk})\par
+\end{center}
+\vfill
+\textbf{Key words:} renal cell carcinoma; Leibovich score; prognosis; risk prediction; competing risks; external validation; nephrectomy; PREDICT Kidney\par
+\end{titlepage}
+
+\section*{Abstract}
+
+\textbf{Objectives} To externally validate Leibovich Plus, which adds the competing risk of death from other causes to the Leibovich model, for distant metastasis after nephrectomy for clear cell renal cell carcinoma.
+
+\textbf{Patients and methods} We used two public cohorts. TranSORCE comprised 439 patients at intermediate or high Leibovich risk from the SORCE trial, followed from randomisation. The Vasudev cohort, a multinational surgical series, comprised 766 patients without metastases, followed from surgery; its event was any relapse, an upper bound on distant metastasis. At 5 years, with death without the event as the competing risk, we measured calibration (observed-to-expected ratio [O/E] and slope), discrimination (time-dependent area under the curve [AUC]) and the O/E for death from other causes. Missing predictors were multiply imputed, with bootstrap 95\% CIs.
+
+\textbf{Results} In TranSORCE (116 metastases within 5 years), the observed incidence was 27.1\%, against 41.0\% predicted by the Leibovich model and 39.3\% by Leibovich Plus (O/E 0.66, 95\% CI 0.57 to 0.76, and 0.69, 0.59 to 0.79). Slopes were 1.00 and 1.02 and the AUC 0.75 and 0.74. In the Vasudev cohort (134 relapses), the observed incidence was 17.7\%, against 20.5\% and 19.5\% predicted (O/E 0.87, 0.74 to 0.98, and 0.91, 0.78 to 1.03), with slopes 0.80 and 0.87 and AUC 0.76 for both. Leibovich Plus raised the O/E by 0.03 in TranSORCE and 0.04 in the Vasudev cohort. Its predicted risk of other-cause death was 4.5\% against 2.2\% observed in TranSORCE (9 deaths; O/E 0.48, 0.20 to 0.80) and 6.0\% against 7.1\% in the Vasudev cohort (53 deaths; O/E 1.18, 0.89 to 1.49).
+
+\textbf{Conclusion} Both models ranked patients moderately well but over-predicted distant metastasis, by about a third in the trial cohort. Accounting for death from other causes lowered predictions, but too little to correct an error in the baseline metastasis risk. Leibovich Plus may need recalibration before clinical use.
+
+\section*{Introduction}
+
+[To be written.]
+
+\section*{Patients and methods}
+
+\subsection*{Study design}
+
+We externally validated the Leibovich model \cite{Leibovich_2003} and Leibovich Plus \cite{Stimpson_2025} in two cohorts of patients who had a nephrectomy for non-metastatic clear cell renal cell carcinoma.
+Reporting follows the TRIPOD+AI statement (Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis, updated for artificial intelligence) \cite{Collins_2024}.
+Both cohorts are public and de-identified.
+
+\subsection*{Cohorts}
+
+TranSORCE is the UK translational cohort \cite{Abdullah_2026} of the SORCE trial (ISRCTN38934710), which randomised patients at intermediate or high risk of relapse (Leibovich score 3 to 11) to placebo or to one or three years of adjuvant sorafenib, 4 weeks to 3 months after nephrectomy \cite{Eisen_2020}.
+Patients entered the trial only if a post-operative computed tomography scan showed no residual disease.
+Sorafenib did not improve disease-free survival \cite{Eisen_2020}, so all three arms were included, as in a previous validation of the original Leibovich score in SORCE \cite{Oza_2022}.
+We excluded patients whose operation date fell outside the trial's recruitment window (July 2007 to April 2013) or who were randomised outside 28 to 92 days after surgery.
+A missing operation date was estimated as the randomisation date minus the cohort's median interval from operation to randomisation.
+
+The Vasudev cohort, from Leeds and the International Agency for Research on Cancer, is a multinational surgical series with tumour sequencing, treated between 1998 and 2014 and released on cBioPortal \cite{Vasudev_2023}.
+About 69\% of the 943 patients in the source data were treated outside the UK.
+We excluded patients with overall stage IV, recorded distant metastasis or missing overall stage, and patients with no follow-up after surgery.
+In both cohorts, patients with missing sex were to be excluded, because the other-cause risk depends on sex; there were none.
+
+\subsection*{Outcomes and time origin}
+
+The primary outcome was the cumulative incidence of distant metastasis at 5 years, with death without metastasis as the competing event.
+The 3-year incidence was a secondary outcome.
+If fewer than 50 patients remained at risk at 5 years in a cohort, its primary horizon would become 3 years.
+
+In TranSORCE, the event was the first recorded distant metastasis, and nodal metastasis counted as the event.
+Free-text sites of recurrence were classified as distant metastasis, second primary or other, and entries needing clinical judgement were flagged.
+Patients whose first event was a local recurrence or a second primary tumour were censored at that time.
+Every patient had to be alive and free of disease at randomisation, so follow-up started at randomisation and no patient entered the risk set late.
+Each patient's predicted risk covered the same window, from $e$ to $e + t$ years after surgery, conditional on being alive and metastasis-free at $e$, where $e$ was the patient's interval from surgery to randomisation and $t$ the horizon.
+Age at surgery was used throughout.
+
+The Vasudev cohort does not separate distant metastasis from local, regional or contralateral kidney relapse.
+The event was any relapse, and death from renal cell carcinoma without a recorded relapse counted as relapse at the time of death.
+Relapse status came from the relapse field, with the disease-free survival status used only where that field was missing.
+Patients recorded as relapsed but coded disease-free counted as events, and a disease-free survival time later than the overall survival time was capped at the survival time.
+Death without relapse was the competing event, a death of unknown cause counted as a competing event, and follow-up started at surgery.
+Because any relapse includes every distant metastasis, the observed incidence is an upper bound on the incidence of distant metastasis.
+An observed-to-expected ratio below 1 therefore shows over-prediction, but a ratio above 1 cannot be read as under-prediction.
+The bound does not apply to calibration slope or discrimination.
+
+\subsection*{Predictors}
+
+The Leibovich predictors are pathological T stage, nodal status, tumour size of 10\,cm or more, nuclear grade and tumour necrosis \cite{Leibovich_2003}.
+International Society of Urological Pathology (ISUP) grade was taken as equivalent to Fuhrman grade, although the two systems do not agree exactly.
+Unknown nodal status (pNx) scored as pN0, as in the original score \cite{Leibovich_2003}.
+Where pT3 was recorded without a substage, it took the pT3a coefficient; pT1 without a substage was treated as missing.
+In TranSORCE, age at surgery was derived from age at randomisation and the operation and randomisation dates.
+The Leibovich score we computed agreed with the recorded score in 440 of the 443 TranSORCE records (99.3\%) and 594 of the 596 Vasudev cohort records that had one (99.7\%).
+
+\subsection*{Models}
+
+The Leibovich model is a Cox model that ignores death from other causes.
+We recovered its baseline cumulative hazard from the risks at 1, 5 and 10 years published in the Leibovich Plus preprint \cite{Stimpson_2025}, assuming a constant hazard between those times.
+Leibovich Plus combines the Leibovich risk with the risk of death from other causes for the patient's age and sex, and divides the overall risk of either event between the two in proportion to their separate cumulative risks \cite{Stimpson_2025}.
+Because the division uses cumulative risks, the predicted risk of metastasis can fall as follow-up lengthens.
+As in the preprint, the other-cause risk came from Office for National Statistics 2020-based mortality rates followed through the calendar years from 2024 \cite{Stimpson_2025,ONS_qx}.
+We applied these UK rates to every patient, as the model does in use, although patients in the Vasudev cohort were treated between 1998 and 2014 and most were treated outside the UK.
+With the other-cause risk rounded to a whole percent, our implementation reproduced the published risks to within 0.02 percentage points.
+
+\subsection*{Statistical analysis}
+
+We followed published guidance for validating prediction models with competing risks \cite{van_Geloven_2022}.
+The observed cumulative incidence was the Aalen-Johansen estimate.
+Calibration in the large was the ratio of observed incidence to mean predicted risk (O/E).
+Calibration intercept and slope came from generalised estimating equations regressing pseudo-observations on the complementary log-log of the predicted risk.
+Smoothed calibration curves were the running mean of the pseudo-observations over the patients nearest in predicted risk (5\% of the cohort on either side), as in the code published with that guidance, and were summarised by the integrated calibration index (ICI), the mean absolute difference between the curve and the predicted risk \cite{van_Geloven_2022}.
+Discrimination was the time-dependent area under the curve (AUC), with patients who had the event by the horizon as cases and all others, including those who died of other causes, as controls.
+Overall accuracy was the Brier score, with inverse probability of censoring weights from a Kaplan-Meier model of censoring.
+
+The most direct test of the competing-risk adjustment compares Leibovich Plus's predicted risk of death from other causes with the observed incidence of death without the event (other-cause O/E).
+We made this comparison, and that of observed against predicted risk of the event, overall and by age at surgery (under 60, 60 to 69, and 70 years and over).
+Observed and predicted risk of the event were also compared by Leibovich risk group (low, score 0 to 2; intermediate, 3 to 5; high, 6 or more) \cite{Leibovich_2003}.
+Subgroup results are descriptive, without tests, and groups with fewer than 10 events are flagged rather than dropped.
+Leibovich Plus was compared with the original model through paired differences in O/E, calibration slope and Brier score.
+Few deaths without metastasis were expected in the trial cohort, so model comparisons in TranSORCE are descriptive and the Vasudev cohort provides the main test.
+The cohorts were analysed separately.
+
+Before the analysis, a blinded audit of the data counted about 153 distant metastases in TranSORCE and about 175 relapses in the Vasudev cohort over all follow-up, with fewer within 5 years.
+A Poisson approximation gave an O/E interval roughly 15\% either side of the estimate in each cohort.
+This understates the width, because it ignores the censoring variance of the Aalen-Johansen estimate, and the calibration slope needs more events for the same precision.
+
+\subsection*{Missing data and uncertainty}
+
+TranSORCE had no missing predictors.
+In the Vasudev cohort, recorded predictors were kept and the missing ones (tumour size, T stage, grade and necrosis) were imputed by chained equations, with 20 imputations.
+Nodal status was not imputed, because the Vasudev cohort records no node-negative patient and imputation could only have produced node-positive values.
+The imputation model included age, sex, the other predictors, the event indicators and the Nelson-Aalen cumulative hazard of each competing event \cite{Bonneville_2022}.
+The Leibovich score was computed after imputation.
+Including the outcome in the imputation model targets the model's performance when all its predictors are recorded, as they are on the pathology report when PREDICT Kidney is used; methods that a single new patient could use, without the outcome, target performance with predictors missing, and the two can differ \cite{Hoogland_2020}.
+Point estimates were averaged across the imputed datasets.
+The 95\% confidence intervals are percentile intervals from 2,000 paired bootstrap resamples of patients, with the imputation repeated in each resample (3 imputed datasets per resample, averaged) \cite{Bartlett_2020}.
+This scheme gives valid intervals for measures with no variance formula, such as the AUC and paired differences between models; with 3 imputations per resample the intervals are slightly conservative.
+
+\subsection*{Software}
+
+Analyses used Python 3.14 and R 4.6.1, with survival 3.8-12, prodlim 2026.03.11, riskRegression 2026.03.11, mice 3.19.0 and geepack 1.3.13.
+The code reproduces every table and figure from the public data.
+
+\section*{Results}
+
+\subsection*{Patients}
+
+Of 443 TranSORCE patients, 4 were excluded because their operation date fell outside the recruitment window, leaving 439 (Figure 1); the operation date was estimated for 18 of them.
+Of 943 patients in the Vasudev cohort, 177 were excluded (132 with stage IV disease, 1 with missing stage and 44 with no follow-up after surgery), leaving 766.
+Table 1 sets both cohorts beside the Mayo Clinic development cohort \cite{Leibovich_2003}.
+TranSORCE patients had a median age of 59 years and 69\% were men; as the trial's entry criteria required, 55\% were at intermediate and 45\% at high Leibovich risk.
+Patients in the Vasudev cohort had a median age of 62 years and 62\% were men; of the 556 with a complete predictor set, 250 were at low, 211 at intermediate and 95 at high Leibovich risk.
+In the Vasudev cohort, 210 patients (27.4\%) lacked at least one predictor, most often tumour size (205, 26.8\%), and nodal status was recorded only for the 13 node-positive patients.
+
+The median follow-up was 6.3 years (range 0.2 to 11.3) from randomisation in TranSORCE and 5.8 years (0.0 to 20.0) from surgery in the Vasudev cohort.
+Within 5 years, TranSORCE recorded 116 distant metastases and 9 deaths without metastasis, and 282 patients were still at risk at 5 years.
+The Vasudev cohort recorded 134 relapses and 53 deaths without relapse, with 507 patients at risk at 5 years.
+Both cohorts kept the 5-year horizon.
+
+\subsection*{Calibration}
+
+In TranSORCE, the observed 5-year incidence of distant metastasis was 27.1\% (95\% CI 23.0 to 31.4), against mean predicted risks of 41.0\% from the Leibovich model and 39.3\% from Leibovich Plus (Table 2).
+Both models over-predicted, with O/E ratios of 0.66 (0.57 to 0.76) and 0.69 (0.59 to 0.79).
+Their calibration slopes were close to 1, at 1.00 (0.72 to 1.31) and 1.02 (0.76 to 1.33), so the spread of predicted risk was about right but the whole calibration curve lay above the line of agreement (Figure 2).
+The ICI was 0.14 for the Leibovich model and 0.13 for Leibovich Plus.
+Both models over-predicted in each Leibovich risk group.
+The observed incidence was 14.4\% (9.9 to 19.0) in the intermediate-risk group, against 25.6\% and 24.6\% predicted, and 43.1\% (36.2 to 50.1) in the high-risk group, against 60.1\% and 57.4\%.
+Leibovich Plus also over-predicted in each age group (Figure 3).
+
+In the Vasudev cohort, the observed 5-year incidence of any relapse was 17.7\% (15.1 to 20.4), against mean predicted risks of distant metastasis of 20.5\% and 19.5\%.
+The O/E ratio was 0.87 (0.74 to 0.98) for the Leibovich model and 0.91 (0.78 to 1.03) for Leibovich Plus.
+Relapse includes every distant metastasis, so the O/E for distant metastasis alone can be no higher than these values.
+The Leibovich model therefore over-predicted distant metastasis.
+For Leibovich Plus the interval included 1, so its predictions were compatible with good calibration only if almost all relapses were distant.
+The calibration slopes were 0.80 (0.63 to 1.02) and 0.87 (0.67 to 1.10), so predictions may have been somewhat too extreme, and the ICI was 0.056 and 0.045 (Figure 2).
+Both models over-predicted in the intermediate- and high-risk groups, where the observed incidence of relapse was 20.9\% (16.2 to 25.7) and 50.8\% (40.6 to 60.3), against 24.2\% and 23.1\%, and 65.5\% and 61.6\%, predicted.
+In the low-risk group, the observed incidence of relapse, 6.5\% (4.1 to 9.1), was slightly above the 5.6\% and 5.4\% predicted; because relapse is an upper bound, this does not show under-prediction.
+Across the age groups, the observed incidence ranged from 16.7\% to 18.6\%, against 19.4\% to 21.9\% predicted (Figure 3).
+
+\subsection*{Discrimination and overall accuracy}
+
+The time-dependent AUC at 5 years was 0.75 (0.69 to 0.80) for the Leibovich model and 0.74 (0.69 to 0.80) for Leibovich Plus in TranSORCE, and 0.76 (0.71 to 0.81) for both in the Vasudev cohort.
+The Brier scores were 0.185 and 0.181 in TranSORCE and 0.124 and 0.122 in the Vasudev cohort (Table 2).
+
+\subsection*{Leibovich Plus against the Leibovich model}
+
+Leibovich Plus predicted lower risks than the Leibovich model, which raised the O/E ratio by 0.028 (0.024 to 0.033) in TranSORCE and 0.044 (0.037 to 0.052) in the Vasudev cohort.
+The Brier score fell by 0.004 (0.002 to 0.006) and 0.002 (0.0005 to 0.004).
+The calibration slope rose by 0.064 (0.026 to 0.108) in the Vasudev cohort; in TranSORCE the change was 0.019 ($-0.032$ to 0.065).
+The AUC differed by less than 0.01 in each cohort.
+In TranSORCE these gains were small next to the over-prediction the two models shared.
+
+\subsection*{Death from other causes}
+
+In TranSORCE, 9 patients died without metastasis within 5 years.
+The observed incidence of 2.2\% (0.9 to 3.6) was about half the 4.5\% that Leibovich Plus predicted (O/E 0.48, 0.20 to 0.80), and no age group had 10 or more deaths (Figure 3).
+In the Vasudev cohort, 53 patients died without relapse, an observed incidence of 7.1\% (5.3 to 8.9) against 6.0\% predicted (O/E 1.18, 0.89 to 1.49).
+In patients aged 70 years and over, who accounted for about half of the expected deaths, the observed incidence was 14.1\% (8.8 to 19.9) against 14.9\% predicted (O/E 0.94, 0.59 to 1.32).
+Between 60 and 69 years, it was 7.9\% (4.8 to 11.4) against 5.3\% predicted (O/E 1.50, 0.91 to 2.16); patients under 60 had 8 deaths.
+
+At 3 years the results followed the same pattern.
+The O/E ratio was 0.71 (0.60 to 0.83) for the Leibovich model and 0.73 (0.61 to 0.85) for Leibovich Plus in TranSORCE, and 0.90 (0.75 to 1.04) and 0.92 (0.78 to 1.07) in the Vasudev cohort.
+
+\section*{Discussion}
+
+[Opening paragraphs to be written.]
+
+This study has limitations.
+TranSORCE patients had a post-operative scan clear of disease and were alive and free of metastasis at randomisation, 4 weeks to 3 months after surgery.
+Patients who progressed early could not enter, so some of the over-prediction in this cohort may reflect selection and not the model.
+In the Vasudev cohort the event was any relapse, which bounds the incidence of distant metastasis from above but does not measure it.
+Its O/E ratios therefore understate any over-prediction of distant metastasis, but its calibration slopes and AUCs describe relapse, and a ratio near 1 cannot be read as good calibration.
+Its records were also less consistent: 60 patients were recorded as relapsed but coded disease-free, and 210 (27.4\%) lacked at least one predictor and relied on imputation.
+For these reasons TranSORCE carries the conclusions on distant metastasis, while the Vasudev cohort mainly tests the other-cause component, which TranSORCE, with only 9 deaths without metastasis within 5 years, could not judge.
+Leibovich Plus takes its other-cause risk from recent UK life tables, whereas patients in the Vasudev cohort were treated between 1998 and 2014, most of them outside the UK.
+The other-cause comparison in that cohort therefore tests the model as deployed, in a population whose mortality may differ from the one its life tables describe.
+The Leibovich model was developed in patients who all had a radical nephrectomy \cite{Leibovich_2003}, and 107 patients in the Vasudev cohort (14.0\%) had a partial nephrectomy.
+Both cohorts were relatively young, with median ages of 59 and 62 years, and the horizon was 5 years, so deaths from other causes were uncommon and the competing-risk adjustment had little room to act.
+Leibovich Plus is expected to differ most from the original model in older patients over longer follow-up \cite{Stimpson_2025}, which these data could not test.
+Finally, the Leibovich baseline hazard was reconstructed from published risks rather than taken from the original model; the reconstruction reproduced the published Leibovich Plus risks closely, but small differences from the model's own baseline cannot be excluded.
+
+[Remaining paragraphs to be written.]
+
+\section*{Acknowledgements}
+
+[To be written.]
+
+\section*{Declaration of interests}
+
+[To be completed for every author.]
+
+\section*{Data availability}
+
+Both cohorts are publicly available.
+The Vasudev cohort clinical data are the cBioPortal study ccrcc\_sjuh\_2023 (\url{https://www.cbioportal.org/study/summary?id=ccrcc_sjuh_2023}) \cite{Vasudev_2023}.
+The TranSORCE clinical data are in the BioImage Archive, accession S-BIAD2453 (\url{https://www.ebi.ac.uk/biostudies/BioImages/studies/S-BIAD2453}) \cite{Abdullah_2026}.
+The analysis code, which rebuilds every table and figure from these sources, is available at \url{https://github.com/tahmidazam/leibovich-validation}.
+
+\section*{Abbreviations}
+
+AUC, area under the receiver operating characteristic curve;
+ICI, integrated calibration index;
+ISUP, International Society of Urological Pathology;
+O/E, observed-to-expected ratio;
+ONS, Office for National Statistics;
+TRIPOD+AI, Transparent Reporting of a multivariable prediction model for Individual Prognosis Or Diagnosis, updated for artificial intelligence.
+
+\bibliographystyle{bjui}
+\bibliography{references}
+
+\clearpage
+\section*{Tables}
+
+% The table stage writes the editable bodies; the captions and notes stay here.
+
+\textbf{Table 1.} Characteristics of the two validation cohorts and of the Mayo Clinic cohort in which the Leibovich score was developed \cite{Leibovich_2003}.
+Values are n (\%) unless stated.
+Predictors are as recorded, before imputation; unknown nodal status (pNx) is counted with pN0, as in the score, and risk groups are given only for patients with all five predictors.
+Follow-up starts at randomisation in TranSORCE and at surgery in the Vasudev cohort, and events are counted over all follow-up.
+The event is distant metastasis in TranSORCE and any relapse in the Vasudev cohort.
+SD, standard deviation.
+
+\input{../results/tables/table_1.tex}
+
+\clearpage
+\textbf{Table 2.} Performance of the Leibovich model and Leibovich Plus at 5 years.
+In TranSORCE, follow-up starts at randomisation and the event is distant metastasis; in the Vasudev cohort, follow-up starts at surgery and the event is any relapse.
+Observed incidence is the Aalen-Johansen cumulative incidence of the event, with death without the event as the competing event.
+Intervals are 95\% bootstrap percentile intervals.
+Relapse includes every distant metastasis, so an O/E below 1 in the Vasudev cohort shows over-prediction, but one above 1 does not show under-prediction.
+The other-cause O/E compares the observed incidence of death without the event with Leibovich Plus's predicted other-cause risk; it is marked descriptive in TranSORCE, which had few such deaths.
+O/E, observed-to-expected ratio;
+ICI, integrated calibration index;
+AUC, time-dependent area under the receiver operating characteristic curve.
+
+\input{../results/tables/table_2.tex}
+
+\section*{Figure legends}
+
+\textbf{Figure 1.} Flow of patients into the analysis sets of TranSORCE (A) and the Vasudev cohort (B). \texttt{RELAPSE} and \texttt{DFS\_STATUS} are source fields of the Vasudev cohort.
+DFS, disease-free survival;
+M1, distant metastasis at diagnosis.
+
+\textbf{Figure 2.} Calibration of predicted 5-year risk.
+Lines are smoothed calibration curves; points are fifths of predicted risk with 95\% bootstrap percentile intervals.
+The dashed line marks perfect calibration, and the ticks at the foot of each panel show the spread of each model's predicted risk.
+In TranSORCE, follow-up starts at randomisation, the event is distant metastasis and predictions are conditional on being event-free at randomisation.
+In the Vasudev cohort, follow-up starts at surgery and the event is any relapse.
+Death without the event is the competing event in both.
+Relapse includes every distant metastasis, so in B a point below the dashed line shows over-prediction but a point above it does not show under-prediction.
+
+\textbf{Figure 3.} Observed and predicted 5-year risk by age at surgery.
+In the bottom row, observed death without the event is set against Leibovich Plus's predicted other-cause risk; the original Leibovich model does not estimate this risk.
+Observed values are Aalen-Johansen cumulative incidences with 95\% bootstrap percentile intervals.
+Hatched rows have fewer than 10 events.
+Follow-up, events and the competing event are as in Figure 2.
+
+\end{document}

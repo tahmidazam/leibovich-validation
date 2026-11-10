@@ -1,0 +1,13 @@
+variant,cohort,horizon_years,bound,model,metric,estimate,lower,upper,method,n,events
+who_country_life_table_vasudev,vasudev,5.0,"",observed,aj_incidence,0.17733555224765996,0.15055086920706234,0.20115552922688765,bootstrap,766,134
+who_country_life_table_vasudev,vasudev,5.0,pt3a,Leibovich Plus,oe_other_cause,0.6759076502295756,0.5198043110762745,0.8430851734955535,bootstrap,766,53
+who_country_life_table_vasudev,vasudev,5.0,pt3a,Leibovich,oe_ratio,0.8659664492994157,0.7470165418857386,0.9796808593919721,bootstrap,766,134
+who_country_life_table_vasudev,vasudev,5.0,pt3b,Leibovich,oe_ratio,0.8316009460641638,0.7203112512132703,0.9428832056326472,bootstrap,766,134
+who_country_life_table_vasudev,vasudev,5.0,pt3a,Leibovich Plus,oe_ratio,0.9321228113554992,0.8067776424872094,1.0543526816343336,bootstrap,766,134
+who_country_life_table_vasudev,vasudev,5.0,pt3b,Leibovich Plus,oe_ratio,0.8963178154450635,0.7764004001312695,1.0150975120180417,bootstrap,766,134
+who_country_life_table_vasudev,vasudev,3.0,"",observed,aj_incidence,0.14024272803271973,0.11380902817161972,0.16171747974392006,bootstrap,766,107
+who_country_life_table_vasudev,vasudev,3.0,pt3a,Leibovich Plus,oe_other_cause,0.671746391851958,0.47745127041471125,0.9030068935057971,bootstrap,766,32
+who_country_life_table_vasudev,vasudev,3.0,pt3a,Leibovich,oe_ratio,0.89602055367539,0.7467589147677753,1.0315783993811543,bootstrap,766,107
+who_country_life_table_vasudev,vasudev,3.0,pt3b,Leibovich,oe_ratio,0.8546667010596956,0.7123384015776975,0.980576641168987,bootstrap,766,107
+who_country_life_table_vasudev,vasudev,3.0,pt3a,Leibovich Plus,oe_ratio,0.9378682945599588,0.7808589908105477,1.080795623404928,bootstrap,766,107
+who_country_life_table_vasudev,vasudev,3.0,pt3b,Leibovich Plus,oe_ratio,0.8953063257659617,0.7457372847054072,1.0282636180185776,bootstrap,766,107

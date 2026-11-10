@@ -1,0 +1,37 @@
+grouping,label,group_order,stratum,bound,horizon_years,n,events,small,cohort_n,kind,series,estimate,lo,hi,predicted,method
+age,<60,0,TranSORCE,pt3a,5.0,239.0,58.0,false,439,observed,observed,0.2503934612902315,0.19504069263034457,0.3089383334585403,,bootstrap
+age,<60,0,TranSORCE,pt3a,5.0,239.0,58.0,false,439,predicted,Leibovich,,,,0.41632952749988184,mean
+age,<60,0,TranSORCE,pt3a,5.0,239.0,58.0,false,439,predicted,Leibovich Plus,,,,0.4077012327588402,mean
+age,60–69,1,TranSORCE,pt3a,5.0,141.0,42.0,false,439,observed,observed,0.3039664455799329,0.22972408737153954,0.3840707410596811,,bootstrap
+age,60–69,1,TranSORCE,pt3a,5.0,141.0,42.0,false,439,predicted,Leibovich,,,,0.3976504509946189,mean
+age,60–69,1,TranSORCE,pt3a,5.0,141.0,42.0,false,439,predicted,Leibovich Plus,,,,0.37817262292518666,mean
+age,70+,2,TranSORCE,pt3a,5.0,59.0,16.0,false,439,observed,observed,0.2801127757925449,0.17274842781293967,0.39908205826495147,,bootstrap
+age,70+,2,TranSORCE,pt3a,5.0,59.0,16.0,false,439,predicted,Leibovich,,,,0.4164672688121554,mean
+age,70+,2,TranSORCE,pt3a,5.0,59.0,16.0,false,439,predicted,Leibovich Plus,,,,0.3720021669937819,mean
+leibovich,low,0,TranSORCE,pt3a,5.0,0.0,0.0,true,439,observed,observed,,,,,bootstrap
+leibovich,low,0,TranSORCE,pt3a,5.0,0.0,0.0,true,439,predicted,Leibovich,,,,,mean
+leibovich,low,0,TranSORCE,pt3a,5.0,0.0,0.0,true,439,predicted,Leibovich Plus,,,,,mean
+leibovich,intermediate,1,TranSORCE,pt3a,5.0,242.0,34.0,false,439,observed,observed,0.14398939070334846,0.09929434928496048,0.1901147761958506,,bootstrap
+leibovich,intermediate,1,TranSORCE,pt3a,5.0,242.0,34.0,false,439,predicted,Leibovich,,,,0.25551234766628794,mean
+leibovich,intermediate,1,TranSORCE,pt3a,5.0,242.0,34.0,false,439,predicted,Leibovich Plus,,,,0.24610581902635142,mean
+leibovich,high,2,TranSORCE,pt3a,5.0,197.0,82.0,false,439,observed,observed,0.43060506897567713,0.36158516017812614,0.5012830029527915,,bootstrap
+leibovich,high,2,TranSORCE,pt3a,5.0,197.0,82.0,false,439,predicted,Leibovich,,,,0.6005535603420737,mean
+leibovich,high,2,TranSORCE,pt3a,5.0,197.0,82.0,false,439,predicted,Leibovich Plus,,,,0.5743830157871584,mean
+age,<60,0,Vasudev cohort,pt3a,5.0,316.0,52.0,false,766,observed,observed,0.16716304417413225,0.1270465687285014,0.2093826689490956,,bootstrap
+age,<60,0,Vasudev cohort,pt3a,5.0,316.0,52.0,false,766,predicted,Leibovich,,,,0.1986643869138261,mean
+age,<60,0,Vasudev cohort,pt3a,5.0,316.0,52.0,false,766,predicted,Leibovich Plus,,,,0.1949109668091002,mean
+age,60–69,1,Vasudev cohort,pt3a,5.0,284.0,52.0,false,766,observed,observed,0.18576204870951682,0.14254078464089578,0.2334980954591801,,bootstrap
+age,60–69,1,Vasudev cohort,pt3a,5.0,284.0,52.0,false,766,predicted,Leibovich,,,,0.20335529560167687,mean
+age,60–69,1,Vasudev cohort,pt3a,5.0,284.0,52.0,false,766,predicted,Leibovich Plus,,,,0.19412597809725304,mean
+age,70+,2,Vasudev cohort,pt3a,5.0,166.0,30.0,false,766,observed,observed,0.18222026873659697,0.12356523388405748,0.24317729600287236,,bootstrap
+age,70+,2,Vasudev cohort,pt3a,5.0,166.0,30.0,false,766,predicted,Leibovich,,,,0.21891959047788717,mean
+age,70+,2,Vasudev cohort,pt3a,5.0,166.0,30.0,false,766,predicted,Leibovich Plus,,,,0.19568964220963242,mean
+leibovich,low,0,Vasudev cohort,pt3a,5.0,384.65,24.65,false,766,observed,observed,0.06507565191594987,0.04101323028764705,0.09106602432068506,,bootstrap
+leibovich,low,0,Vasudev cohort,pt3a,5.0,384.65,24.65,false,766,predicted,Leibovich,,,,0.055836356298127866,mean
+leibovich,low,0,Vasudev cohort,pt3a,5.0,384.65,24.65,false,766,predicted,Leibovich Plus,,,,0.05437077257367876,mean
+leibovich,intermediate,1,Vasudev cohort,pt3a,5.0,276.85,56.9,false,766,observed,observed,0.20924074693630704,0.16211674616363864,0.25669179136034964,,bootstrap
+leibovich,intermediate,1,Vasudev cohort,pt3a,5.0,276.85,56.9,false,766,predicted,Leibovich,,,,0.24165505583476662,mean
+leibovich,intermediate,1,Vasudev cohort,pt3a,5.0,276.85,56.9,false,766,predicted,Leibovich Plus,,,,0.23091808826197457,mean
+leibovich,high,2,Vasudev cohort,pt3a,5.0,104.5,52.45,false,766,observed,observed,0.507866063381483,0.40621633376512084,0.6026835032676329,,bootstrap
+leibovich,high,2,Vasudev cohort,pt3a,5.0,104.5,52.45,false,766,predicted,Leibovich,,,,0.6554613224504856,mean
+leibovich,high,2,Vasudev cohort,pt3a,5.0,104.5,52.45,false,766,predicted,Leibovich Plus,,,,0.6159596076441528,mean

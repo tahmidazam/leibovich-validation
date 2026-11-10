@@ -1,0 +1,1057 @@
+kind,series,bound,stratum,horizon_years,predicted,estimate,lo,hi,n,events,cohort_n
+bin,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,0.06423197747447265,0.01969233572509946,0.11834371046926746,112,103,556
+bin,Leibovich,pt3a,Vasudev cohort,5.0,0.07281007424047273,0.0629985269722147,0.01734590381718814,0.11508515108825776,111,103,556
+bin,Leibovich,pt3a,Vasudev cohort,5.0,0.1565406974301118,0.11076631152294508,0.05577978309763537,0.18470577784615647,111,103,556
+bin,Leibovich,pt3a,Vasudev cohort,5.0,0.28415327781112126,0.24807697147527838,0.16221139416796854,0.33028482962622085,111,103,556
+bin,Leibovich,pt3a,Vasudev cohort,5.0,0.6223246812629784,0.45528157757903276,0.3585929959754936,0.5612900316874826,111,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.05577129893101551,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.05786767180630392,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.09956731521256312,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.09956731521256312,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.09956731521256312,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.14550672944895915,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.1803703349034741,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.18250074187751142,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.18250074187751142,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.207805298048377,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.2580798326902939,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.31760793955754363,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.31760793955754363,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.3276337646368206,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.4442653646730681,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.5289599025118081,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.6721600094595337,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.7713570270776219,,,,,103,556
+rug,Leibovich,pt3a,Vasudev cohort,5.0,0.9959426369511603,,,,,103,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029300899081924698,0.06353754570110885,0.01885909113156005,0.11683823698065024,112,103,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.07043082090801009,0.053691473323948996,0.016491179459290066,0.09964915268812476,111,103,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.15079119554121204,0.11170285046357853,0.05519999047978156,0.18642583102256527,111,103,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2717420268413466,0.23756045589249902,0.1643618030491768,0.32856840734781273,111,103,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5844360451952231,0.47486929578491055,0.365149448709532,0.5671985692253194,111,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.028995929385153087,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029159158680992954,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029249812324089526,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.02936077423248446,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029449673137827866,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029583237651190007,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.05404013572635535,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.05631546094265646,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.09486065719888102,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.09672606251853828,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0986625152510595,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.14094145930963345,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.16954070303860042,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1744651012925271,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.17866137863517273,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2008348188476386,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.25328946731952423,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.29345255511325713,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3089020276559005,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.31595432775635474,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.42015234419344033,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5047960029695945,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.6295466443104253,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7420238658001462,,,,,103,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.9565840194085108,,,,,103,556
+bin,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,0.06423197747447265,0.01969233572509946,0.11834371046926746,112,103,556
+bin,Leibovich,pt3b,Vasudev cohort,5.0,0.07281007424047273,0.0629985269722147,0.01734590381718814,0.11508515108825776,111,103,556
+bin,Leibovich,pt3b,Vasudev cohort,5.0,0.16132048030489635,0.11228667821652308,0.05299242343123896,0.18380075241192267,111,103,556
+bin,Leibovich,pt3b,Vasudev cohort,5.0,0.3027370497731872,0.2450654638184139,0.16366672230053944,0.3357579802023083,111,103,556
+bin,Leibovich,pt3b,Vasudev cohort,5.0,0.6503365417572284,0.45677271854231927,0.355827981599825,0.5573374721239843,111,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.029806423459467823,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.05577129893101551,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.05786767180630392,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.09956731521256312,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.09956731521256312,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.09956731521256312,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.14550672944895915,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.1803703349034741,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.1866602940830544,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.20287409092108044,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.207805298048377,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.26638104013645936,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.3241777046285196,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.34949940718960437,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.35710996150286944,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.47113880302678557,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.5713426224545122,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.7131072133996414,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.8099376241391637,,,,,103,556
+rug,Leibovich,pt3b,Vasudev cohort,5.0,0.9979644091102164,,,,,103,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029300899081924698,0.06353754570110885,0.01885909113156005,0.11683823698065024,112,103,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.07043082090801009,0.053691473323948996,0.016491179459290066,0.09964915268812476,111,103,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.15505410454106502,0.1121404778510679,0.04071432613095629,0.1795865409377403,111,103,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2891677189138759,0.24616390357681925,0.17363917777144675,0.33863706160069623,111,103,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.6107420087538885,0.465828220713101,0.36543740832856747,0.563591250752145,111,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.028995929385153087,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029159158680992954,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029249812324089526,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.02936077423248446,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029449673137827866,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029583237651190007,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.05404013572635535,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.05631546094265646,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.09486065719888102,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.09672606251853828,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0986625152510595,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.14094145930963345,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1730261590902525,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.17866137863517273,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1923159145696031,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.20094065239932474,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.261425484523534,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3152761405714223,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3316019694671618,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.34288776813150945,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.42796259114051605,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5399784387093332,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.6641830642463388,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7790648195302088,,,,,103,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.9654463883002721,,,,,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.0298064235,0.055758063668799984,,,171,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.0557712989,0.09126535607323898,,,247,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.0578676718,0.09126535607323898,,,250,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.0995673152,0.0631694615587842,,,138,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.1068925226,0.0631694615587842,,,109,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.1455067294,0.0631694615587842,,,174,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.1803703349,0.09096250390485874,,,100,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.1825007419,0.14909619154426823,,,100,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.1866602941,0.1715050269793713,,,100,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.207805298,0.1715050269793713,,,84,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.2578584371,0.17481561208356552,,,32,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.2580798327,0.22139303019504908,,,32,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.2663810401,0.22139303019504908,,,32,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.3176079396,0.28820197114799395,,,73,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.3241777046,0.27280896766875934,,,73,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.3276337646,0.25859794318198204,,,73,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.3571099615,0.23433391711621412,,,73,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.52718798,0.32807848233804726,,,32,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.5286053417,0.3305690403613262,,,32,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.5289599025,0.507610629727224,,,32,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.5360691965,0.5169046290490081,,,35,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.7597959935,0.607748882537268,,,20,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.7713570271,0.6196314689784186,,,21,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.7727052753,0.6196314689784186,,,21,103,556
+smooth,Leibovich,pt3a,Vasudev cohort,5.0,0.8183810644,0.6196314689784186,,,20,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0289959294,0.07007725311951166,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0290093744,0.07007725311951166,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0290199253,0.06295113188495484,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0290284259,0.06295113188495484,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0290384734,0.06295113188495484,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0290505324,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029065274,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.029073947,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0291074104,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0291220021,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0291390297,0.06215330801811063,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0291591587,0.06215330801811063,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0291833213,0.06659092513859995,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0292128649,0.05575205949385027,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0292498123,0.06987381960450717,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0292973454,0.06076184104580683,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0293607742,0.07866109023983076,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0294496731,0.04872530016066565,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0295832377,0.08476098323317584,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0298064235,0.07307282091265313,,,171,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0530991778,0.07307282091265313,,,248,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0533135771,0.07038397340796677,,,248,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0533666928,0.06910908881522757,,,248,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.053429219,0.06553523200607328,,,248,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0537745012,0.06553523200607328,,,248,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0538508976,0.06334175375283575,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0539385476,0.06030079526539281,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0540401357,0.058557017648620154,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0541592736,0.05678226477377647,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0543009389,0.053534676461807526,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0544721883,0.053534676461807526,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0546833693,0.06272958010197038,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0549502921,0.08883169901673149,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0552983817,0.09256569689771654,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0554983437,0.09429494390125973,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0555504729,0.07089456394542758,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0558294976,0.07089456394542758,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0559245521,0.07089456394542758,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0563154609,0.07673408527219906,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0564990207,0.05348867482753275,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0567243614,0.05247166232390467,,,249,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.05700758,0.03565095775067375,,,250,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0573742605,0.03718861621034364,,,250,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0920637097,0.03718861621034364,,,133,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0923988409,0.03718861621034364,,,133,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0933153683,0.03718861621034364,,,136,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0936088124,0.05429468809058695,,,136,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0937739079,0.05429468809058695,,,136,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0939533865,0.03863692738573006,,,136,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0945997431,0.03863692738573006,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0948606572,0.03565484900213004,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0954748077,0.036550359381854074,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0958396156,0.03890975304966365,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0962532054,0.03570060730268181,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0967260625,0.021043619267036174,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0972719099,0.017324374832975616,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.097909061,0.050844184292246554,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0986625153,0.06886725718198454,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0995673152,0.07129064649937256,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.0998774472,0.07129064649937256,,,138,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.103781129,0.06917186929828242,,,131,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1068925226,0.08497045167190388,,,98,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1393252652,0.08075474764129377,,,174,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1400920288,0.0794373401317281,,,175,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1409414593,0.11051569097142842,,,175,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1418876873,0.10651305855239908,,,175,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1429482585,0.12008839029580845,,,173,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1441452316,0.11809407217860335,,,165,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1606091625,0.11809407217860335,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1615362629,0.11253405860202423,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1655989764,0.11253405860202423,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1657547694,0.10943477446003912,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1661534004,0.107773096409584,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1664380564,0.13548980492919166,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1667435509,0.13548980492919166,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1686452621,0.1256355847150766,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1692882702,0.12827221568826,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.169540703,0.13039185045663007,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1699752445,0.13279821001011435,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1703742783,0.13036325388545325,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.170710854,0.13036325388545325,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1712744409,0.14066499133594262,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.171500453,0.14066499133594262,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1722495014,0.10819680885318446,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1723502118,0.128345445732935,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1730261591,0.1356734889942596,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1732672781,0.13297573989431002,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1733092136,0.13314157531096335,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1742599784,0.1356730736124795,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1744651013,0.1337383275901358,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1753380721,0.135795051943097,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1757308798,0.13326133585375147,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1762074247,0.13081810962473972,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1765130727,0.13159826706540403,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1771230021,0.12703086929877377,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1777986612,0.12929927767910926,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1786613786,0.1470478210360032,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.179211221,0.13155474006110313,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1792990961,0.11771830257229485,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1803703349,0.131681754347254,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1807705397,0.1321729373876702,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1818358662,0.14257549441583267,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1832883773,0.1546105319909858,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1848886062,0.14950827828253757,,,101,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1897019991,0.1318528572286394,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.1981304241,0.12943478240364747,,,95,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2008348188,0.12943478240364747,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2040140744,0.12943478240364747,,,107,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2058226538,0.13966509897092103,,,114,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2195734692,0.1475485664979809,,,102,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2357682481,0.15297624892431144,,,42,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2406554977,0.16536611191312364,,,44,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2438687672,0.18089227464031438,,,49,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2453073831,0.18452499699855246,,,49,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2455159679,0.18122527191136895,,,51,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2489292324,0.18592538272418077,,,51,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2491419318,0.20423271892716122,,,51,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2511437137,0.20423271892716124,,,53,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2530724767,0.21960623559082823,,,58,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2532894673,0.24228340797488074,,,58,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2533363746,0.2745031989077489,,,58,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2551668949,0.27450319890774894,,,60,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2553761194,0.27638288585386944,,,60,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2555953041,0.28024663035754627,,,60,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2614254845,0.25673586895232103,,,73,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2638136115,0.25673586895232103,,,79,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2722009307,0.25673586895232103,,,96,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2731781509,0.25673586895232103,,,96,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.279850034,0.24443777591578997,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2852491637,0.24443777591578997,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2853441947,0.25292388463551296,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.288025727,0.2807036165914767,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2883105941,0.28606706847001223,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2899462468,0.28606706847001223,,,99,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2909633023,0.28606706847001223,,,98,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2916584018,0.2832337501822843,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2934525551,0.29353845431251024,,,100,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2953347417,0.29341144002635944,,,93,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.2973116037,0.2854787916624323,,,93,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.299390469,0.29681362007942613,,,89,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3006526947,0.3121265441882173,,,89,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3015794413,0.3368111857188642,,,86,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3038875064,0.3301548091110197,,,82,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3045011773,0.29294684448974284,,,82,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.306324655,0.293810075783548,,,75,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3087367983,0.29374536063862344,,,75,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3089020277,0.2956416435738721,,,75,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3101347535,0.29649642955878075,,,75,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3116320846,0.2596797563225654,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3126348581,0.2596797563225654,,,75,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3145288077,0.24114920391070135,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3152761406,0.25043053899588913,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3159543278,0.25375899725153034,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3180709067,0.240161862510906,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.319388106,0.25375899725153034,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3210329352,0.257711637086945,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3214580766,0.2533571209193141,,,74,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3244544652,0.24903352916893776,,,72,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3362091923,0.2584895212585332,,,71,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3414474211,0.24929728415047184,,,69,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.347226915,0.24929728415047184,,,64,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3536361379,0.24929728415047184,,,55,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.3620979487,0.26003007669362815,,,33,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4524506062,0.3142620445081253,,,24,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4550173506,0.3085866627674283,,,26,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4668791916,0.30311041722815923,,,32,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4688688788,0.332982752262627,,,34,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4737610732,0.31261329770774465,,,33,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4828747637,0.3251171095395987,,,34,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4844739858,0.3373350048116672,,,34,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.487141434,0.34887637656430676,,,32,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4922023325,0.33062984323756367,,,32,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4946104629,0.34258288175117735,,,33,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.49626005,0.3673195021876279,,,33,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.4987888462,0.3673195021876279,,,33,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5001220521,0.38576262781094905,,,34,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.504796003,0.4113874040187392,,,33,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5075876234,0.44071862143995383,,,31,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5092890205,0.47970757403544056,,,31,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.512223883,0.4886569612022248,,,31,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5170296002,0.497944061092284,,,32,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5187661314,0.5163716770826756,,,32,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5208394232,0.5164695748599917,,,31,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5237684481,0.5072169652498957,,,30,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5295582817,0.5358539939841419,,,31,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.5308066733,0.5272290418729987,,,31,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.543548073,0.5364711553610996,,,27,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.549559117,0.5464717199598405,,,23,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7030736892,0.5894065329136469,,,22,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7091885557,0.6076530662403898,,,22,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7420238658,0.6150166875507904,,,20,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7449898146,0.6273882079612244,,,20,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7490826234,0.6116374546197818,,,20,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7563197773,0.6216659659862206,,,20,103,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,5.0,0.7576410778,0.6128675000789244,,,20,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.0298064235,0.055758063668799984,,,171,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.0557712989,0.09126535607323898,,,247,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.0578676718,0.09126535607323898,,,250,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.0995673152,0.0631694615587842,,,138,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.1068925226,0.0631694615587842,,,109,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.1455067294,0.0631694615587842,,,139,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.1803703349,0.07331573877371056,,,100,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.1866602941,0.07331573877371056,,,100,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.2028740909,0.20329357632394968,,,84,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.207805298,0.20329357632394968,,,84,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.2578584371,0.20008637736356824,,,32,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.2663810401,0.20532545257529541,,,32,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.2853059339,0.22513380588810605,,,45,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.3241777046,0.21767835837715366,,,84,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.3494994072,0.2873601950096894,,,73,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.3571099615,0.2634490009290924,,,73,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.3602437318,0.30232619859262805,,,73,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.5360691965,0.30905236979469153,,,35,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.5695277501,0.3333471793918023,,,35,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.5709795357,0.3436379427479113,,,35,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.5713426225,0.5169046290490081,,,35,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.5811659609,0.48778275361039813,,,35,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.7990899923,0.5220637073306418,,,21,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.8099376241,0.6302145254272937,,,21,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.8111982733,0.6302145254272937,,,21,103,556
+smooth,Leibovich,pt3b,Vasudev cohort,5.0,0.8183810644,0.6302145254272937,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0289959294,0.07007725311951166,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0290093744,0.07007725311951166,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0290199253,0.06295113188495484,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0290284259,0.06295113188495484,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0290384734,0.06295113188495484,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0290505324,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029065274,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.029073947,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0291074104,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0291220021,0.05227276333224156,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0291390297,0.06215330801811063,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0291591587,0.06215330801811063,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0291833213,0.06659092513859995,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0292128649,0.05575205949385027,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0292498123,0.06987381960450717,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0292973454,0.06076184104580683,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0293607742,0.07866109023983076,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0294496731,0.04872530016066565,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0295832377,0.08476098323317584,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0298064235,0.07307282091265313,,,171,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0530991778,0.07307282091265313,,,248,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0533135771,0.07038397340796677,,,248,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0533666928,0.06910908881522757,,,248,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.053429219,0.06553523200607328,,,248,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0537745012,0.06553523200607328,,,248,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0538508976,0.06334175375283575,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0539385476,0.06030079526539281,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0540401357,0.058557017648620154,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0541592736,0.05678226477377647,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0543009389,0.053534676461807526,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0544721883,0.053534676461807526,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0546833693,0.06272958010197038,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0549502921,0.08883169901673149,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0552983817,0.09256569689771654,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0554983437,0.09429494390125973,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0555504729,0.07089456394542758,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0558294976,0.07089456394542758,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0559245521,0.07089456394542758,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0563154609,0.07673408527219906,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0564990207,0.05348867482753275,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0567243614,0.05247166232390467,,,249,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.05700758,0.03565095775067375,,,250,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0573742605,0.03718861621034364,,,250,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0920637097,0.03718861621034364,,,133,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0923988409,0.03718861621034364,,,133,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0933153683,0.03718861621034364,,,136,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0936088124,0.05429468809058695,,,136,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0937739079,0.05429468809058695,,,136,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0939533865,0.03863692738573006,,,136,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0945997431,0.03863692738573006,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0948606572,0.03565484900213004,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0954748077,0.036550359381854074,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0958396156,0.03890975304966365,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0962532054,0.03570060730268181,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0967260625,0.021043619267036174,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0972719099,0.017324374832975616,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.097909061,0.050844184292246554,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0986625153,0.06997748896480625,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0995673152,0.07112737188272866,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.0998774472,0.08588232586978886,,,138,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.103781129,0.08436636555045506,,,131,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1068925226,0.08436636555045506,,,98,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1393252652,0.08215729363034241,,,149,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1400920288,0.07986200444956681,,,150,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1409414593,0.10028662962151194,,,151,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1418876873,0.10028662962151194,,,153,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1429482585,0.10033680604312994,,,154,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1441452316,0.0988085357127754,,,147,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1655989764,0.0988085357127754,,,100,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1657547694,0.0988085357127754,,,100,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1661534004,0.0926044224592188,,,100,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1667435509,0.09116914252742583,,,100,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.169540703,0.11502285772947492,,,100,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1703742783,0.10115963792537488,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1712744409,0.10329675978040102,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1722495014,0.11221215754465838,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1730261591,0.10807746145481671,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1733092136,0.09359806974916267,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1744651013,0.05991682373530643,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1757308798,0.07700914494923974,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1762074247,0.07559566288046521,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1768188568,0.07999316264998596,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1771230021,0.07999316264998597,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1779967414,0.09922984756458958,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1786613786,0.101169608777932,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1792990961,0.10275890198909682,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1803703349,0.10484357326282245,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1818358662,0.10876747258597752,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1832883773,0.12883601631024827,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.184109466,0.12883601631024827,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1848886062,0.12450263070607233,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.186800366,0.1393080328658307,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1875772686,0.13537857025857064,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1884038335,0.13537857025857064,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1892849798,0.14044899342700273,,,101,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1897019991,0.15071468114075617,,,98,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1902262985,0.14800811948967432,,,97,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1912341711,0.1535196632155137,,,94,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1923159146,0.1720369936449487,,,91,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1934799593,0.1720369936449487,,,88,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1947360692,0.1720369936449487,,,86,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1960956163,0.18476530103621513,,,92,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1975719257,0.195252669403938,,,92,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1981304241,0.19907597714191583,,,92,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.1991807144,0.22381853379158087,,,95,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2008348188,0.20532604630584217,,,95,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2009406524,0.2058172293462584,,,95,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2040140744,0.2096945730928726,,,98,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2058226538,0.2137182316978496,,,103,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2195734692,0.2201238107104011,,,100,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2406554977,0.20726818332963307,,,62,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2453073831,0.22211420933793263,,,54,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2489292324,0.21419583943235926,,,45,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2530724767,0.22003406969504366,,,38,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2533363746,0.23293491749903064,,,38,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2551668949,0.22917790270065827,,,37,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2553761194,0.22246194632853258,,,37,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2598260864,0.21842585205532825,,,37,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2614254845,0.2145313751250434,,,40,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2638136115,0.22044261696380701,,,42,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2692691533,0.22044261696380701,,,49,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2711620457,0.23442300162861432,,,53,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2752969587,0.23442300162861432,,,58,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2775611248,0.2245908012218573,,,59,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.279973612,0.22023262273735247,,,62,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2825494883,0.2300146723784097,,,67,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2853441947,0.24341072605702763,,,70,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.288025727,0.24341072605702763,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2973927818,0.2688105781269888,,,92,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.2985611435,0.2928661376810432,,,92,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3064808821,0.2928661376810432,,,83,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3101347535,0.2905340471665566,,,85,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3126348581,0.2751125346206986,,,84,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3128177313,0.28027312476128396,,,84,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3152761406,0.2831017075583765,,,83,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3163826225,0.2831017075583765,,,83,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3180709067,0.28559741044204573,,,83,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3182789625,0.27631164176613626,,,83,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.318636747,0.2619774612921204,,,83,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.319388106,0.27536045426890043,,,82,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3202578419,0.28052563551408205,,,82,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3210329352,0.29093245993229533,,,82,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3223247694,0.2933637092547046,,,81,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3244857552,0.2933637092547046,,,81,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3267473692,0.28557017327899337,,,80,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3291168075,0.29672974317279477,,,78,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3298864742,0.293531436990815,,,78,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3316019695,0.30316932732757007,,,76,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3342115453,0.27520597760907634,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3343026729,0.2881773245800903,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3362091923,0.2881773245800903,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3369551174,0.29440580513137166,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.339129448,0.3056497726069294,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3398432786,0.2900877956599388,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3414474211,0.29616978055510473,,,74,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3428877681,0.2411065739921466,,,75,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3461016315,0.25415084449107106,,,75,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.347226915,0.2586698066329255,,,75,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3472740799,0.24042327330618246,,,75,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.353417818,0.2360664410512344,,,73,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3536361379,0.24959134183521714,,,73,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3567385935,0.25801540581342747,,,72,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3769395066,0.25801540581342747,,,53,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3851408597,0.25801540581342747,,,43,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3882673229,0.2811803847351978,,,40,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.3922035032,0.2770403681839705,,,30,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.487141434,0.3274983783306394,,,20,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.4898784397,0.31664402714042456,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.505526504,0.35185408377735483,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5108355185,0.3335784339417771,,,33,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5208394232,0.3275581166754792,,,33,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.521081385,0.33357843394177716,,,33,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5227188078,0.33151631558987527,,,33,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5308066733,0.34976284891661774,,,34,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.531249144,0.36137422661453455,,,34,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5340244743,0.3727678818723807,,,34,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5357138233,0.38539979226833343,,,34,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5386129707,0.392602739032023,,,33,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5399784387,0.4000774951075501,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5450743141,0.42153094334923596,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5482416408,0.42145673854312243,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.549559117,0.4293274065341229,,,32,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5499842299,0.4980960272470978,,,32,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5532968821,0.49819392502441384,,,32,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5585236249,0.4982281572001507,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5603022415,0.4990610137191289,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5603117839,0.4990610137191289,,,31,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5645868042,0.5179538249316646,,,30,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5657274761,0.5276114760039345,,,30,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5754526097,0.5376335667393088,,,27,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.5806511245,0.5547176886878421,,,27,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7378448853,0.570452611335661,,,20,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7443331818,0.570452611335661,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.764693073,0.606974794497982,,,20,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7717953836,0.6224845235246794,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7790648195,0.634759893259887,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7834984255,0.6273882079612244,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7865073502,0.6033744217393525,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7871712629,0.6165686337982712,,,21,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.7941292324,0.6219117063569435,,,20,103,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,5.0,0.8099376241,0.6340456685997804,,,20,103,556
+bin,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,0.053900656378322864,0.01729641744866637,0.10655973512795357,112,85,556
+bin,Leibovich,pt3a,Vasudev cohort,3.0,0.051262988608807326,0.044256570105056806,0.007965654231115225,0.08919505609603182,111,85,556
+bin,Leibovich,pt3a,Vasudev cohort,3.0,0.1117338585775154,0.08257935218816714,0.0369310855305717,0.14638444474095552,111,85,556
+bin,Leibovich,pt3a,Vasudev cohort,3.0,0.20764802333842397,0.20000935434847128,0.12646026338001456,0.27950160405837277,111,85,556
+bin,Leibovich,pt3a,Vasudev cohort,3.0,0.5072721206726459,0.3891441676775251,0.2889722103157469,0.48855066105609674,111,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.03909679411569689,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.040579920402307845,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.07029443777333677,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.07029443777333677,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.07029443777333677,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.10352078889893379,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.1291011604971971,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.13067494376651345,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.13067494376651345,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.14946495351321187,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.18735028253347974,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.23323867342789184,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.23323867342789184,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.24108533085293693,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.33519691698341914,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.40736374591109703,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.5393147745242691,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.641375319877513,,,,,85,556
+rug,Leibovich,pt3a,Vasudev cohort,3.0,0.9782316996988637,,,,,85,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020582933667341097,0.05358862078278077,0.017012916189113703,0.09907307461777358,112,85,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.050235556445793715,0.04457141683209027,0.00838463524059478,0.0894552485681801,111,85,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.10932863554810118,0.08257935218816714,0.035528886536339205,0.1370924373380971,111,85,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.20220886262955004,0.20000935434847128,0.12793539755200933,0.28017936720114095,111,85,556
+bin,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.48879935362979876,0.3891441676775251,0.28934919347351346,0.4892616281519485,111,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020421523585541675,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020524839557787323,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.02055400560303589,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.02059746533417972,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020669136793322156,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020669136793322156,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.03832378715519261,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.03987997772861066,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.06824059884556354,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0691999499834524,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.069679039232803,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.10178560669522778,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.12471846587968045,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1268654824399447,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.12840835046287274,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.14682844704204176,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.18540487191584815,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.22210775168149136,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.22950280640623258,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.23608866831635075,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.32321846320948755,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.39598110002189346,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.5192317081975718,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6289357174737169,,,,,85,556
+rug,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.9406395776473214,,,,,85,556
+bin,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,0.053900656378322864,0.01729641744866637,0.10655973512795357,112,85,556
+bin,Leibovich,pt3b,Vasudev cohort,3.0,0.051262988608807326,0.044256570105056806,0.007965654231115225,0.08919505609603182,111,85,556
+bin,Leibovich,pt3b,Vasudev cohort,3.0,0.11527892785207239,0.08367033366572178,0.03699161968604283,0.14632072008594232,111,85,556
+bin,Leibovich,pt3b,Vasudev cohort,3.0,0.22214220694258602,0.2169701543828057,0.1271650891206902,0.2818334501702599,111,85,556
+bin,Leibovich,pt3b,Vasudev cohort,3.0,0.5355538839117848,0.371092386165636,0.28108011205260597,0.47903056237734887,111,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.02080969102353636,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.03909679411569689,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.040579920402307845,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.07029443777333677,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.07029443777333677,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.07029443777333677,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.10352078889893379,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.1291011604971971,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.13375131706403842,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.14578906695403748,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.14946495351321187,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.19368010571311545,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.2383764590533386,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.25832341338388665,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.2643645877545032,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.3577065748792885,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.4449510600322675,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.5801088818308383,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.6846001530693928,,,,,85,556
+rug,Leibovich,pt3b,Vasudev cohort,3.0,0.9865213365617174,,,,,85,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020582933667341097,0.05358862078278077,0.017012916189113703,0.09907307461777358,112,85,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.050235556445793715,0.04457141683209027,0.00838463524059478,0.0894552485681801,111,85,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.11261006065609011,0.0739879824581502,0.027405323468368655,0.1316628306928295,111,85,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.21625296662181523,0.21761909359341022,0.13688822933420944,0.29143813575719724,111,85,556
+bin,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.5160034101429694,0.3801257981626031,0.28897213013412504,0.4816345542702792,111,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020421523585541675,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020524839557787323,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.02055400560303589,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.02059746533417972,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020669136793322156,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020669136793322156,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.03832378715519261,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.03987997772861066,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.06824059884556354,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0691999499834524,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.069679039232803,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.10178560669522778,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.12595842233181143,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1291011604971971,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.14121302760106802,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.14682844704204176,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.19183839499631727,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.23608866831635075,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2513800661420738,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2558364524041964,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.33962941908838457,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.43212875229637887,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.545370470181715,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6712967960507781,,,,,85,556
+rug,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.9485981366114353,,,,,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.020809691,0.04703319731148828,,,247,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.0390967941,0.0691021357218115,,,250,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.0405799204,0.0691021357218115,,,250,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.0702944378,0.05194765310545519,,,266,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.0755572094,0.05194765310545519,,,138,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1035207889,0.05194765310545519,,,179,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1291011605,0.060742106689605294,,,100,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1306749438,0.10485308607580973,,,100,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1337513171,0.13842573130726052,,,100,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1494649535,0.13842573130726052,,,132,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.187181761,0.15212991454058297,,,80,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1873502825,0.18844293087523045,,,80,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.1936801057,0.18844293087523045,,,104,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.2332386734,0.224594258220953,,,105,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.2383764591,0.2184632547551747,,,77,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.2410853309,0.21323226523948244,,,77,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.2643645878,0.17275982818237137,,,73,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.405815335,0.2471134481864959,,,35,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.4070537677,0.27400101021858936,,,35,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.4073637459,0.41260604678435725,,,35,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.4135942325,0.420126866110552,,,35,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.4538220206,0.420126866110552,,,36,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.6288684437,0.4934936967604234,,,20,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.6413753199,0.5330380516839972,,,20,85,556
+smooth,Leibovich,pt3a,Vasudev cohort,3.0,0.6428462891,0.5330380516839972,,,20,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204215236,0.045093459041037356,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204294053,0.045093459041037356,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204364019,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204406455,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204455379,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204512403,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204579719,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020466039,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0204881628,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0205039114,0.06333820861424284,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0205248396,0.06772744738641283,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0205540056,0.07359908237296299,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0205974653,0.07469644145431574,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0206691368,0.04113979935791434,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.020809691,0.049252948230465464,,,247,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0378181828,0.049252948230465464,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0379438663,0.04805552050696977,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0379690601,0.04747793772269535,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0379978764,0.045823950658636814,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0382389859,0.04478255139608144,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0383237872,0.04283269745767989,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0384331341,0.039792083642845776,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0385794871,0.06771662260745243,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0387854582,0.06440863850067531,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0390967941,0.07486299520279904,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0394873803,0.07632264926739817,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.039537497,0.07210292206246614,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0396709276,0.07210292206246614,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0397624811,0.07210292206246614,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0398799777,0.07632264926739818,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.040036265,0.05271973361918087,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0402543505,0.037604271752754014,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0405799204,0.037604271752754014,,,250,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0667986334,0.037604271752754014,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0669298671,0.037604271752754014,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0673928116,0.037604271752754014,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0675200575,0.05274945767580061,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0676642364,0.05274945767580061,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.067828969,0.03836188194045613,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0680189878,0.03836188194045613,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0682405988,0.04361533502003094,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0685023953,0.03691835260318366,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0688163973,0.04685956823068187,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.06919995,0.01723377426149128,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0696790392,0.04548848810417741,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0702944378,0.05197840552112609,,,266,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0723053396,0.05197840552112609,,,140,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0743623457,0.04932753443725203,,,145,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.0755572094,0.04932753443725203,,,158,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1005340289,0.04932753443725203,,,179,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1011129495,0.06296000769008513,,,179,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1017856067,0.07098007288270718,,,179,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1025767721,0.06809930932114468,,,179,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1203470122,0.06809930932114468,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1210202984,0.06809930932114468,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1227244921,0.09325940978853306,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1232413369,0.09325940978853306,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1232723448,0.09325940978853306,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1242944016,0.09325940978853306,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1244481729,0.10701126357216258,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1247184659,0.10945120604230904,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1251586424,0.09497475627812346,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1253016292,0.09497475627812346,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1259493464,0.09497475627812346,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1259584223,0.07223432945120829,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1266729642,0.08249259783626711,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1268654824,0.09323198141791936,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1274866543,0.09323198141791936,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1276053002,0.0795680500402988,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1279029599,0.07294981576361073,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1284083505,0.10667337124551006,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1291011605,0.10667337124551006,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1294610857,0.1106503342026774,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1296329218,0.1106503342026774,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1304738934,0.12418387672398638,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1314242586,0.12418387672398638,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1325068474,0.14638258727650383,,,111,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1416764797,0.1551202239219048,,,130,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1457305577,0.1551202239219048,,,132,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.146828447,0.1441616807585181,,,132,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.148064033,0.14165822046688237,,,132,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1494649535,0.14165822046688237,,,132,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1690832785,0.15364374847021461,,,120,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.177802949,0.15364374847021461,,,99,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.179795651,0.14865398186935747,,,79,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1811747673,0.14865398186935747,,,89,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1823419883,0.16487697161583392,,,90,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1825055506,0.16487697161583392,,,90,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1837995123,0.15644056545792606,,,90,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1839646948,0.1569716440590707,,,90,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1854048719,0.20091037340273124,,,92,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1855717126,0.2374061274448224,,,92,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.187181761,0.24182177825225154,,,100,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1873502825,0.25116257803719794,,,100,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.1886489944,0.23740612744482234,,,100,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.191838395,0.22722338621675905,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2119463499,0.22722338621675905,,,105,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2128333951,0.22722338621675905,,,105,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2158046512,0.22722338621675905,,,105,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2180918934,0.22722338621675905,,,105,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2204344689,0.22722338621675905,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2206808441,0.2561168455383035,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2215835248,0.25152477657947026,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2221077517,0.23674380853576754,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2236354158,0.23674380853576754,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2240449801,0.23674380853576754,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.225274899,0.2250052033497493,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2270389447,0.250921453945919,,,104,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2289423092,0.25074339089424463,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2295028064,0.2600686652294521,,,103,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2310021755,0.22468169943152597,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.231101637,0.22085592459105344,,,102,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2320245603,0.17562969503742226,,,101,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2328142288,0.17258368277546055,,,94,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2332386734,0.182054011808105,,,94,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2339779673,0.1756296950374223,,,89,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2360886683,0.1777785985264678,,,80,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2366329829,0.1815743615630486,,,80,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2387704948,0.1894169236062409,,,75,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2410853309,0.20327909694846782,,,75,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2466145716,0.19987379506338743,,,74,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2551797301,0.19658014242044083,,,75,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2572419271,0.2097891168351652,,,75,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2594491631,0.2097891168351652,,,77,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2618172971,0.2097891168351652,,,78,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.2918735981,0.20109387413397947,,,20,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3356525409,0.23816069497729175,,,20,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3720810758,0.25555703760519344,,,38,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3751245088,0.25097496521659424,,,36,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3786962098,0.2555570376051934,,,35,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3802877469,0.26908958117617965,,,34,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3830297541,0.26908958117617965,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3860597544,0.2740010102185894,,,31,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3877503344,0.2740010102185894,,,31,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3910391644,0.2740010102185894,,,31,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3919224919,0.2740644127147724,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3925261358,0.31067087872861776,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3944789221,0.32907663535780235,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3956803774,0.32907663535780235,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3959811,0.3472773447424632,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3980802409,0.3673725194097027,,,32,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.3995977516,0.420126866110552,,,34,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.4018547768,0.420126866110552,,,35,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.4033877125,0.43061192777168394,,,35,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.4057038974,0.44659899976901873,,,35,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.4135942325,0.4361259673966039,,,35,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.4410515544,0.42022905890376905,,,28,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.5765407044,0.4385483688401246,,,22,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6061848343,0.45699234145352075,,,20,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6116257548,0.4666889067847073,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6172263794,0.5115944696075027,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.622678194,0.5113815648425314,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6229938443,0.5409442906693901,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6289357175,0.5331970406872372,,,20,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6350600315,0.5251024571268802,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6365162944,0.5373383053427693,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6413753199,0.5263225507080737,,,21,85,556
+smooth,Leibovich Plus,pt3a,Vasudev cohort,3.0,0.6567299605,0.5263225507080737,,,20,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.020809691,0.04703319731148828,,,247,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.0390967941,0.0691021357218115,,,250,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.0405799204,0.0691021357218115,,,250,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.0702944378,0.05194765310545519,,,266,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.0755572094,0.05194765310545519,,,138,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.1035207889,0.05194765310545519,,,179,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.1291011605,0.049453191133899926,,,100,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.1337513171,0.049453191133899926,,,100,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.145789067,0.15017537978151407,,,121,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.1494649535,0.15017537978151407,,,121,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.187181761,0.15502943485212284,,,72,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.1936801057,0.15480391987276704,,,85,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.2081930331,0.17836417039643837,,,45,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.2383764591,0.14266135621584858,,,88,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.2583234134,0.2396778735977354,,,73,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.2643645878,0.21989292375493347,,,73,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.2668584732,0.25361398859211104,,,73,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.4135942325,0.233099268499517,,,37,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.4433189591,0.24694789287023447,,,35,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.4446243705,0.2625397363659322,,,35,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.44495106,0.420126866110552,,,35,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.4538220206,0.401803593624914,,,35,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.67219635,0.4290048957846694,,,21,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.6846001531,0.5359467363069903,,,21,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.6860554779,0.5359467363069903,,,21,85,556
+smooth,Leibovich,pt3b,Vasudev cohort,3.0,0.6944048777,0.5359467363069903,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204215236,0.045093459041037356,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204294053,0.045093459041037356,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204364019,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204406455,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204455379,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204512403,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204579719,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020466039,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0204881628,0.06005048294967448,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0205039114,0.06333820861424284,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0205248396,0.06772744738641283,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0205540056,0.07359908237296299,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0205974653,0.07469644145431574,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0206691368,0.04113979935791434,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.020809691,0.049252948230465464,,,247,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0378181828,0.049252948230465464,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0379438663,0.04805552050696977,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0379690601,0.04747793772269535,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0379978764,0.045823950658636814,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0382389859,0.04478255139608144,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0383237872,0.04283269745767989,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0384331341,0.039792083642845776,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0385794871,0.06771662260745243,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0387854582,0.06440863850067531,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0390967941,0.07486299520279904,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0394873803,0.07632264926739817,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.039537497,0.07210292206246614,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0396709276,0.07210292206246614,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0397624811,0.07210292206246614,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0398799777,0.07632264926739818,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.040036265,0.05271973361918087,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0402543505,0.037604271752754014,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0405799204,0.037604271752754014,,,250,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0667986334,0.037604271752754014,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0669298671,0.037604271752754014,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0673928116,0.037604271752754014,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0675200575,0.05274945767580061,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0676642364,0.05274945767580061,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.067828969,0.03836188194045613,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0680189878,0.03836188194045613,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0682405988,0.04361533502003094,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0685023953,0.03691835260318366,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0688163973,0.04685956823068187,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.06919995,0.01723377426149128,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0696790392,0.04548848810417741,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0702944378,0.05197840552112609,,,266,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0723053396,0.05197840552112609,,,138,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0743623457,0.05197840552112609,,,142,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.0755572094,0.06636147433965693,,,149,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1005340289,0.06636147433965693,,,179,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1011129495,0.06320207634765639,,,179,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1017856067,0.05606417718054401,,,179,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1025767721,0.055281941655381,,,179,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1227244921,0.055281941655381,,,103,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1232413369,0.0846157738489935,,,103,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1242944016,0.0846157738489935,,,103,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1244481729,0.08728083233293932,,,102,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1251586424,0.09382304333214625,,,102,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1259584223,0.09259759377913844,,,101,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1268654824,0.07084134697456508,,,101,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1276053002,0.04168515924309145,,,101,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1279029599,0.05782956647727592,,,101,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1291011605,0.06000988435259558,,,101,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1296329218,0.07435887232855151,,,101,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1304738934,0.05949386608891603,,,102,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1314242586,0.05949386608891603,,,102,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1325068474,0.06312583902363228,,,108,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1334957621,0.06312583902363228,,,108,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1343470722,0.06312583902363228,,,111,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.137141631,0.06923709927620081,,,116,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1388943171,0.08163876670547537,,,119,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1395921045,0.09179094717686948,,,119,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1403611714,0.10583770255094294,,,119,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1412130276,0.11518799933603055,,,119,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1416764797,0.1180398646719082,,,119,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1421618018,0.125184597521604,,,121,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1432250315,0.1666526044991664,,,121,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1444247573,0.14449908494461405,,,121,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1457305577,0.14714523223735898,,,121,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.146828447,0.14714523223735898,,,121,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.148064033,0.16547839890924956,,,122,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1494649535,0.16547839890924956,,,122,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1690832785,0.16547839890924956,,,116,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.179795651,0.16547839890924956,,,81,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1823419883,0.16860739032034774,,,80,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1837995123,0.19169409657102432,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1854048719,0.1987511905960487,,,79,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.187181761,0.1987511905960487,,,84,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1886489944,0.21815467884252038,,,85,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.191838395,0.19170026737713886,,,72,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.1972865639,0.18845111030294984,,,58,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.201207448,0.18845111030294984,,,64,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2027338887,0.1826914652447093,,,69,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2043941144,0.17048471937801776,,,79,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2062065197,0.1822925241695515,,,92,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2081930331,0.19345121980133304,,,96,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2204344689,0.19345121980133304,,,104,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2215835248,0.19345121980133304,,,104,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2320245603,0.2508829198372166,,,103,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2338093945,0.2508829198372166,,,94,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2339779673,0.24611766778111724,,,94,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.234869261,0.24611766778111724,,,94,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2360886683,0.2204544042331594,,,89,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2383941659,0.2204544042331594,,,88,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2410814236,0.2296616505794654,,,86,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2440960728,0.2374936578572914,,,84,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2457454534,0.23736120057006152,,,84,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2466145716,0.23736120057006152,,,84,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2474467791,0.23736120057006152,,,83,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2475018243,0.25605925678389807,,,83,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2493759446,0.25656706398208123,,,83,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2513800661,0.23700046997603216,,,82,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2535282016,0.2506367240720075,,,81,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2537861284,0.25521264662161414,,,81,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2551797301,0.2506367240720075,,,80,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2556210517,0.24622136020835206,,,80,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2558364524,0.163996820579464,,,80,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2572419271,0.1933888519804304,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2575755691,0.2040281712349412,,,77,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2583234134,0.22301587377117232,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2594491631,0.2150139134166178,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2618172971,0.21122351114340773,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2618934155,0.20402817123494124,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2642862766,0.21036885840881372,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.2668584732,0.21036885840881372,,,76,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.3037985866,0.20767085470419758,,,37,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.3074355678,0.2116845060669005,,,23,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.3081526755,0.20104867041115765,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.3751245088,0.2555873960689573,,,20,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.3802877469,0.2510047815649339,,,23,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.3919224919,0.2603397370360928,,,37,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4057038974,0.25100478156493394,,,36,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4057080337,0.2605565844818969,,,36,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4132750715,0.23756923298550411,,,36,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4135942325,0.23756923298550417,,,36,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4180384031,0.23330837139368532,,,34,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4214262322,0.25583334486634796,,,34,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4233996254,0.2691220351365915,,,34,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.427053783,0.26438236757004857,,,33,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4286210456,0.3286968993325184,,,33,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4308623463,0.33480311998971973,,,32,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4321287523,0.3411397640679475,,,32,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4324456803,0.3652562882158631,,,32,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4348353132,0.37203953459312644,,,32,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4364348327,0.43846003278244255,,,32,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4389835635,0.42022905890376905,,,33,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4405993514,0.3980262635484328,,,33,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4410515544,0.383514798831895,,,33,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.4493816444,0.39802626354843273,,,32,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6468340553,0.4598728940276426,,,22,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6526999848,0.4751930508381814,,,22,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6587278224,0.5115944696075027,,,22,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6649243651,0.5307181905406025,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6655729207,0.5409442906693901,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6712967961,0.544326958538145,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6778527119,0.5255771271584851,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6792934864,0.5255771271584851,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.680905582,0.5255771271584851,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6846001531,0.5149630560286317,,,21,85,556
+smooth,Leibovich Plus,pt3b,Vasudev cohort,3.0,0.6873742075,0.5025551924681274,,,21,85,556

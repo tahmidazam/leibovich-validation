@@ -1,0 +1,10 @@
+rule,n
+relapse_yes,160
+relapse_at_dfs_time,100
+rcc_death_without_relapse,15
+relapsed_but_coded_disease_free,60
+dfs_time_later_than_survival,535
+deceased,328
+rcc_deceased,192
+other_cause_deceased,126
+overall_stage_iv,132

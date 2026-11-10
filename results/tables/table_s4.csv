@@ -1,0 +1,21 @@
+section,item,value,source
+Missing values,TranSORCE: t_stage,0 of 439 (0.0%),harmonised patient table
+Missing values,TranSORCE: node_positive,0 of 439 (0.0%),harmonised patient table
+Missing values,TranSORCE: size_ge_10cm,0 of 439 (0.0%),harmonised patient table
+Missing values,TranSORCE: grade,0 of 439 (0.0%),harmonised patient table
+Missing values,TranSORCE: necrosis,0 of 439 (0.0%),harmonised patient table
+Missing values,TranSORCE: any_predictor,0 of 439 (0.0%),harmonised patient table
+Missing values,Vasudev cohort: t_stage,32 of 766 (4.2%),harmonised patient table
+Missing values,Vasudev cohort: node_positive,753 of 766 (98.3%),harmonised patient table
+Missing values,Vasudev cohort: size_ge_10cm,205 of 766 (26.8%),harmonised patient table
+Missing values,Vasudev cohort: grade,34 of 766 (4.4%),harmonised patient table
+Missing values,Vasudev cohort: necrosis,28 of 766 (3.7%),harmonised patient table
+Missing values,Vasudev cohort: any_predictor,210 of 766 (27.4%),harmonised patient table
+Imputation model,Method,"multiple imputation by chained equations, 20 completed datasets, seed 20261108",R package mice 3.19.0; counts from params.yaml
+Imputation model,Outcome terms,cause-specific event indicator and Nelson-Aalen cumulative hazard of each competing cause,Bonneville et al. 2022 (https://doi.org/10.1177/09622802221102623)
+Imputation model,T stage,polytomous logistic regression (polyreg),R package mice 3.19.0
+Imputation model,Nuclear grade,proportional-odds logistic regression (polr),R package mice 3.19.0
+Imputation model,"Size 10 cm or more, necrosis",logistic regression (logreg),R package mice 3.19.0
+Imputation model,Nodal status,not imputed: unrecorded nodal status (pNx) scores as pN0,this study
+Imputation model,Other covariates,"age at surgery, sex, entry time",this study
+Imputation model,Interval estimation,each bootstrap resample re-runs MICE with 3 completed datasets,this study; count from params.yaml

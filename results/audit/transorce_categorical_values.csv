@@ -1,0 +1,48 @@
+source,column,value,n,covered_by_mapping_rule
+clinical,arm,A,107,true
+clinical,arm,B,173,true
+clinical,arm,C,163,true
+clinical,sex,F,139,true
+clinical,sex,M,304,true
+clinical,who_ps,0,338,
+clinical,who_ps,1,104,
+clinical,who_ps,2,1,
+clinical,histology,Conventional/ Clear Cell,443,true
+clinical,t_stage,pT1a,1,true
+clinical,t_stage,pT1b,52,true
+clinical,t_stage,pT2,102,true
+clinical,t_stage,pT3a - 4,288,true
+clinical,node_status,pN1/ pN2,6,true
+clinical,node_status,pNx/ pN0,437,true
+clinical,tumour_size_category,<10,310,true
+clinical,tumour_size_category,>10,133,true
+clinical,necrosis,No,197,true
+clinical,necrosis,Yes,246,true
+clinical,leibovich_risk_group,0,244,true
+clinical,leibovich_risk_group,1,199,true
+clinical,local_recurrence,<missing>,283,
+clinical,local_recurrence,Local node,7,
+clinical,local_recurrence,No,132,
+clinical,local_recurrence,Remnant kidney,2,
+clinical,local_recurrence,Renal bed,19,
+clinical,contralateral_kidney_metastasis,<missing>,283,
+clinical,contralateral_kidney_metastasis,No,149,
+clinical,contralateral_kidney_metastasis,Yes,11,
+clinical,nodal_metastasis,<missing>,280,
+clinical,nodal_metastasis,No,131,
+clinical,nodal_metastasis,Yes,32,
+clinical,lung_metastasis,<missing>,278,
+clinical,lung_metastasis,No,89,
+clinical,lung_metastasis,Yes,76,
+clinical,bone_metastasis,<missing>,280,
+clinical,bone_metastasis,No,144,
+clinical,bone_metastasis,Yes,19,
+clinical,liver_metastasis,<missing>,280,
+clinical,liver_metastasis,No,149,
+clinical,liver_metastasis,Yes,14,
+clinical,other_metastasis,<missing>,395,
+clinical,other_metastasis,Yes,48,
+clinical,method_of_assessment,<missing>,279,
+clinical,method_of_assessment,CT Scan,138,
+clinical,method_of_assessment,Chest X-Ray,5,
+clinical,method_of_assessment,Other,21,

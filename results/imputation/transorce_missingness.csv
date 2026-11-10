@@ -1,0 +1,7 @@
+cohort,predictor,n_total,n_missing,pct_missing,n_imputed
+transorce,t_stage,439,0,0.0,0
+transorce,node_positive,439,0,0.0,0
+transorce,size_ge_10cm,439,0,0.0,0
+transorce,grade,439,0,0.0,0
+transorce,necrosis,439,0,0.0,0
+transorce,any_predictor,439,0,0.0,0

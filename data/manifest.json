@@ -1,0 +1,102 @@
+{
+  "lifetables/ons-2020-based-qx.xlsx": {
+    "bytes": 360939,
+    "sha256": "2a76977cd6e105bd2f396e71857b444e3f8cd37e7b4676cde03e070d0b1e2142"
+  },
+  "lifetables/who/nmx-CZE-female.json": {
+    "bytes": 269603,
+    "sha256": "77cb0d1cbbfc421b6bf4d03295bda4000607da40a269132e5da59ee60fad2f4f"
+  },
+  "lifetables/who/nmx-CZE-male.json": {
+    "bytes": 269153,
+    "sha256": "a4bb04d5f46665cadd4891ac40cd2da3afa78944825bc6ee3fee305b31febdb6"
+  },
+  "lifetables/who/nmx-GBR-female.json": {
+    "bytes": 269599,
+    "sha256": "6cac3519de383e388c5df0225ccaa53412f3ec7566c6bdf0ac6e12b2e62fd7d4"
+  },
+  "lifetables/who/nmx-GBR-male.json": {
+    "bytes": 269138,
+    "sha256": "8518169d46254f358f682c79690cb279fe569a8edaf8e3b13a0e6d29a560f82d"
+  },
+  "lifetables/who/nmx-ROU-female.json": {
+    "bytes": 269599,
+    "sha256": "0902635f104c8aca37f91cfec9c9b8c824d52afcdaadeb1b0e9b3e3b8b7224ec"
+  },
+  "lifetables/who/nmx-ROU-male.json": {
+    "bytes": 269144,
+    "sha256": "fc2d957e85e9260e28a093dfedbb39c2d00cafbb304038738c1a54703632a06d"
+  },
+  "lifetables/who/nmx-RUS-female.json": {
+    "bytes": 269600,
+    "sha256": "e4ca4c1ba432f1971b97f44e5141830c62e59daafe21ba43d48d07169817f9ac"
+  },
+  "lifetables/who/nmx-RUS-male.json": {
+    "bytes": 269151,
+    "sha256": "152d651c865f01d407c537f8f90fe94251f91ea13b314a0aa1ae769b4b6cc13e"
+  },
+  "lifetables/who/nmx-SRB-female.json": {
+    "bytes": 269600,
+    "sha256": "8156e9e7290d82c18e22d899f3ef99094a0c51dbc104f1738a30c27fc26c5e9d"
+  },
+  "lifetables/who/nmx-SRB-male.json": {
+    "bytes": 269149,
+    "sha256": "d0b8b5bd286e0ca781c5b08268d604d168a654b9466130fc0cfe941942b3326a"
+  },
+  "literature/1220.pdf": {
+    "bytes": 5439455,
+    "sha256": "12d07ab51479d9aaf6b55b93b4a606c99bdd860a9fb2282e61a5be37fc61f357"
+  },
+  "literature/abdullah-2026-transorce-data.pdf": {
+    "bytes": 1552822,
+    "sha256": "415f2bb6f56b039c4cbdd60a71fa9cb4e02a05bd416ac83535eb321cf5c78f60"
+  },
+  "literature/laouris-2025-predict-kidney-feasibility.pdf": {
+    "bytes": 2305756,
+    "sha256": "1ac1f21f11b1551b72224a10647eae054e7d81e3f64eea5675e11ff144c61f92"
+  },
+  "literature/leibovich-2003-cancer.pdf": {
+    "bytes": 22910652,
+    "sha256": "d46bfc94438aca502509b4b5a8f8721bb1d7bf60e860e4274cec1db709d232b3"
+  },
+  "literature/re-2026-predict-kidney-codesign.pdf": {
+    "bytes": 1659445,
+    "sha256": "b1f97e6ecfdf9e99b6aef5090976e710114e4e039fcc83b9dd62ccf0f200f881"
+  },
+  "literature/stimpson-2025-leibovich-plus-preprint.pdf": {
+    "bytes": 393414,
+    "sha256": "4db659ccd086aab3383ddbdfe2eaf50d2ff62a435cb4a04c7eaa937e0557fb77"
+  },
+  "stratos/rdata.rds": {
+    "bytes": 12285,
+    "sha256": "0e213f718f27a05a409426891b82529ff1395ec17c6eca117ca359389d400bda"
+  },
+  "stratos/vdata.rds": {
+    "bytes": 11715,
+    "sha256": "16006994a963dad458203c9fde1b178fa54add975b1c3409a3567f955ced71db"
+  },
+  "transorce/analysis.xlsx": {
+    "bytes": 39938,
+    "sha256": "0babd9f0429a9bc6c664dc4e8fcca71522b2bafce9fee27ef1fbf90174e5b3ac"
+  },
+  "transorce/clinical.xlsx": {
+    "bytes": 104426,
+    "sha256": "634d94dc4fec4a24ad402ca161b9eba8f4e71341ecfd2e0bf24416f8343abd8f"
+  },
+  "vasudev/data_clinical_patient.txt": {
+    "bytes": 159257,
+    "sha256": "98e27c6f626a2f1025731bfb115f62f4b60b0ea709e8bacda0dd0b4e2d1da889"
+  },
+  "vasudev/data_clinical_sample.txt": {
+    "bytes": 90342,
+    "sha256": "bbe9c26685658ef8f7e6e95e69652aa7dd9595fd871e3a71f102db8bd4d0d32b"
+  },
+  "vasudev/meta_study.txt": {
+    "bytes": 308,
+    "sha256": "a080f3c332d3b52a604526de9c452e72dd57fb43c05a5a1a2a3418b302514ef3"
+  },
+  "vasudev/readme.md": {
+    "bytes": 661,
+    "sha256": "7101cc2f7ba7abe9e82b06ce3eb92e4c4bd0628a4a6cbc81716b512ff82bc927"
+  }
+}

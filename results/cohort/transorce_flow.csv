@@ -1,0 +1,8 @@
+step,n
+workbook_rows,443
+eligible_trial_record,443
+excluded_missing_sex,0
+estimated_operation_date,18
+excluded_operation_outside_window,4
+excluded_randomisation_lag_outside_range,0
+analysis_set,439

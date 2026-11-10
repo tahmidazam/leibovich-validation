@@ -1,0 +1,116 @@
+variant,cohort,horizon_years,bound,model,metric,estimate,lower,upper,method,n,events
+pt3b_for_unsplit_pt3,transorce,5.0,"",observed,aj_incidence,0.2714486061826621,0.23049007916568412,0.3135414647074884,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,oe_ratio,0.6283647331859553,0.5385785755350592,0.7171823785939743,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,calibration_intercept,-0.6384540935628142,-0.8411347447416836,-0.461867216061146,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,calibration_slope,1.0088654403915656,0.724543166859383,1.3210260410154104,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,ici,0.1614706793243288,0.12864267828623924,0.20057192378003996,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,auc,0.7546207045510406,0.7007941330634382,0.8068982888624229,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,brier,0.1904695821428957,0.17241984370781413,0.20858744564655812,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,ipa,0.03689417932732819,-0.09470110780509641,0.1441390192968962,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich,mean_predicted,0.43199210879699523,,,mean,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,oe_ratio,0.6557128403149354,0.5615152529204949,0.7499849087309768,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,calibration_intercept,-0.5655424448559949,-0.7649343847689313,-0.39055083383235034,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,calibration_slope,1.031173925728071,0.7727911269530059,1.3334383531635825,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,ici,0.14509058149097212,0.11527482088488605,0.18457433492843273,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,auc,0.7476700335442299,0.6943143062195464,0.8014332795925304,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,brier,0.18555339980620364,0.16814533560001094,0.20293196180351028,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,ipa,0.06175276184054079,-0.060101512626840506,0.15816309270331283,bootstrap,439,116
+pt3b_for_unsplit_pt3,transorce,5.0,pt3b,Leibovich Plus,mean_predicted,0.4139748217410029,,,mean,439,116
+pt3b_for_unsplit_pt3,transorce,3.0,"",observed,aj_incidence,0.22508403834107357,0.1863780455677932,0.2648763867163414,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,oe_ratio,0.6704432967134449,0.5622324327325036,0.7822692944830536,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,calibration_intercept,-0.5067512539120079,-0.7342344997107133,-0.3019635287271052,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,calibration_slope,1.0027427784630656,0.7031926875896901,1.3797405764804807,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,ici,0.11275989306858801,0.09195218801273576,0.15377710108659878,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,auc,0.7428116414867681,0.6847416369040878,0.7999114239616475,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,brier,0.16403445035921171,0.1464550752192274,0.18201399114008718,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,ipa,0.05956186214492343,-0.06338961125034026,0.16471665955818032,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich,mean_predicted,0.3357241983691233,,,mean,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,oe_ratio,0.6871915426343115,0.5763735312432746,0.8020834297752877,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,calibration_intercept,-0.4710924868348942,-0.6968935435845265,-0.2669752375103863,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,calibration_slope,1.006017048287608,0.710891717580225,1.3735267306759023,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,ici,0.1049926924845384,0.0848039902762799,0.14518403348545575,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,auc,0.735082168974551,0.6753737074718941,0.7925072747083646,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,brier,0.16245890691248632,0.14501520697171452,0.18033609875315998,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,ipa,0.06859472775274833,-0.04807463571316658,0.1678413630968912,bootstrap,439,97
+pt3b_for_unsplit_pt3,transorce,3.0,pt3b,Leibovich Plus,mean_predicted,0.3275419215408649,,,mean,439,97
+complete_cases,transorce,5.0,"",observed,at_risk,282.0,,,count,282,
+complete_cases,transorce,3.0,"",observed,at_risk,323.0,,,count,323,
+complete_cases,transorce,5.0,"","",headline_horizon,5.0,,,min_at_risk,439,
+complete_cases,transorce,5.0,"",observed,aj_incidence,0.2714486061826621,0.23049007916568412,0.3135414647074884,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,oe_ratio,0.6615073134658562,0.5663616849366657,0.7558450427976884,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,calibration_intercept,-0.5568879686879336,-0.7617730812159037,-0.3808403319482316,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,calibration_slope,1.0030526433914129,0.7235686733923777,1.314565122422206,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,ici,0.13962824511310978,0.10953105313057417,0.17922034166745135,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,auc,0.7478870091519149,0.6935357756859101,0.8019363968386086,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,brier,0.18482610578563094,0.16714347867958498,0.20241160734049476,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,ipa,0.06543031022739287,-0.055770693159709187,0.16429662934941175,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich,mean_predicted,0.41034860939095713,,,mean,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,oe_ratio,0.6899728165485347,0.5902375175978792,0.7888443636516199,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,calibration_intercept,-0.4888223894884664,-0.6901547846631622,-0.3131467358020526,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,calibration_slope,1.0217842141539306,0.7586552722422066,1.3284540461931615,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,ici,0.12531127359584307,0.1007453929409411,0.16661131748850466,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,auc,0.7430392267434403,0.6900985333869426,0.7976806532784281,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,brier,0.18095630428911935,0.1639499084880228,0.19789235822529674,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,ipa,0.08499788791726248,-0.024685714871023265,0.17537965433372812,bootstrap,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,mean_predicted,0.39341927634270446,,,mean,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,oe_ratio,0.6283647331859553,0.5385785755350592,0.7171823785939743,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,calibration_intercept,-0.6384540935628142,-0.8411347447416836,-0.461867216061146,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,calibration_slope,1.0088654403915656,0.724543166859383,1.3210260410154104,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,ici,0.1614706793243288,0.12864267828623924,0.20057192378003996,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,auc,0.7546207045510406,0.7007941330634382,0.8068982888624229,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,brier,0.1904695821428957,0.17241984370781413,0.20858744564655812,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,ipa,0.03689417932732819,-0.09470110780509641,0.1441390192968962,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich,mean_predicted,0.43199210879699523,,,mean,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,oe_ratio,0.6557128403149354,0.5615152529204949,0.7499849087309768,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,calibration_intercept,-0.5655424448559949,-0.7649343847689313,-0.39055083383235034,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,calibration_slope,1.031173925728071,0.7727911269530059,1.3334383531635825,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,ici,0.14509058149097212,0.11527482088488605,0.18457433492843273,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,auc,0.7476700335442299,0.6943143062195464,0.8014332795925304,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,brier,0.18555339980620364,0.16814533560001094,0.20293196180351028,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,ipa,0.06175276184054079,-0.060101512626840506,0.15816309270331283,bootstrap,439,116
+complete_cases,transorce,5.0,pt3b,Leibovich Plus,mean_predicted,0.4139748217410029,,,mean,439,116
+complete_cases,transorce,5.0,pt3a,Leibovich Plus,oe_other_cause,0.477938641549629,0.200350941456147,0.797616882771862,bootstrap,439,9
+complete_cases,transorce,3.0,"",observed,aj_incidence,0.22508403834107357,0.1863780455677932,0.2648763867163414,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,oe_ratio,0.7111152023335002,0.5960585028822488,0.8295442509257365,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,calibration_intercept,-0.42412570294593255,-0.6543230088990192,-0.21903883443641856,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,calibration_slope,1.0020380784304324,0.6968274101367943,1.372006817212563,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,ici,0.09433824406319072,0.07450607590507759,0.13286223636421576,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,auc,0.7355726208383626,0.6762959397925757,0.7942358449498496,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,brier,0.16032646889563837,0.14283747088195275,0.1789485313452456,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,ipa,0.08082036714291474,-0.031921046856607474,0.17537526688877292,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich,mean_predicted,0.31652260787347536,,,mean,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,oe_ratio,0.7286799867585751,0.6098816060479457,0.8507783672580594,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,calibration_intercept,-0.3902164445044129,-0.6195642475234551,-0.1858593743182279,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,calibration_slope,1.004335773671956,0.7078992771540945,1.3685726876960305,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,ici,0.087122967512841,0.07167188566818047,0.1274159593874554,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,auc,0.7300066217152035,0.6712473137441827,0.787831907964879,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,brier,0.15919398397256457,0.14156092730177033,0.17755026497896564,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,ipa,0.0873131008941006,-0.020723572506877435,0.17743183241310717,bootstrap,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,mean_predicted,0.30889285067691585,,,mean,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,oe_ratio,0.6704432967134449,0.5622324327325036,0.7822692944830536,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,calibration_intercept,-0.5067512539120079,-0.7342344997107133,-0.3019635287271052,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,calibration_slope,1.0027427784630656,0.7031926875896901,1.3797405764804807,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,ici,0.11275989306858801,0.09195218801273576,0.15377710108659878,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,auc,0.7428116414867681,0.6847416369040878,0.7999114239616475,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,brier,0.16403445035921171,0.1464550752192274,0.18201399114008718,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,ipa,0.05956186214492343,-0.06338961125034026,0.16471665955818032,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich,mean_predicted,0.3357241983691233,,,mean,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,oe_ratio,0.6871915426343115,0.5763735312432746,0.8020834297752877,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,calibration_intercept,-0.4710924868348942,-0.6968935435845265,-0.2669752375103863,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,calibration_slope,1.006017048287608,0.710891717580225,1.3735267306759023,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,ici,0.1049926924845384,0.0848039902762799,0.14518403348545575,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,auc,0.735082168974551,0.6753737074718941,0.7925072747083646,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,brier,0.16245890691248632,0.14501520697171452,0.18033609875315998,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,ipa,0.06859472775274833,-0.04807463571316658,0.1678413630968912,bootstrap,439,97
+complete_cases,transorce,3.0,pt3b,Leibovich Plus,mean_predicted,0.3275419215408649,,,mean,439,97
+complete_cases,transorce,3.0,pt3a,Leibovich Plus,oe_other_cause,0.3594757524277651,0.08526139915168165,0.7546917558588753,bootstrap,439,4
+transorce_surgery_clock,transorce,5.0,"",observed,aj_incidence,0.2616111721464491,0.22418814588897487,0.2965451146200048,bootstrap,439,112
+transorce_surgery_clock,transorce,5.0,pt3a,Leibovich,oe_ratio,0.6111832512675807,0.5281163328011792,0.6928515375968891,bootstrap,439,112
+transorce_surgery_clock,transorce,5.0,pt3b,Leibovich,oe_ratio,0.5813867030090014,0.50337232006187,0.6578326315254233,bootstrap,439,112
+transorce_surgery_clock,transorce,5.0,pt3a,Leibovich Plus,oe_ratio,0.6366747419771521,0.5509626313449324,0.7205348970758854,bootstrap,439,112
+transorce_surgery_clock,transorce,5.0,pt3b,Leibovich Plus,oe_ratio,0.6058915945125403,0.5254319115147825,0.6856333854623717,bootstrap,439,112
+transorce_surgery_clock,transorce,3.0,"",observed,aj_incidence,0.21089117224443152,0.1751917695790255,0.24913869312282977,bootstrap,439,91
+transorce_surgery_clock,transorce,3.0,pt3a,Leibovich,oe_ratio,0.6308166577986145,0.5365584150297762,0.738787931807185,bootstrap,439,91
+transorce_surgery_clock,transorce,3.0,pt3b,Leibovich,oe_ratio,0.5955956803662357,0.5065432561752999,0.6974301824393943,bootstrap,439,91
+transorce_surgery_clock,transorce,3.0,pt3a,Leibovich Plus,oe_ratio,0.645735489588816,0.5499302190359738,0.7571299686085375,bootstrap,439,91
+transorce_surgery_clock,transorce,3.0,pt3b,Leibovich Plus,oe_ratio,0.6098262825659968,0.5187149493067256,0.7140753036349589,bootstrap,439,91

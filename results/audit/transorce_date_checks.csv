@@ -1,0 +1,4 @@
+check,n_applicable,n_pass,n_fail
+operation_date_present,443,425,18
+operation_in_window,425,421,4
+randomisation_lag_in_range,425,424,1

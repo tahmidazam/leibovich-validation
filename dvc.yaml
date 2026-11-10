@@ -1,0 +1,580 @@
+vars:
+  - manuscript.yaml
+
+stages:
+  manifest:
+    # Raw data live outside the repository under $LP_DATA_DIR. Hashing them on every run lets
+    # downstream stages depend on data/manifest.json instead of on the files.
+    cmd: uv run leibovich-validation manifest
+    deps:
+      - src/leibovich_validation/manifest.py
+      - src/leibovich_validation/progress.py
+    outs:
+      - data/manifest.json:
+          cache: false
+    always_changed: true
+
+  cohort:
+    # TranSORCE spreadsheet to the harmonised patient table (data/interim, git-ignored)
+    # plus flow counts and the score-agreement check in results/cohort/.
+    cmd: uv run leibovich-validation cohort --name transorce
+    deps:
+      - data/manifest.json
+      - docs/transorce-other-details-mapping.yaml
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/raw_vasudev.py
+      - src/leibovich_validation/raw_transorce.py
+    params:
+      - analysis.score_agreement_min
+      - audit.operation_window
+      - audit.randomisation_lag_days
+    outs:
+      - data/interim/transorce_patients.parquet
+      - results/cohort/transorce_flow.csv:
+          cache: false
+      - results/cohort/transorce_score_agreement.csv:
+          cache: false
+
+  cohort_vasudev:
+    # Vasudev cohort cBioPortal tables to the harmonised patient table, with the
+    # flow counts and the score-agreement check in results/cohort/.
+    cmd: uv run leibovich-validation cohort --name vasudev
+    deps:
+      - data/manifest.json
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/raw_vasudev.py
+    params:
+      - analysis.score_agreement_min
+    outs:
+      - data/interim/vasudev_patients.parquet
+      - results/cohort/vasudev_flow.csv:
+          cache: false
+      - results/cohort/vasudev_score_agreement.csv:
+          cache: false
+
+  impute:
+    # MICE through the R bridge, one completed patient table per imputation in
+    # data/interim (git-ignored), plus the missingness counts in
+    # results/imputation/. TranSORCE is re-origined at randomisation first.
+    cmd: uv run leibovich-validation impute --name transorce
+    deps:
+      - data/interim/transorce_patients.parquet
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/raw_vasudev.py
+      - src/leibovich_validation/rbridge.py
+    params:
+      - analysis.imputations
+      - analysis.seed
+    outs:
+      - data/interim/transorce_imputed.parquet
+      - results/imputation/transorce_missingness.csv:
+          cache: false
+
+  impute_vasudev:
+    # The same MICE imputation for the Vasudev cohort.
+    cmd: uv run leibovich-validation impute --name vasudev
+    deps:
+      - data/interim/vasudev_patients.parquet
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/raw_vasudev.py
+      - src/leibovich_validation/rbridge.py
+    params:
+      - analysis.imputations
+      - analysis.seed
+    outs:
+      - data/interim/vasudev_imputed.parquet
+      - results/imputation/vasudev_missingness.csv:
+          cache: false
+
+  predict:
+    # Per-patient risks from all three models at both horizons, with the pT3b bound,
+    # conditional on being event-free at randomisation. One row per patient per
+    # completed dataset; the _cc file keeps the complete-case predictions. Reads
+    # the ONS life table, so it depends on the raw-data manifest.
+    cmd: uv run leibovich-validation predict --name transorce
+    deps:
+      - data/manifest.json
+      - data/interim/transorce_imputed.parquet
+      - data/interim/transorce_patients.parquet
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+    outs:
+      - data/interim/transorce_predictions.parquet
+      - data/interim/transorce_predictions_cc.parquet
+      - results/cohort/transorce_prediction_summary.csv:
+          cache: false
+
+  predict_vasudev:
+    # The same predictions as the TranSORCE stage, from surgery with no
+    # delayed entry. The deployed ONS life table is used here too; the
+    # country-matched WHO tables are a sensitivity analysis.
+    cmd: uv run leibovich-validation predict --name vasudev
+    deps:
+      - data/manifest.json
+      - data/interim/vasudev_imputed.parquet
+      - data/interim/vasudev_patients.parquet
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+    outs:
+      - data/interim/vasudev_predictions.parquet
+      - data/interim/vasudev_predictions_cc.parquet
+      - results/cohort/vasudev_prediction_summary.csv:
+          cache: false
+
+  score:
+    # Pooled performance measures across the completed datasets, through the R
+    # bridge, on the randomisation clock (no left truncation) and paired bootstrap
+    # intervals that re-run the imputation inside each resample. The life table
+    # is read for the re-prediction, so the stage depends on the manifest.
+    # The _cc files hold the complete-case sensitivity analysis.
+    cmd: uv run leibovich-validation score --name transorce
+    deps:
+      - data/manifest.json
+      - data/interim/transorce_patients.parquet
+      - data/interim/transorce_predictions.parquet
+      - data/interim/transorce_predictions_cc.parquet
+      - src/leibovich_validation/bootstrap.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/other_cause.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/score.py
+      - src/leibovich_validation/subgroups.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - analysis.seed
+      - analysis.bootstrap_resamples
+      - analysis.bootstrap_imputations
+      - analysis.min_at_risk
+      - analysis.subgroups.age_cut_points
+      - analysis.subgroups.leibovich_groups
+      - reporting.calibration_bins
+      - reporting.calibration_rug_points
+    outs:
+      - results/scores/transorce_performance.csv:
+          cache: false
+      - results/scores/transorce_contrasts.csv:
+          cache: false
+      - results/scores/transorce_calibration.csv:
+          cache: false
+      - results/scores/transorce_other_cause.csv:
+          cache: false
+      - results/scores/transorce_subgroups.csv:
+          cache: false
+      - results/scores/transorce_performance_cc.csv:
+          cache: false
+      - results/scores/transorce_contrasts_cc.csv:
+          cache: false
+      - results/scores/transorce_calibration_cc.csv:
+          cache: false
+
+  score_vasudev:
+    # The same scoring as the TranSORCE stage; entry_time is zero, so the
+    # Aalen-Johansen estimate is untruncated.
+    cmd: uv run leibovich-validation score --name vasudev
+    deps:
+      - data/manifest.json
+      - data/interim/vasudev_patients.parquet
+      - data/interim/vasudev_predictions.parquet
+      - data/interim/vasudev_predictions_cc.parquet
+      - src/leibovich_validation/bootstrap.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/other_cause.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/score.py
+      - src/leibovich_validation/subgroups.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - analysis.seed
+      - analysis.bootstrap_resamples
+      - analysis.bootstrap_imputations
+      - analysis.min_at_risk
+      - analysis.subgroups.age_cut_points
+      - analysis.subgroups.leibovich_groups
+      - reporting.calibration_bins
+      - reporting.calibration_rug_points
+    outs:
+      - results/scores/vasudev_performance.csv:
+          cache: false
+      - results/scores/vasudev_contrasts.csv:
+          cache: false
+      - results/scores/vasudev_calibration.csv:
+          cache: false
+      - results/scores/vasudev_other_cause.csv:
+          cache: false
+      - results/scores/vasudev_subgroups.csv:
+          cache: false
+      - results/scores/vasudev_performance_cc.csv:
+          cache: false
+      - results/scores/vasudev_contrasts_cc.csv:
+          cache: false
+      - results/scores/vasudev_calibration_cc.csv:
+          cache: false
+
+  sensitivity:
+    # The TranSORCE sensitivity analyses, each a params.yaml switch: complete
+    # cases and the pT3b bound already computed in the principal analysis, and
+    # the surgery clock (delayed entry at randomisation, reporting the
+    # Aalen-Johansen incidence and O/E only). The rows land in
+    # results/sensitivity/ for Table S3.
+    cmd: uv run leibovich-validation sensitivity --kind definitions --name transorce
+    deps:
+      - data/interim/transorce_patients.parquet
+      - results/scores/transorce_performance.csv
+      - results/scores/transorce_performance_cc.csv
+      - src/leibovich_validation/bootstrap.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/other_cause.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/score.py
+      - src/leibovich_validation/sensitivity.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - analysis.score_agreement_min
+      - analysis.seed
+      - analysis.bootstrap_resamples
+      - analysis.bootstrap_imputations
+      - analysis.imputations
+      - analysis.min_at_risk
+      - analysis.sensitivity
+      - analysis.subgroups.age_cut_points
+      - reporting.calibration_bins
+      - reporting.calibration_rug_points
+    outs:
+      - results/sensitivity/transorce_definitions.csv:
+          cache: false
+
+  sensitivity_vasudev:
+    # The Vasudev cohort sensitivity analyses: the relapsed but disease-free
+    # records censored, complete cases and the pT3b bound.
+    cmd: uv run leibovich-validation sensitivity --kind definitions --name vasudev
+    deps:
+      - data/interim/vasudev_patients.parquet
+      - results/scores/vasudev_performance.csv
+      - results/scores/vasudev_performance_cc.csv
+      - src/leibovich_validation/bootstrap.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/other_cause.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/raw_vasudev.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/score.py
+      - src/leibovich_validation/sensitivity.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - analysis.score_agreement_min
+      - analysis.seed
+      - analysis.bootstrap_resamples
+      - analysis.bootstrap_imputations
+      - analysis.imputations
+      - analysis.min_at_risk
+      - analysis.sensitivity
+      - analysis.subgroups.age_cut_points
+      - reporting.calibration_bins
+      - reporting.calibration_rug_points
+    outs:
+      - results/sensitivity/vasudev_definitions.csv:
+          cache: false
+
+  sensitivity_life_tables:
+    # The country-matched WHO life-table analysis for the Vasudev cohort: each patient
+    # is re-predicted under their own country's table and the pooled O/E rows
+    # with bootstrap intervals are written in the shared sensitivity schema,
+    # feeding Table S3. Depends on the manifest for the WHO life-table files.
+    cmd: uv run leibovich-validation sensitivity --kind life-tables
+    deps:
+      - data/manifest.json
+      - data/interim/vasudev_patients.parquet
+      - data/interim/vasudev_imputed.parquet
+      - src/leibovich_validation/bootstrap.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/other_cause.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/score.py
+      - src/leibovich_validation/sensitivity.py
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - analysis.seed
+      - analysis.bootstrap_resamples
+      - analysis.bootstrap_imputations
+      - analysis.vasudev_who_year
+      - analysis.sensitivity.who_country_life_table_vasudev
+    outs:
+      - results/sensitivity/life_tables.csv:
+          cache: false
+
+  report:
+    # Tidy summary CSVs for figures and manuscript tables. Reads the ONS life table, so
+    # it depends on the raw-data manifest. The flow and Table 1 summaries read the
+    # cohort stages' flow counts and the harmonised patient tables; everything the
+    # stage writes is aggregate.
+    cmd: uv run leibovich-validation report
+    deps:
+      - data/manifest.json
+      - data/interim/transorce_patients.parquet
+      - data/interim/vasudev_patients.parquet
+      - data/interim/transorce_imputed.parquet
+      - data/interim/vasudev_imputed.parquet
+      - data/interim/transorce_predictions.parquet
+      - data/interim/vasudev_predictions.parquet
+      - results/scores
+      - results/cohort/transorce_flow.csv
+      - results/cohort/vasudev_flow.csv
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+    params:
+      - model
+      - reporting
+      - analysis.horizon_years
+      - analysis.subgroups.age_cut_points
+      - analysis.subgroups.leibovich_groups
+    outs:
+      - results/summary/model_behaviour.csv:
+          cache: false
+      - results/summary/table2.csv:
+          cache: false
+      - results/summary/other_cause.csv:
+          cache: false
+      - results/summary/other_cause_by_age.csv:
+          cache: false
+      - results/summary/calibration_5y.csv:
+          cache: false
+      - results/summary/flow.csv:
+          cache: false
+      - results/summary/table1.csv:
+          cache: false
+      - results/summary/subgroups.csv:
+          cache: false
+
+  figure:
+    foreach: ${figure}
+    do:
+      cmd: uv run leibovich-validation figure ${key}
+      deps:
+        - results/summary
+        - src/leibovich_validation/figures
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/params.py
+      params:
+        - manuscript.yaml:
+            - style
+            - figure.${key}
+        - reporting
+      outs:
+        - results/figures/${item.placement}/${key}.pdf:
+            cache: false
+        - results/figures/${item.placement}/${key}.png:
+            cache: false
+
+  table:
+    # Manuscript tables written as CSV, with LaTeX for Tables 1 and 2. Table S1 comes from the
+    # model module and params.yaml; Tables 1 and 2 come from report-stage summaries,
+    # with the 3-year Table 2 filtered to the secondary horizon; Table S2 and its
+    # Other: Details part come from the loaders' schemas, the mapping constants in
+    # cohort.py and the approved mapping file; Table S3 concatenates whatever the
+    # sensitivity stages have written; Table S4 comes from the impute-stage
+    # missingness counts; Table S6 comes from the report stage's other-cause O/E summary.
+    cmd: uv run leibovich-validation table
+    deps:
+      - docs/transorce-other-details-mapping.yaml
+      - results/summary/table1.csv
+      - results/summary/table2.csv
+      - results/summary/other_cause.csv
+      - results/imputation
+      - results/sensitivity
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/raw_vasudev.py
+      - src/leibovich_validation/raw_transorce.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/sensitivity.py
+      - src/leibovich_validation/tables.py
+      - src/leibovich_validation/tables_latex.py
+    params:
+      - model
+      - analysis.imputations
+      - analysis.bootstrap_imputations
+      - analysis.seed
+      - analysis.missing_sex
+      - analysis.vasudev_who_year
+      - analysis.score_agreement_min
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - audit.operation_window
+      - audit.randomisation_lag_days
+    outs:
+      - results/tables/table_s1.csv:
+          cache: false
+      - results/tables/table_1.csv:
+          cache: false
+      - results/tables/table_1.tex:
+          cache: false
+      - results/tables/table_2.csv:
+          cache: false
+      - results/tables/table_2.tex:
+          cache: false
+      - results/tables/table_2_3y.csv:
+          cache: false
+      - results/tables/table_s3.csv:
+          cache: false
+      - results/tables/table_s3_notes.csv:
+          cache: false
+      - results/tables/table_s2.csv:
+          cache: false
+      - results/tables/table_s2_other_details.csv:
+          cache: false
+      - results/tables/table_s4.csv:
+          cache: false
+      - results/tables/table_s6.csv:
+          cache: false
+
+  export:
+    # One dated folder holding every declared table and figure, with an index of
+    # each item, its placement and its caption. Downstream of all figure and
+    # table stages through results/figures and results/tables.
+    cmd: uv run leibovich-validation export
+    deps:
+      - results/figures
+      - results/tables
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/export.py
+      - src/leibovich_validation/tables.py
+    params:
+      - manuscript.yaml:
+          - table
+          - figure
+    outs:
+      - results/manuscript:
+          cache: false
+
+  audit:
+    # Blind audit of the raw data: counts and value lists only, no predictions.
+    cmd: uv run leibovich-validation audit
+    deps:
+      - data/manifest.json
+      - params.yaml
+      - src/leibovich_validation/audit.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/raw_vasudev.py
+      - src/leibovich_validation/raw_transorce.py
+      - src/leibovich_validation/leibovich.py
+    outs:
+      - results/audit:
+          cache: false

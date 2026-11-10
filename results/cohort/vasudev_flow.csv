@@ -1,0 +1,16 @@
+step,n
+patient_rows,943
+sample_rows,943
+patients_without_sample_row,0
+sample_rows_without_patient,0
+excluded_missing_overall_stage,1
+excluded_overall_stage_iv,132
+excluded_recorded_m1,0
+excluded_missing_sex,0
+excluded_nonpositive_followup,44
+analysis_set,766
+missing_relapse_event_status_from_dfs_status,21
+relapse_and_dfs_status_both_missing,3
+relapsed_but_coded_disease_free,60
+dfs_time_capped_at_survival_time,465
+missing_dfs_time_used_survival_time,0
