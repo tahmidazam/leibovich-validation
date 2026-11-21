@@ -1,0 +1,266 @@
+# Manuscript figure layout. Each `figure` entry becomes a `figure@<name>` DVC stage that
+# draws a results/summary table with the registered geometry named by `draw`. Sizes are
+# in millimetres; captions sit beside their layout.
+
+# Shared rcParams for every figure: one sans-serif family, TrueType fonts in the PDF,
+# left and bottom spines only, light grids and a frameless legend.
+style:
+  font.family: sans-serif
+  font.sans-serif: DejaVu Sans
+  font.size: 8
+  axes.titlesize: 8
+  axes.labelsize: 8
+  xtick.labelsize: 7
+  ytick.labelsize: 7
+  legend.fontsize: 7
+  pdf.fonttype: 42
+  axes.spines.top: false
+  axes.spines.right: false
+  axes.grid: true
+  axes.axisbelow: true
+  grid.color: "0.9"
+  grid.linewidth: 0.6
+  legend.frameon: false
+  lines.linewidth: 1.4
+
+figure:
+  participant_flow:
+    label: "Figure 1"
+    placement: main
+    size: [183, 92]
+    mosaic: [[A, B]]
+    panels:
+      A:
+        draw: flow
+        table: flow
+        where: {stratum: TranSORCE}
+        title: "{stratum}"
+      B:
+        draw: flow
+        table: flow
+        where: {stratum: "Vasudev cohort"}
+        title: "{stratum}"
+    caption: >-
+      Flow of patients into the analysis sets of TranSORCE (A) and the Vasudev cohort (B).
+      RELAPSE and DFS_STATUS are source fields of the Vasudev cohort. DFS, disease-free
+      survival; M1, distant metastasis at diagnosis.
+
+  model_behaviour:
+    label: "Figure S1"
+    placement: supplement
+    size: [183, 75]
+    mosaic: [[A, B, C]]
+    sharex: true
+    sharey: true
+    legend: {loc: outside lower center, ncol: 6, stratum_label: "age {}"}
+    panels:
+      A:
+        draw: curve
+        table: model_behaviour
+        where: {label: low}
+        title: Low-risk profile
+        xlabel: Years since surgery
+        ylabel: Predicted risk of distant metastasis
+      B:
+        draw: curve
+        table: model_behaviour
+        where: {label: intermediate}
+        title: Intermediate-risk profile
+        xlabel: Years since surgery
+      C:
+        draw: curve
+        table: model_behaviour
+        where: {label: high}
+        title: High-risk profile
+        xlabel: Years since surgery
+    caption: >-
+      Predicted cumulative incidence of distant metastasis in men for the three
+      tumour profiles of Stimpson et al., defined in Table S2. The original
+      Leibovich model does not use age, so it has one curve per profile. Leibovich
+      Plus divides the risk of either event in proportion to the two cumulative
+      risks, so its predicted risk can fall as follow-up lengthens, as in the
+      high-risk profile at older ages.
+
+  calibration:
+    label: "Figure 2"
+    placement: main
+    size: [183, 90]
+    mosaic: [[A, B]]
+    sharex: true
+    sharey: true
+    legend: {loc: outside lower center, ncol: 3}
+    panels:
+      A:
+        draw: calibration
+        table: calibration_5y
+        where: {stratum: TranSORCE, bound: pt3a}
+        title: "{stratum} (n = {cohort_n:,}; {events} metastases)"
+        xlabel: "Predicted 5-year risk of distant metastasis"
+        ylabel: "Observed 5-year risk"
+      B:
+        draw: calibration
+        table: calibration_5y
+        where: {stratum: "Vasudev cohort", bound: pt3a}
+        title: "{stratum} (n = {cohort_n:,}; {events} relapses)"
+        xlabel: "Predicted 5-year risk of distant metastasis"
+    caption: >-
+      Calibration of predicted 5-year risk. Lines are smoothed calibration curves;
+      points are fifths of predicted risk with 95% bootstrap percentile intervals.
+      The dashed line marks perfect calibration, and the ticks at the foot of each
+      panel show the spread of each model's predicted risk. In TranSORCE,
+      follow-up starts at randomisation, the event is distant metastasis and
+      predictions are conditional on being event-free at randomisation. In
+      the Vasudev cohort, follow-up starts at surgery and the event is any relapse. Death
+      without the event is the competing event in both. Relapse includes every
+      distant metastasis, so in B a point below the dashed line shows
+      over-prediction but a point above it does not show under-prediction.
+
+  subgroups_by_age:
+    label: "Figure 3"
+    placement: main
+    size: [183, 92]
+    mosaic: [[A, B], [C, D]]
+    legend: {loc: outside lower center, ncol: 3, labels: {observed: "Observed incidence"}}
+    panels:
+      A:
+        draw: dot
+        table: subgroups
+        where: {stratum: TranSORCE, grouping: age, bound: pt3a}
+        title: "{stratum}: distant metastasis"
+        xlabel: "5-year risk"
+        ylabel: "Age at surgery, years"
+      B:
+        draw: dot
+        table: subgroups
+        where: {stratum: "Vasudev cohort", grouping: age, bound: pt3a}
+        title: "{stratum}: relapse"
+        xlabel: "5-year risk"
+      C:
+        draw: dot
+        table: other_cause_by_age
+        where: {stratum: TranSORCE, grouping: age}
+        title: "{stratum}: other-cause death"
+        xlabel: "5-year risk"
+        ylabel: "Age at surgery, years"
+      D:
+        draw: dot
+        table: other_cause_by_age
+        where: {stratum: "Vasudev cohort", grouping: age}
+        title: "{stratum}: other-cause death"
+        xlabel: "5-year risk"
+    caption: >-
+      Observed and predicted 5-year risk by age at surgery. In the bottom row,
+      observed death without the event is set against Leibovich Plus's predicted
+      other-cause risk; the original Leibovich model does not estimate this risk.
+      Observed values are Aalen-Johansen cumulative incidences with 95% bootstrap
+      percentile intervals. Hatched rows have fewer than 10 events. Follow-up,
+      events and the competing event are as in Figure 2.
+
+  subgroups_by_risk_group:
+    label: "Figure S2"
+    placement: supplement
+    size: [183, 58]
+    mosaic: [[A, B]]
+    sharex: true
+    legend: {loc: outside lower center, ncol: 3, labels: {observed: "Observed incidence"}}
+    panels:
+      A:
+        draw: dot
+        table: subgroups
+        where: {stratum: TranSORCE, grouping: leibovich, bound: pt3a}
+        title: "{stratum} (n = {cohort_n:,})"
+        xlabel: "5-year risk"
+        ylabel: "Leibovich risk group"
+      B:
+        draw: dot
+        table: subgroups
+        where: {stratum: "Vasudev cohort", grouping: leibovich, bound: pt3a}
+        title: "{stratum} (n = {cohort_n:,})"
+        xlabel: "5-year risk"
+    caption: >-
+      Observed and predicted 5-year risk of the event by Leibovich risk group
+      (low, score 0 to 2; intermediate, 3 to 5; high, 6 or more). SORCE enrolled
+      only patients with a score of 3 or more, so TranSORCE has no low-risk group.
+      Group sizes and event counts in the Vasudev cohort are averages over the imputed
+      datasets. Symbols, intervals and hatching are as in Figure 3; follow-up,
+      events and the competing event as in Figure 2.
+
+# The publication tables the export stage copies into the dated manuscript
+# folder. Each `table` entry names a results/tables stem (a CSV written by the
+# table stage), its placement and its caption; `latex` and `notes` add the
+# stem's .tex and _notes.csv files.
+table:
+  table_1:
+    label: "Table 1"
+    placement: main
+    latex: true
+    caption: >-
+      Characteristics of the two validation cohorts and of the Mayo Clinic cohort
+      in which the Leibovich score was developed (Leibovich et al., 2003). Values
+      are n (%) unless stated. Predictors are as recorded, before imputation;
+      unknown nodal status (pNx) is counted with pN0, as in the score, and risk
+      groups are given only for patients with all five predictors. Follow-up
+      starts at randomisation in TranSORCE and at surgery in the Vasudev cohort, and
+      events are counted over all follow-up. The event is distant metastasis in
+      TranSORCE and any relapse in the Vasudev cohort. SD, standard deviation.
+
+  table_2:
+    label: "Table 2"
+    placement: main
+    latex: true
+    caption: >-
+      Performance of the Leibovich model and Leibovich Plus at 5 years. In
+      TranSORCE, follow-up starts at randomisation and the event is distant
+      metastasis; in the Vasudev cohort, follow-up starts at surgery and the event is any
+      relapse. Observed incidence is the Aalen-Johansen cumulative incidence of
+      the event, with death without the event as the competing event. Intervals
+      are 95% bootstrap percentile intervals. Relapse includes every distant
+      metastasis, so an O/E below 1 in the Vasudev cohort shows over-prediction, but one above
+      1 does not show under-prediction. The other-cause O/E compares the observed
+      incidence of death without the event with Leibovich Plus's predicted
+      other-cause risk; it is marked descriptive in TranSORCE, which had few such
+      deaths. O/E, observed-to-expected ratio; ICI, integrated calibration index;
+      AUC, time-dependent area under the receiver operating characteristic curve.
+
+  table_s2:
+    label: "Table S1"
+    placement: supplement
+    caption: >-
+      Rules that map each cohort's source fields to the predictors, outcomes and
+      design fields used in the analysis, with the handling of missing values.
+  table_s2_other_details:
+    label: "Table S1 (continued)"
+    placement: supplement
+    caption: >-
+      Classification of every distinct entry in the TranSORCE free-text "Other:
+      Details" field. Only distant_metastasis counts as the event. Flagged entries
+      needed clinical review; laterality marks entries whose class depends on
+      which kidney was removed.
+  table_s1:
+    label: "Table S2"
+    placement: supplement
+    caption: >-
+      Specification of the validated models: the Leibovich coefficients and score
+      points with their sources, the tumour profiles of Stimpson et al., the
+      recovered baseline cumulative hazard and the life-table settings.
+  table_s4:
+    label: "Table S3"
+    placement: supplement
+    caption: >-
+      Missing predictor values before imputation, and the imputation model.
+      Unrecorded nodal status is not imputed; it scores as pN0.
+  table_s6:
+    label: "Table S4"
+    placement: supplement
+    caption: >-
+      Observed and predicted risk of death without the event under Leibovich Plus,
+      overall and by age at surgery, at 3 and 5 years. Observed incidence is the
+      Aalen-Johansen cumulative incidence with its 95% bootstrap percentile
+      interval. Groups with fewer than 10 deaths are flagged as few events.
+      TranSORCE rows are descriptive. O/E, observed-to-expected ratio.
+  table_2_3y:
+    label: "Table S5"
+    placement: supplement
+    caption: >-
+      Performance of the Leibovich model and Leibovich Plus at 3 years, laid out
+      as Table 2.

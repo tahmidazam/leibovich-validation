@@ -1,0 +1,10 @@
+[project]
+name = "lv-datasets"
+version = "0.1.0"
+description = "Dataset descriptor, harmonised-table schema, registry and finalisation for leibovich-validation"
+requires-python = ">=3.14"
+dependencies = ["polars>=2.1.0"]
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"

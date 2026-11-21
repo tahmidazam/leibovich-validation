@@ -1,0 +1,68 @@
+# TranSORCE "Other: Details" mapping
+#
+# The TranSORCE clinical workbook records recurrence at sites the site flags do not
+# name in a free-text "Other: Details" field. Each distinct string, listed by the blind
+# audit in results/audit/transorce_other_details.csv, is mapped here to one of:
+#
+#   distant_metastasis  the string names a distant organ or non-local nodal site;
+#                       counts as the event
+#   second_primary      the string describes a probable second primary tumour;
+#                       excluded from the event
+#   other               anything else, including regional nodal recurrence, local
+#                       recurrence in the renal bed, surgical scar or remaining kidney;
+#                       excluded from the event
+#
+# flagged: true marks strings where the classification is uncertain and needs
+# clinical judgement.
+#
+# laterality: true marks strings whose class depends on which kidney was removed:
+# an adrenal, psoas, renal-bed or suprarenal deposit on the operated side is a local
+# recurrence (other), while one on the other side is distant. These need the
+# operation side confirmed before they can be classified; they keep a proposed class
+# in the meantime.
+#
+# The structured flags nodal_metastasis and contralateral_kidney_metastasis are not
+# in this file; the cohort build's event rules cover them directly.
+mapping:
+  "Abdomen and right iliac chest": distant_metastasis
+  "Adenopathy in the thorax": distant_metastasis
+  "Below diaphragm, mass located between colon and right psoas": {class: distant_metastasis, flagged: true, laterality: true}
+  "Bladder neck": {class: second_primary, flagged: true}
+  "Bowel": {class: second_primary, flagged: true}
+  "Brain": distant_metastasis
+  "Brain - right sided cortical tumour.": distant_metastasis
+  "Breast": {class: second_primary, flagged: true}
+  "Descending colon": {class: second_primary, flagged: true}
+  "Endometrium": {class: second_primary, flagged: true}
+  "Focal metastatic deposit within in the left proximal femural": distant_metastasis
+  "Heart - mass in left ventricle 5.7cm x 3.7 cm": {class: distant_metastasis, flagged: true}
+  "L4 and posteromedical pleural surface": distant_metastasis
+  "Large pleural effusion with solid pleural elements,": {class: distant_metastasis, flagged: true}
+  "Left Adrenal": {class: distant_metastasis, laterality: true}
+  "Left Psoas Muscle": {class: distant_metastasis, laterality: true}
+  "Left adrenal": {class: distant_metastasis, laterality: true}
+  "Left cerebeller metastasis": distant_metastasis
+  "Left sided pelvic lesion ? follicle": {class: other, flagged: true}
+  "Lymph node, antenar right main bronchus": distant_metastasis
+  "Mediastinal lymph adenopathy": distant_metastasis
+  "New soft tissue masses between upper pole of spleen & diaphr": {class: distant_metastasis, laterality: true}
+  "Pancreas": distant_metastasis
+  "Pancreatic": distant_metastasis
+  "Pleural Effusion": {class: distant_metastasis, flagged: true}
+  "Psoas muscle - defined lesion measuring 2.6cm x 2.2cm": {class: distant_metastasis, laterality: true}
+  "RIght renal nodule": {class: other, flagged: true, laterality: true}
+  "Retroperitoneal mass": {class: other, flagged: true}
+  "Right hemithyroid": {class: distant_metastasis, flagged: true}
+  "Right orbit and ethnoid": distant_metastasis
+  "Right shoulder subcutaneous lesion": distant_metastasis
+  "Right testes": {class: second_primary, flagged: true}
+  "Rt adrenal nodule. New soft tissue adjacent to the CMS of -": {class: distant_metastasis, laterality: true}
+  "Scar recurrence, left flank.": other
+  "Spleen": distant_metastasis
+  "Subtle increase in the bulk of the proximal pancreas with": {class: distant_metastasis, flagged: true}
+  "Supra Renal Deposit (Right)": {class: distant_metastasis, laterality: true}
+  "T7 Vertebral body with soft tissue tumour extending back": distant_metastasis
+  "adrenals": {class: distant_metastasis, laterality: true}
+  "ascending colon right psoas muscle": {class: distant_metastasis, flagged: true, laterality: true}
+  "left para-aortic lymph node": {class: other}
+  "left ureter": {class: second_primary, flagged: true}

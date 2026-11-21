@@ -1,0 +1,22 @@
+[project]
+name = "lv-transorce"
+version = "0.1.0"
+description = "TranSORCE cohort adapter for leibovich-validation"
+requires-python = ">=3.14"
+dependencies = ["lv-datasets", "openpyxl>=3.1.5", "polars>=2.1.0", "pyyaml>=6.0.3"]
+
+[project.entry-points."leibovich_validation.datasets"]
+transorce = "lv_transorce:dataset"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+lv-datasets = { workspace = true }
+
+[tool.ruff]
+extend = "../../pyproject.toml"
+
+[tool.ruff.lint.flake8-tidy-imports.banned-api]
+"leibovich_validation".msg = "adapters must not import the analysis app"

@@ -1,0 +1,438 @@
+vars:
+  - manuscript.yaml
+
+stages:
+  manifest:
+    # Raw data live outside the repository under $LV_DATA_DIR. Stages depend on
+    # data/manifest.json instead of the files.
+    cmd: uv run leibovich-validation manifest
+    deps:
+      - src/leibovich_validation/manifest.py
+      - src/leibovich_validation/progress.py
+    outs:
+      - data/manifest.json:
+          cache: false
+    always_changed: true
+
+  # The per-dataset stages loop over the keys of the `datasets` block in params.yaml and depend on
+  # that dataset's adapter package, so editing one adapter reruns only its dataset.
+  cohort:
+    # Raw files to the harmonised patient table (data/interim, untracked), plus flow counts and
+    # the score-agreement check in results/cohort/.
+    foreach: ${datasets}
+    do:
+      cmd: uv run leibovich-validation cohort --name ${key}
+      deps:
+        - data/manifest.json
+        - src/leibovich_validation/atomic.py
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/cohort.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/interrupt.py
+        - src/leibovich_validation/leibovich.py
+        - src/leibovich_validation/params.py
+        - packages/api/src
+        - packages/${key}/src
+      params:
+        - analysis.score_agreement_min
+        - datasets.${key}
+      outs:
+        - data/interim/${key}_patients.parquet
+        - results/cohort/${key}_flow.csv:
+            cache: false
+        - results/cohort/${key}_score_agreement.csv:
+            cache: false
+
+  impute:
+    # MICE through the R bridge: one completed patient table per imputation in data/interim
+    # (untracked), plus missingness counts in results/imputation/. A dataset with delayed entry
+    # is re-origined at its entry time first.
+    foreach: ${datasets}
+    do:
+      cmd: uv run leibovich-validation impute --name ${key}
+      deps:
+        - data/interim/${key}_patients.parquet
+        - src/leibovich_validation/atomic.py
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/cohort.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/impute.py
+        - src/leibovich_validation/interrupt.py
+        - src/leibovich_validation/leibovich.py
+        - src/leibovich_validation/params.py
+        - src/leibovich_validation/progress.py
+        - src/leibovich_validation/rbridge.py
+        - packages/api/src
+        - packages/${key}/src
+      params:
+        - analysis.imputations
+        - analysis.seed
+        - datasets.${key}
+      outs:
+        - data/interim/${key}_imputed.parquet
+        - results/imputation/${key}_missingness.csv:
+            cache: false
+
+  predict:
+    # Per-patient risks from all three models at both horizons, with the pT3b bound, conditional
+    # on being event-free at entry. One row per patient per completed dataset; the _cc file holds
+    # complete-case predictions. Depends on the manifest for the ONS life table.
+    foreach: ${datasets}
+    do:
+      cmd: uv run leibovich-validation predict --name ${key}
+      deps:
+        - data/manifest.json
+        - data/interim/${key}_imputed.parquet
+        - data/interim/${key}_patients.parquet
+        - src/leibovich_validation/atomic.py
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/cohort.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/interrupt.py
+        - src/leibovich_validation/leibovich.py
+        - src/leibovich_validation/leibovich_plus.py
+        - src/leibovich_validation/lifetables.py
+        - src/leibovich_validation/params.py
+        - src/leibovich_validation/predict.py
+        - src/leibovich_validation/progress.py
+        - packages/api/src
+        - packages/${key}/src
+      params:
+        - model
+        - analysis.horizon_years
+        - analysis.secondary_horizon_years
+        - datasets.${key}
+      outs:
+        - data/interim/${key}_predictions.parquet
+        - data/interim/${key}_predictions_cc.parquet
+        - results/cohort/${key}_prediction_summary.csv:
+            cache: false
+
+  score:
+    # Pooled performance through the R bridge, with paired bootstrap intervals that re-run the
+    # imputation in each resample. Depends on the manifest for the life table. The _cc files hold
+    # the complete-case analysis.
+    foreach: ${datasets}
+    do:
+      cmd: uv run leibovich-validation score --name ${key}
+      deps:
+        - data/manifest.json
+        - data/interim/${key}_patients.parquet
+        - data/interim/${key}_predictions.parquet
+        - data/interim/${key}_predictions_cc.parquet
+        - src/leibovich_validation/atomic.py
+        - src/leibovich_validation/bootstrap.py
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/cohort.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/impute.py
+        - src/leibovich_validation/interrupt.py
+        - src/leibovich_validation/leibovich.py
+        - src/leibovich_validation/leibovich_plus.py
+        - src/leibovich_validation/lifetables.py
+        - src/leibovich_validation/other_cause.py
+        - src/leibovich_validation/params.py
+        - src/leibovich_validation/predict.py
+        - src/leibovich_validation/progress.py
+        - src/leibovich_validation/rbridge.py
+        - src/leibovich_validation/report.py
+        - src/leibovich_validation/score.py
+        - src/leibovich_validation/subgroups.py
+        - packages/api/src
+        - packages/${key}/src
+      params:
+        - model
+        - analysis.horizon_years
+        - analysis.secondary_horizon_years
+        - analysis.seed
+        - analysis.bootstrap_resamples
+        - analysis.bootstrap_imputations
+        - analysis.min_at_risk
+        - analysis.subgroups.age_cut_points
+        - analysis.subgroups.leibovich_groups
+        - reporting.calibration_bins
+        - reporting.calibration_rug_points
+        - datasets.${key}
+      outs:
+        - results/scores/${key}_performance.csv:
+            cache: false
+        - results/scores/${key}_contrasts.csv:
+            cache: false
+        - results/scores/${key}_calibration.csv:
+            cache: false
+        - results/scores/${key}_other_cause.csv:
+            cache: false
+        - results/scores/${key}_subgroups.csv:
+            cache: false
+        - results/scores/${key}_performance_cc.csv:
+            cache: false
+        - results/scores/${key}_contrasts_cc.csv:
+            cache: false
+        - results/scores/${key}_calibration_cc.csv:
+            cache: false
+
+  sensitivity:
+    # Sensitivity analyses, each a params.yaml switch and each applied only where the dataset's
+    # data support it. Rows go to results/sensitivity/ for Table S3.
+    foreach: ${datasets}
+    do:
+      cmd: uv run leibovich-validation sensitivity --kind definitions --name ${key}
+      deps:
+        - data/interim/${key}_patients.parquet
+        - results/scores/${key}_performance.csv
+        - results/scores/${key}_performance_cc.csv
+        - src/leibovich_validation/atomic.py
+        - src/leibovich_validation/bootstrap.py
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/cohort.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/impute.py
+        - src/leibovich_validation/interrupt.py
+        - src/leibovich_validation/leibovich.py
+        - src/leibovich_validation/leibovich_plus.py
+        - src/leibovich_validation/lifetables.py
+        - src/leibovich_validation/other_cause.py
+        - src/leibovich_validation/params.py
+        - src/leibovich_validation/predict.py
+        - src/leibovich_validation/progress.py
+        - src/leibovich_validation/rbridge.py
+        - src/leibovich_validation/report.py
+        - src/leibovich_validation/score.py
+        - src/leibovich_validation/sensitivity.py
+        - packages/api/src
+        - packages/${key}/src
+      params:
+        - model
+        - analysis.horizon_years
+        - analysis.secondary_horizon_years
+        - analysis.score_agreement_min
+        - analysis.seed
+        - analysis.bootstrap_resamples
+        - analysis.bootstrap_imputations
+        - analysis.imputations
+        - analysis.min_at_risk
+        - analysis.sensitivity
+        - analysis.subgroups.age_cut_points
+        - reporting.calibration_bins
+        - reporting.calibration_rug_points
+        - datasets.${key}
+      outs:
+        - results/sensitivity/${key}_definitions.csv:
+            cache: false
+
+  sensitivity_life_tables:
+    # Country-matched WHO life-table analysis for every dataset with a country column: each
+    # patient is re-predicted under their own country's table, with pooled O/E rows and bootstrap
+    # intervals in the shared sensitivity schema for Table S3. Depends on the manifest for the
+    # WHO files.
+    cmd: uv run leibovich-validation sensitivity --kind life-tables
+    deps:
+      - data/manifest.json
+      - data/interim
+      - src/leibovich_validation/atomic.py
+      - src/leibovich_validation/bootstrap.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/impute.py
+      - src/leibovich_validation/interrupt.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/other_cause.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/score.py
+      - src/leibovich_validation/sensitivity.py
+      - packages
+    params:
+      - model
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - analysis.seed
+      - analysis.bootstrap_resamples
+      - analysis.bootstrap_imputations
+      - analysis.fallback_surgery_year
+      - analysis.sensitivity.country_life_table
+      - datasets
+    outs:
+      - results/sensitivity/life_tables.csv:
+          cache: false
+
+  report:
+    # Summary CSVs for figures and manuscript tables. Depends on the manifest for the ONS life
+    # table. Output is aggregate only.
+    cmd: uv run leibovich-validation report
+    deps:
+      - data/manifest.json
+      - data/interim
+      - results/scores
+      - results/cohort
+      - src/leibovich_validation/atomic.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/interrupt.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/params.py
+      - src/leibovich_validation/predict.py
+      - src/leibovich_validation/progress.py
+      - src/leibovich_validation/rbridge.py
+      - src/leibovich_validation/report.py
+      - packages
+    params:
+      - model
+      - reporting
+      - analysis.horizon_years
+      - analysis.subgroups.age_cut_points
+      - analysis.subgroups.leibovich_groups
+      - datasets
+    outs:
+      - results/summary/model_behaviour.csv:
+          cache: false
+      - results/summary/table2.csv:
+          cache: false
+      - results/summary/other_cause.csv:
+          cache: false
+      - results/summary/other_cause_by_age.csv:
+          cache: false
+      - results/summary/calibration_5y.csv:
+          cache: false
+      - results/summary/flow.csv:
+          cache: false
+      - results/summary/table1.csv:
+          cache: false
+      - results/summary/subgroups.csv:
+          cache: false
+
+  figure:
+    foreach: ${figure}
+    do:
+      cmd: uv run leibovich-validation figure ${key}
+      deps:
+        - results/summary
+        - src/leibovich_validation/atomic.py
+        - src/leibovich_validation/cli.py
+        - src/leibovich_validation/config.py
+        - src/leibovich_validation/figures
+        - src/leibovich_validation/interrupt.py
+        - src/leibovich_validation/params.py
+      params:
+        - manuscript.yaml:
+            - style
+            - figure.${key}
+        - reporting
+      outs:
+        - results/figures/${item.placement}/${key}.pdf:
+            cache: false
+        - results/figures/${item.placement}/${key}.png:
+            cache: false
+
+  table:
+    # Manuscript tables as CSV, with LaTeX for Tables 1 and 2. S1 comes from the model module
+    # and params.yaml; Tables 1, 2 and S6 from report-stage summaries (the 3-year Table 2
+    # filters to the secondary horizon); S2 from the loader schemas, cohort.py constants and the
+    # approved mapping file in the TranSORCE package; S3 concatenates the sensitivity outputs;
+    # S4 from impute-stage missingness counts.
+    cmd: uv run leibovich-validation table
+    deps:
+      - results/summary/table1.csv
+      - results/summary/table2.csv
+      - results/summary/other_cause.csv
+      - results/imputation
+      - results/sensitivity
+      - src/leibovich_validation/atomic.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/interrupt.py
+      - src/leibovich_validation/leibovich.py
+      - src/leibovich_validation/leibovich_plus.py
+      - src/leibovich_validation/lifetables.py
+      - src/leibovich_validation/params.py
+      - packages
+      - src/leibovich_validation/report.py
+      - src/leibovich_validation/sensitivity.py
+      - src/leibovich_validation/tables.py
+      - src/leibovich_validation/tables_latex.py
+    params:
+      - model
+      - analysis.imputations
+      - analysis.bootstrap_imputations
+      - analysis.seed
+      - analysis.missing_sex
+      - analysis.fallback_surgery_year
+      - analysis.score_agreement_min
+      - analysis.horizon_years
+      - analysis.secondary_horizon_years
+      - datasets
+    outs:
+      - results/tables/table_s1.csv:
+          cache: false
+      - results/tables/table_1.csv:
+          cache: false
+      - results/tables/table_1.tex:
+          cache: false
+      - results/tables/table_2.csv:
+          cache: false
+      - results/tables/table_2.tex:
+          cache: false
+      - results/tables/table_2_3y.csv:
+          cache: false
+      - results/tables/table_s3.csv:
+          cache: false
+      - results/tables/table_s3_notes.csv:
+          cache: false
+      - results/tables/table_s2.csv:
+          cache: false
+      - results/tables/table_s2_other_details.csv:
+          cache: false
+      - results/tables/table_s4.csv:
+          cache: false
+      - results/tables/table_s6.csv:
+          cache: false
+
+  export:
+    # One dated folder with every declared table and figure, plus an index of items, placements
+    # and captions.
+    cmd: uv run leibovich-validation export
+    deps:
+      - results/figures
+      - results/tables
+      - src/leibovich_validation/atomic.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/export.py
+      - src/leibovich_validation/interrupt.py
+      - src/leibovich_validation/tables.py
+    params:
+      - manuscript.yaml:
+          - table
+          - figure
+    outs:
+      - results/manuscript:
+          cache: false
+
+  audit:
+    # Blind audit of the raw data: counts and value lists only, no predictions.
+    cmd: uv run leibovich-validation audit
+    deps:
+      - data/manifest.json
+      - src/leibovich_validation/atomic.py
+      - src/leibovich_validation/audit.py
+      - src/leibovich_validation/cli.py
+      - src/leibovich_validation/cohort.py
+      - src/leibovich_validation/config.py
+      - src/leibovich_validation/interrupt.py
+      - packages
+      - src/leibovich_validation/leibovich.py
+    params:
+      - audit
+      - datasets
+    outs:
+      - results/audit:
+          cache: false
